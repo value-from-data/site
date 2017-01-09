@@ -17,16 +17,6 @@
   </url>
   
   <url>
-    <loc>http://value-from-data.com/competition/2017/01/kaggle/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/competition/2017/01/new-york-times-blog-articles/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://value-from-data.com/datatable/dt1/</loc>
   </url>
   
@@ -71,18 +61,6 @@
   </url>
   
   <url>
-    <loc>http://value-from-data.com/work/proj-1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/work/proj-2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/work/proj-3/</loc>
-  </url>
-  
-  <url>
     <loc>http://value-from-data.com/contact/</loc>
   </url>
   
@@ -94,12 +72,6 @@
   
   <url>
     <loc>http://value-from-data.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/competition/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -155,11 +127,6 @@
   <url>
     <loc>http://value-from-data.com/tags/use-case/</loc>
     <lastmod>2017-01-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/work/</loc>
     <priority>0</priority>
   </url>
   
