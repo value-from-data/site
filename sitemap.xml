@@ -2,33 +2,93 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://value-from-data.com/blog/2015/10/10/migrate-from-jekyll/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <loc>http://value-from-data.com/blog/2017/01/quero-comprar-um-carro-usado-parte1/</loc>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/blog/2015/10/02/linked-post/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <loc>http://value-from-data.com/blog/2017/01/kaggle/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/blog/2015/09/17/go-is-for-lovers/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+    <loc>http://value-from-data.com/blog/2017/01/inteligencia-artificial/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/blog/2015/08/03/hugo-is-for-lovers/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+    <loc>http://value-from-data.com/competition/2017/01/kaggle/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/blog/2015/06/24/creating-a-new-theme/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
+    <loc>http://value-from-data.com/competition/2017/01/new-york-times-blog-articles/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/datatable/dt1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc10/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc11/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc4/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc5/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc6/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc7/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/htmlwidget/hc_tm/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/work/proj-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/work/proj-2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/work/proj-3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/contact/</loc>
   </url>
   
   <url>
     <loc>http://value-from-data.com/blog/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -38,7 +98,26 @@
   </url>
   
   <url>
-    <loc>http://value-from-data.com/contact/</loc>
+    <loc>http://value-from-data.com/competition/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/categories/competi%C3%A7%C3%B5es/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/datatable/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/categories/exemplos/</loc>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -46,56 +125,25 @@
   </url>
   
   <url>
-    <loc>http://value-from-data.com/tags/go/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+    <loc>http://value-from-data.com/categories/geral/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/tags/golang/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <loc>http://value-from-data.com/htmlwidget/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/tags/hugo/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <loc>http://value-from-data.com/tags/intelig%C3%AAncia-artificial/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/tags/ipsum/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/categories/lorem/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/categories/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/tags/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/categories/pseudo/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/categories/starting/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
+    <loc>http://value-from-data.com/tags/kaggle/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -105,14 +153,19 @@
   </url>
   
   <url>
-    <loc>http://value-from-data.com/tags/theme/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <loc>http://value-from-data.com/tags/use-case/</loc>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/work/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://value-from-data.com/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

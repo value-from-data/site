@@ -1,0 +1,56 @@
+---
+title: "Kaggle: Competições reais"
+date: "2017-01-01"
+tags: ["Kaggle"]
+categories: ["Competições"]
+banner: "img/banners/kaggle.png"
+---
+
+Muita da informação presente neste post foi diretamente traduzida da [wikipedia](https://en.wikipedia.org/wiki/Kaggle). Para quê inventar a roda?
+
+<font size="4" color="grey"> <b> O que é a [Kaggle](https://www.kaggle.com/)  </b></font>
+
+Em 2010, a Kaggle foi fundada como uma plataforma para competições de modelos preditivos e analítica, nas quais empresas e pesquisadores disponibilizam os seus dados e _analistas de dados_ de todo o mundo competem para produzir os melhores modelos. 
+
+Esta abordagem crowdsourcing baseia-se no fato de que existem inúmeras estratégias que podem ser aplicadas a qualquer tarefa de modelagem preditiva e é impossível saber, no início, qual a técnica ou analista que será mais eficaz. A _Kaggle_ também aloja competições de recrutamento em que os cientistas de dados competem por uma hipótese de conseguir entrevistas de trabalho nas empresas líderes em ciência de dados como _Facebook_, _Winton Capital_ e _Walmart_.
+
+A provavelmente mais famosa competição feita deste género terminou em 2009 e foi patrocinada pela _Netflix_.
+
+A _Netflix_ oferecia 1.000.000 US Dólares ao competidor (individual ou equipa) que conseguisse uma melhoria de 10% no seu algoritmo de predição dos ratings dos utilizadores.
+
+## Tipos de competições e categorias de cientistas de dados
+
+Na Kaggle existem diversos tipos de competições que estão direcionadas para 3 grandes áreas:
+
+* Problemas e negocio
+
+* Recrutamento
+
+* Investigação
+
+Existem 5 categorias de cientistas de dados:
+
+* _Novice_
+
+* _Contributor_
+
+* _Expert_
+
+* _Master_
+
+* _Grandmaster_
+
+Para vos dar uma ideia, e sendo esta a maior plataforma de competição deste tipo, existem à data de hoje (02-01-2017) 88 Grandmasters, 800 Masters, 2157 Experts e 44440 Contributors.
+
+No entanto a comunidade Kaggle tem mais de 700 mil utilizadores (conhecidos como _kagglers_) de quase 200 países e espera atingir o utilizador um milhão em 9 de setembro de 2017.
+
+
+## Disposições finais
+
+Irei publicar alguns artigos da minha experiência em competições _kaggle_, começando por descrever as já terminadas e ir atualizando conforme vá participando em novas competições.
+
+Normalmente as competições são muito interessantes e os dados são reais.
+
+Espero que gostem.
+
+

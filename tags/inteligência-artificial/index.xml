@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inteligência Artificial on value-from-data</title>
+    <link>http://value-from-data.com/tags/intelig%C3%AAncia-artificial/index.xml</link>
+    <description>Recent content in Inteligência Artificial on value-from-data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017, value-from-data; all rights reserved.</copyright>
+    <atom:link href="http://value-from-data.com/tags/intelig%C3%AAncia-artificial/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A era da Inteligência artificial</title>
+      <link>http://value-from-data.com/blog/2017/01/inteligencia-artificial/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://value-from-data.com/blog/2017/01/inteligencia-artificial/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;&lt;em&gt;Andrew Ng&lt;/em&gt; (VP &amp;amp; Chief Scientist of Baidu; Co-Chairman and Co-Founder of Coursera; Adjunct Professor at Stanford University) um dos mais reputados especialistas em &lt;strong&gt;Inteligência Artificial&lt;/strong&gt; disse em Maio de 2016 que, “&lt;strong&gt;IA&lt;/strong&gt; é a nova eletricidade! A eletricidade transformou incontáveis industrias; a &lt;strong&gt;IA&lt;/strong&gt; vai fazer o mesmo.”&lt;/p&gt;
+&lt;p&gt;A &lt;strong&gt;Inteligência Artificial (IA)&lt;/strong&gt; pode ser a tecnologia mais disruptiva que o mundo viu desde a Revolução Industrial. Eu acredito que a &lt;em&gt;IA&lt;/em&gt; vai mudar positivamente e materialmente como nos relacionamos com o mundo que nos rodeia, quer em termos pessoais quer em termos de negócio.&lt;/p&gt;
+&lt;p&gt;Mas como todas as mudanças disruptivas, ela não será feita sem sacrifícios ou custos.&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Machine Learning&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;div id=&#34;bg&#34;&gt;
+&lt;p&gt;&lt;img align=&#34;right&#34; style=&#34;width:35%;height:35%;margin:20px 30px&#34; src=&#34;../../../../img/ai.png&#34; alt=&#34;Inteligência Artificial&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt; A área da &lt;strong&gt;IA&lt;/strong&gt; é enorme e vamos simplificar e generalizar como sendo um conjunto de técnicas que permitem aos computadores imitar o comportamento humano.&lt;/p&gt;
+&lt;p&gt;Dentro das técnica de &lt;em&gt;IA&lt;/em&gt; temos um subconjunto designado de &lt;em&gt;machine learning&lt;/em&gt; que são metodos estatisticas que permitem aos computadores aprender com exemplos ou experiências.&lt;/p&gt;
+&lt;p&gt;E dento do &lt;em&gt;machine learning&lt;/em&gt; ainda temos uma subconjunto mais especifico de técnicas que habilitam a computação de redes neurais multicamada.&lt;/p&gt;
+&lt;p&gt;Será na area de &lt;em&gt;Machine Learning&lt;/em&gt; que tentarei partilhar convosco artigos, ideias, exemplos e visões.&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Big Data &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;As mudanças potenciadas pela &lt;em&gt;IA&lt;/em&gt; só foram possíveis pela colisão de duas tendências ou acontecimentos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;O aumento exponencial dos dados existentes, nomeadamente através da Internet das coisas. Agora, temos eletrónica e sensores de rastreamento em quase tudo. E como consequência do aumento do número de “coisas” inteligentes e conectadas, temos uma enorme quantidade de dados comportamentais disponíveis.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;O aumento da capacidade computacional e do seu custo. Hoje em dia é possível em 10 minutos ter disponível uma maquina virtual com uma capacidade computacional tremenda e a preços competitivos, que à 5 anos atrás nos obrigaria a dispendiosos e demorados investimentos.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;E ter dados e capacidade para os processar permite desenvolver modelos de comportamentos que nos permitem contruir melhores sistemas sociais que melhoram a nossa vida.&lt;/p&gt;
+&lt;p&gt;Como curiosidade, apresento apenas dois dados:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Criou-se mais informação nos últimos dois anos que em toda a história da humanidade até essa altura. Menos de 1% destes dados são hoje analisados e utilizados;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A Internet das coisas veio para ficar e estima-se que nos próximos cinco anos existirão mais de 50 biliões de dispositivos inteligentes a recolherem e tratarem dados, em todo o mundo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Por eestas e outras razões o termo &lt;strong&gt;“Big Data”&lt;/strong&gt; está na moda. Ela é muitas vezes caracterizada com o modelo dos 4Vs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Volume - conjunto de dados cujo tamanho ultrapassa a capacidade que maioria dos softwares pode tratar;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Velocidade - Velocidade com que a informação é criada e alterada, nomeadamente pela &lt;em&gt;Internet das coisas&lt;/em&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Variedade - longe vai o tempo que a única informação que possuíamos era a residente em base de dados transacionais e muitas vezes relacionada com a área de gestão. Hoje uma grande parte dos dados não é estruturado e esse tipo de dados tem vindo a ganhar preponderância no tratamento da informação. Falamos do vídeo, da voz, da informação presente nas rede sociais, etc;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Veracidade - As fontes de dados são cada vez mais variadas e dispersas e uma questão fundamental é se podemos confiar nos dados que recolhemos (se representam a realidade) e se podemos tomar decisões com base neles.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Eu pessoalmente não gosto muito do termo &lt;strong&gt;Big Data&lt;/strong&gt;, pois o que nos chama a atenção é o &lt;strong&gt;Big&lt;/strong&gt; e essa é talvez a característica menos relevante, certamente para mim a menos interessante.&lt;/p&gt;
+&lt;p&gt;Sim, é verdade que em muitas situações os alegoritmos de &lt;em&gt;machine learning&lt;/em&gt; precisam de muitos exemplos e portanto o volume é relevante. Mas estamos a falar de quantidades perfeitamente razoaveis que consigo processar no meu portátil.&lt;/p&gt;
+&lt;p&gt;O que é verdadeiramente importante é se a informação leva ao conhecimento e esse só será relevante se nos levar à ação (tomada de decisões). Por vezes isso consegue-se com _small data__.&lt;/p&gt;
+&lt;p&gt;Por esse motivo gosto mais do termo &lt;strong&gt;Data Analytics&lt;/strong&gt; porque de facto o relevante está na analítica dos dados. É ela que nos leva ao conhecimento e, esperamos, à decisão que leva à mudança e que possibilita a melhoria.&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Informação como diferenciador estratégico &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;A informação é a principal matéria-prima para qualquer organização, publica, industrial, comerical ou de serviços. O conhecimento que resulta da &lt;strong&gt;informação&lt;/strong&gt; é uma vantagem competitiva. Um diferenciador estratégico para qualquer atividade.&lt;/p&gt;
+&lt;p&gt;Vivemos tempos extraordinários. Julgo que somos privilegiados por podermos assistir na primeira fila em mudanças que a nossa geração e a anterior nunca viveu.&lt;/p&gt;
+&lt;p&gt;Essas mudanças já contecem à algum tempo mas vão evoluir a uma velocidade vertiginosa.&lt;/p&gt;
+&lt;div id=&#34;bg&#34;&gt;
+&lt;p&gt;&lt;img align=&#34;left&#34; style=&#34;width:60%;height:60%;margin:20px 30px&#34; src=&#34;../../../../img/ageoftech.png&#34; alt=&#34;Inteligência Artificial&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt; O mundo está muito diferente e não precisamos de recurar 50 anos para perceber isso.&lt;/p&gt;
+&lt;p&gt;Atentem ao quadro seguinte que nos mostra as empresas mais valiosas em termos de capitalização bolsista de 2006 para 2016.&lt;/p&gt;
+&lt;p&gt;Em 2006 apenas existia uma empresa tecnologica nas seis mais valiosas do mundo. Em 2016 apenas existe uma não tecnologica.&lt;/p&gt;
+&lt;p&gt;E apenas passaram 10 anos. Extraordinário, não é?&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Um outro exemplo muito interessante é o da &lt;a href=&#34;https://www.airbnb.pt/&#34;&gt;Airbnb&lt;/a&gt;: não possuiu um único quarto de hotel, mas vale mais que os gigantes Marriott e Hilton.&lt;/p&gt;
+&lt;p&gt;Os exemplos de sucesso que encontramos são quae todos de organizações que sabem gerir muito bem a informação e dela tirar o conhecimento para a boa decisão. Pelo menos fazem-no melhor que os seus concorrentes.&lt;/p&gt;
+&lt;p&gt;O valor contabilistico ou patrimonial das empresas (o valor dos seus ativos, nomeadamente fisicos) é cada vez menos relevante.&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Como será o novo mundo? &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Muitos de nós não repara, mas a &lt;strong&gt;IA&lt;/strong&gt; está presente de inúmeras formas na nossa vida: quando traduzimos um texto na net, quando falamos para o nosso telemóvel, quando a &lt;em&gt;Netflix&lt;/em&gt; nos recomenda um filme, quando fazemos uma compra na &lt;em&gt;Amazon&lt;/em&gt;, quando o Picasa reconhece as pessoas nas fotos que tiramos, etc.&lt;/p&gt;
+&lt;p&gt;Podemos achar que estes feitos são banais, mas o facto é que o mesmo tipo de algoritmos é utilizado nos automóveis auto conduzidos e na realização de diagnósticos médicos.&lt;/p&gt;
+&lt;p&gt;Julgo mesmo que o automóvel e a saúde serão as áreas que irão, a muito curto prazo, produzir o maior impacto nas nossas vidas.&lt;/p&gt;
+&lt;p&gt;Atualmente, muitos diagnósticos médicos já são feitos por computadores com recurso a algoritmos de &lt;strong&gt;IA&lt;/strong&gt;. Embora os médicos estejam sempre envolvidos nestes processos, no futuro próximo uma percentagem significativa dos diagnósticos resultará da &lt;em&gt;IA&lt;/em&gt; ou com grande suporte dela.&lt;/p&gt;
+&lt;p&gt;Na industria automovel temos cada vez mais experiências de taxis e autocarros autonomos por todo o mundo. Os regulamentos e leis parecem ser o entrava a uma mais rápida adoção.&lt;/p&gt;
+&lt;p&gt;Um exemplo recente na industria automóvel vêm da &lt;em&gt;Tesla&lt;/em&gt; com a versão 8.0 do &lt;em&gt;AutoPilot&lt;/em&gt;, o software de &lt;em&gt;IA&lt;/em&gt; que guia os carros. Neste &lt;a href=&#34;https://t.co/70MySRiHGR&#34;&gt;video&lt;/a&gt; podemos perceber o &lt;em&gt;AutoPilot&lt;/em&gt; a prever o acidente e cerca de um segundo antes avisar com 3 apitos sonoros o condutor e a reduzir a velocidade. Espantoso!!&lt;/p&gt;
+&lt;p&gt;Em setores mais tradicionais e que à partida não consideraríamos os mais prováveis na adoção da &lt;em&gt;IA&lt;/em&gt;, temos a companhia mineira &lt;a href=&#34;http://www.riotinto.com/&#34;&gt;Rio Tinto&lt;/a&gt;, das maiores do mundo, com 73 dumpers gigantes a operar de forma autónoma e 24h por dia em minas da &lt;em&gt;Austrália&lt;/em&gt;. A &lt;em&gt;Rio Tinto&lt;/em&gt; está igualmente a atualizar o seu sistema de comboios para operarem autonomamente, incluindo o processo de carregar e descarregar os comboios.&lt;/p&gt;
+&lt;p&gt;Uma outra area que terá provocará uma grande alteração na forma como as nossas vidas irão evoluir é a da educação. Tenho a convicção que as alterações serão profundas. Atualmente vivemos um processo educacional que é sequencial e predefinido. Começamos a estudar e seguimos uma carreira académica até um determinado momento em que ingressamos no mercado de trabalho (isto é uma generalização. O caminho académico de uns é mais longo que de outros e alguns desenvolvem a sua carreira profissional no meio académico). Mas eu diria que para muitos, a formação formal termina com o inicio da carreira profissional. No futuro a aprendizagem será constante e ela intercalará momentos de desenvolvimento profissional com outros de desenvolvimento académico, por vezes simultâneos. E isso ocorrerá durante toda a nossa vida.&lt;/p&gt;
+&lt;p&gt;O ensino tradicional que ocorre hoje nas escolas e faculdades de pedra e cimento perderá para o ensino à distância. Já hoje a qualidade, oferta e custo dos MOOC ( &lt;a href=&#34;www.coursera.org&#34;&gt;Coursera&lt;/a&gt;, &lt;a href=&#34;www.edx.org&#34;&gt;EDX&lt;/a&gt; entre outros) supera em alguns casos o das universidades tradicionais (minha opinião). Para além das vantagens obvias de eu poder aprender em qualquer universidade do mundo, incluindo as mais reputadas, nos dias e horas à minha escolha (nos últimos anos tirei diversos cursos com a chancela do &lt;a href=&#34;http://web.mit.edu/&#34;&gt;MIT&lt;/a&gt; e &lt;a href=&#34;https://www.stanford.edu/&#34;&gt;Stanford&lt;/a&gt;, para dar apenas 2 exemplos).&lt;/p&gt;
+&lt;p&gt;Existem inúmeros exemplos dos benefícios que a &lt;em&gt;IA&lt;/em&gt; proporciona já hoje (e que irei partilhar) e certamente que muitos mais existirão num futuro que está muito mais próximo do que pensamos.&lt;/p&gt;
+&lt;p&gt;Em alguns casos, a realidade supera ficção. Bem vindos ao futuro.&lt;/p&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
