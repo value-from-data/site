@@ -1,114 +1,66 @@
 ---
-title: "Acerca de mim"
+title: "Sobre mim"
 id: "contact"
 --- 
 
 
 
 <div id="bg">
-  <img align="left" style="width:13%;height:13%;margin:20px 30px" src="../img/ac.png" alt="António Cruz">
+  <img align="left" style="width:30%;height:30%;margin:20px 30px" src="../img/ac.png" alt="António Cruz">
 </div>  
 
 <br>
 
-Olá! Sou o António Cruz, e ajudo as organizações a resolver problemas, criar valor, potenciar o crescimento, melhorar o desempenho organizacional e identificar oportunidades de mudança e melhoria. 
+Olá! Sou o António Cruz, e este é o meu _site_ pessoal. 
 
-Este é o meu _site_ pessoal. As opiniões aqui expressas representam a minha forma de ver o mundo e as mudanças que estão a ocorrer.
+Tenho uma paixão pela área do _machine learning_, do seu potencial e do que conseguimos fazer com todo o conhecimento que podemos retirar dos dados. 
+
+Criei este site para partilhar as minhas ideias mas principalmente para dar exemplos concretos, sempre que possível com dados reais, do que é possível fazer com as técnicas adequadas.
+
+A maioria das organizações que conheço tem um grande potencial para melhorar na extração de conhecimento dos dados existentes. 
+
+E eu ajudo as organizações a potenciar esse conhecimento, criar valor, aumentar o crescimento, melhorar o desempenho organizacional e identificar oportunidades de mudança e melhoria. 
+
 
 Sou licenciado em gestão de empresas pelo ISEG e tenho uma _MBA_ pela Universidade Católica. Nos últimos 3 anos tenho tirado vários cursos nas áreas da análise de dados, estatística e _machine learning_.
 
-<br><br><br>
-
-## A minha experiência
-Tive a oportunidade e a sorte de ter desempenhado diversas funções em diferentes tipos de organizações, cujas experiências combinadas me permitem, hoje, fazer o que faço.
-Comecei na auditoria, passei pela banca onde desempenhei funções de comercial, analista de crédito, informático e acabei por ser diretor dos sistemas de informação na área do crédito especializado.
-Isso permitiu-me ganhar experiência e conhecimentos quer na área financeira quer na área dos sistemas de informação. Desde a gestão de base de dados, passando pela gestão da infraestrutura ou alguma programação, essa experiência revela-se hoje inestimável quando tenho de lidar com __dados__.
-
-Fui igualmente responsável por uma empresa de software ligada a um dos maiores grupos de construção nacional. Aprendi lá, quer o negocio da construção e as suas especificidades e desafios, mas essencialmente uma cultura de exigência e resultados. O que ainda me recordo com frequência e tento sempre praticar foi a forma com que os processo de gestão mais complexos eram simplificados e praticados. Transformar coisas complexas em simples é uma arte de difícil aprendizagem ao alcance de poucos.
-
-Ao longo da minha carreira reconheci sempre na extração  e análise de dados um grande valor. Muito do valor que acrescentei às organizações resultou da capacidade de utilizar informação que existia mas não era utilizada, e dela extrair conhecimento que permitisse ajudar à tomada de decisões.
-
-Nas ultimas duas décadas tenho sido um consultor independente e tenho trabalhado com organismos públicos e privados, nas áreas da saúde, serviços, banca e administração publica local.
+<br>
 
 ## Ver o mundo pelos números
 
-A minha ligação aos dados e informação começou bastante cedo pois quer no secundário quer na faculdade eram nas cadeiras com base matemática onde eu conseguia fazer a diferença.
+A minha ligação aos dados e informação começou bastante cedo pois, quer no secundário quer na faculdade, eram nas cadeiras com base matemática onde eu conseguia fazer a diferença.
 
 Profissionalmente essa ligação aos números começou, como com tantos outros, com as folhas de cálculo, na altura o Lotus 123. Rapidamente passei a lidar com base de dados relacionais e com um volume de dados muito maior.
 
-Mas durante muitos anos o que fazia era reportar o passado com relatórios e dashboards (o que aconteceu) e a tentar perceber porque que aconteceu.
+Mas durante muitos anos o que fazia era reportar o passado com relatórios e _dashboards_ e a tentar perceber porque que é que as coisas aconteceram daquela maneira.
 
-Atualmente, e nos últimos anos, estou muito mais preocupado em tentar perceber o que vai acontecer e como podemos influenciar o que vai acontecer de forma a que aconteça o que nos é mais favorável.
+Atualmente e nos últimos anos, estou mais interessado em tentar perceber o que vai acontecer e como podemos influenciar o que vai acontecer.
 
 Julgo que a analogia de guiar um carro é apropriada. No passado passava todo o tempo a olhar pelo espelho retrovisor e agora tento passar mais tempo a olhar para a frente, sem deixar de utilizar o espelho retrovisor.
 
 Com uma melhor utilização das ferramenta e compreensão da informação e obtenção de conhecimento, vêm a necessidade de saber comunicar e transmitir esse conhecimento de forma a que as mudanças ocorram e os resultados melhorem.
 
-Também aqui a experiência passada veio ajudar, habituado que estou a comunicar com audiências pequenas e grandes (até 300 pessoas), de todos os níveis hierárquicos da organização. Mas também tive de aprender novos truques, nomeadamente novas formas de apresentar conhecimento e saber, e contar histórias com dados.
-
-Hoje vivo viciado e apaixonado pela área do _machine learning_, do seu potencial e do que conseguimos fazer com todo o conhecimento que podemos retirar dos dados. A maioria das organizações que conheço faz um trabalho muito pobre nesta área. Espero ensinar e aprender com os outros como eu e crescer nesta área incrível.
+Também aqui a experiência passada veio ajudar, habituado que estou a comunicar com audiências pequenas e grandes, de todos os níveis hierárquicos da organização. Mas também tive de aprender novos truques, nomeadamente novas formas de apresentar conhecimento e saber, e contar histórias com dados.
 
 
-## Ferramentas que utilizo
-
-As ferramentas não são o mais importante mas desempenham um papel fundamental para que seja possivel produzir o conhecimento necessário à boa decisão.
-
-Existem muitas ferramentas no mercado que permitem realizar trabalho de análise e modelagem de dados com qualidade. 
-
-Tentarei sempre aprender novas ferramentas de forma a melhorar a minha _toolbox_. 
-
-Atualmente utilizo com mais frequências as seguintes:
-
-* [R](https://www.r-project.org/)
-
-* [R Studio](https://www.rstudio.com/)
-
-* [Microsoft R Server](https://www.microsoft.com/en-gb/cloud-platform/r-server)
-
-* [R markdown](http://rmarkdown.rstudio.com/)
-
-* [Power BI](https://powerbi.microsoft.com/pt-br/)
-
-* [AzureML](https://azure.microsoft.com/pt-pt/services/machine-learning/)
-
-* [Highcharts](http://www.highcharts.com/)
-
-* [Plotly](https://plot.ly/)
-
-
-## Obras publicadas
-
-<div id="bg">
-  <img align="left" style="margin:20px 30px" src="../img/principiosdegestaoparamunicipios.png" alt="Princípios de gestão para municípios">
-</div>  
-   
-<br><br> 
-    
-Coautor do livro [“Princípios de gestão para municípios”](http://www.uceditora.ucp.pt/site/custom/template/ucptpl_uce.asp?SSPAGEID=1307&lang=1&artigoID=1464)
-ISBN 9789725404430
-Editor: Universidade Católica Portuguesa  
-
-<br><br><br><br>
 
 ## Interesses
 
 Adoro desporto, e atualmente pratico corrida, estrada e trail, e bicicleta nas vertentes de estrada e BTT.
 
-Mas já pratiquei karaté, hóquei em patins e tiro com pistola de ar comprimido, entre outros desportos.
+Mas já pratiquei karaté, hóquei em patins e tiro com pistola de ar comprimido.
 
-Ligado ao desporto, surgiu nos ultimo anos uma paixão pelo metabolismo humano, nutrição e saúde. Estudei, tirei cursos e tento ler o mais possível sobre o assunto.
-Experimentei e testei vários regimes alimentares. Ainda não encontrei o perfeito mas aprendi as vantagens e desvantagens de cada um.
+Ligado ao desporto, surgiu nos ultimo anos uma paixão pelo metabolismo humano, nutrição e saúde. Tenho estudado e lido bastante sobre o aasunto, tirei cursos e tento estar atualizado.
+Experimentei e testei vários regimes alimentares. Ainda não encontrei o regime alimentar perfeito, mas aprendi as vantagens e desvantagens de cada um.
 
-O comum ao desporto e saúde são, advinharam, os dados.
+Comum e fundamental ao desporto e à saúde são os dados. Sem informação não conseguimos melhorar e fazer predurar essas melhorias, quer no desporto que na saúde. Até porque com o avançar dos anos as melhores soluções vão, também elas, mudando.
 
 Meço tudo o que consigo, analiso os dados, brinco com eles e tento extrair conhecimento que me levem a alterar comportamentos de forma a melhorar a saúde e o desempenho.
 
 ## Acerca deste _site_
 
-Este site é criado e mantido com [knitr](https://yihui.name/knitr/), [R markdown](http://rmarkdown.rstudio.com/) e [hugo](https://gohugo.io/).
+Este site é criado e mantido com [knitr](https://yihui.name/knitr/), [R markdown](http://rmarkdown.rstudio.com/), [Blogdown](https://github.com/rstudio/blogdown/) e [hugo](https://gohugo.io/).
 
-
-Todas as opiniões são minhas e dos meus convidados e não representam nenhuma organização.
 
 
 

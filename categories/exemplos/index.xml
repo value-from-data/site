@@ -10,11 +10,11 @@
     <atom:link href="http://value-from-data.com/categories/exemplos/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Quero comprar um carro usado - parte 1</title>
-      <link>http://value-from-data.com/blog/2017/01/quero-comprar-um-carro-usado-parte1/</link>
-      <pubDate>Fri, 06 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Um bom negócio?</title>
+      <link>http://value-from-data.com/blog/2017/01/um-bom-negocio/</link>
+      <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://value-from-data.com/blog/2017/01/quero-comprar-um-carro-usado-parte1/</guid>
+      <guid>http://value-from-data.com/blog/2017/01/um-bom-negocio/</guid>
       <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
@@ -22,168 +22,85 @@
 &lt;p&gt;Vamos supor que você pretende comprar um carro usado. O que faz?&lt;/p&gt;
 &lt;p&gt;Bem, presumo que das primeiras coisas é consultar algum site de compra e venda de carros usados e procurar algum carro com as características que considera relevantes de forma a ter uma ideia das alternativas e preços. Provavelmente até visitará algum stand recomendado por um amigo seu ou que fica perto da sua casa ou trabalho.&lt;/p&gt;
 &lt;p&gt;Mas, qual a melhor compra que pode fazer?&lt;/p&gt;
-&lt;p&gt;E se que quiser vender o meu carro? qual o preço que devo pedir?&lt;/p&gt;
-&lt;p&gt;Dependendo dos seus objetivos, se é comprar ou vender, se já escolheu a marca e modelo ou se apenas tem um limite de valor, se privilegia o preço, a idade os kms, todas estas questões vão influenciar como são recolhidos os dados, como é feita a análise exploratória e criados e testados os modelos ou simulações.&lt;/p&gt;
-&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Enquadramento e pressupostos &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;Considerando que este exercício é meramente académico e pretende demonstrar algumas abordagens possíveis ao problema, vamos apresentar análises mais genéricas e variadas.&lt;/p&gt;
-&lt;p&gt;Vou também dividir este trabalho em duas partes, para o documento não ser tornar demasiado extenso e cansativo para o leitor.&lt;/p&gt;
-&lt;p&gt;A primeira parte incluirá a recolha, tratamento e análise exploratória dos dados e na segunda parte iremos construir alguns modelos e retirar conhecimento dos dados que nos permitam tomar decisões informadas.&lt;/p&gt;
-&lt;p&gt;Para simplificar vou considerar alguns pressupostos:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Quero um carro a gasóleo&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Pretendo um carro que tenha mais de 20 000kms e menos de 200 000 kms.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Não quero gastar mais de 15 000€ e talvez só considere carros a partir de 4 000€ (quero um carro &lt;em&gt;jeitosito&lt;/em&gt;)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Não tenho preferência por marca ou modelo&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Com estes pressupostos iniciais passamos a fase seguinte que é a da recolha dos dados que possam permitir encontrar respostas.&lt;/p&gt;
+&lt;p&gt;E se que quiser vender o carro? qual o preço que deve pedir?&lt;/p&gt;
+&lt;p&gt;Dependendo dos seus objetivos, se é comprar ou vender, se já escolheu a marca e modelo ou se apenas tem um limite de valor, se privilegia o preço, a idade ou os kms, todas estas questões vão influenciar a sua decisão final e eventualmente gerar alternativas demasiado numerosas que permitam um enfoque nas propostas mais interessantes. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A compra ou venda de um carro é apenas o pretexto para exemplificar algumas técnicas da ciência de dados que poderão ser aplicadas perante situações de incerteza, nomeadamente a simulação e a regressão linear. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A mesma lógica poderia ser aplicada se estivéssemos a falar de casas, de escolhas a serem feitas por departamento de compras de uma organização, a decidir quantos funcionários devem estar na loja a um determinado dia ou hora, qual a quantidade a estocar de determinado produto ou a tentar perceber qual o melhor preço a praticar. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Embora este seja um exercício académico no sentido que coloco questões que certamente seriam diferentes das colocadas por alguém que efetivamente quisesse comprar ou vender um carro, os dados são reais e as questões colocadas parecem-me suficientemente práticas para acrescentarem valor.&lt;/p&gt;
 &lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Recolha de dados &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;Como em todos os processos de decisão, é necessário obter alguma informação prévia para podermos tomar uma decisão informada.&lt;/p&gt;
-&lt;p&gt;Em conformidade pesquisei informação sobre viaturas usadas em dois sites de referência em Portugal selecionei viaturas que cumpriam os meus pressupostos.&lt;/p&gt;
-&lt;p&gt;Isso resultou na recolha de dados acerca de 12462 viaturas.&lt;/p&gt;
-&lt;p&gt;A maioria da informação nos dois sites é idêntica ou muito semelhante pelo que conseguimos criar um conjunto de dados único e estandardizado.&lt;/p&gt;
-&lt;p&gt;No entanto os dados recolhidos necessitam de algum tratamento prévio antes de poder ser utilizado em modelos ou simulações. Os tratamentos mais comuns resultam de dados incompletos, errados, sem relevância para a análise.&lt;/p&gt;
-&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Limpeza e transformação dos dados &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;É sempre necessário, também, proceder a alguma engenharia de variáveis (&lt;em&gt;feature engineering&lt;/em&gt;). Por exemplo, a cilindrada consta apenas de descrição da viatura e como nós queremos usar essa informação posteriormente no modelo, é necessária extrai-la. O mesmo vamos ter de fazer para a marca e modelo.&lt;/p&gt;
-&lt;p&gt;Por outro lado, temos algumas marcas com poucas viaturas e, com poucos exemplos, as conclusões são sempre perigosas pelo que decidi ficar apenas com as marcas que tenham mais de 250 viaturas.&lt;/p&gt;
-&lt;p&gt;Temos outras questões de normalização que também acontecem sempre e que é necessário corrigir. Como recolhemos dados de duas origens distintas, existem dados que representam o mesmo objeto, mas são descritos com nomes diferentes. Num dos sites as viaturas tem como marca &lt;em&gt;volkswagen&lt;/em&gt; e no segundo site são classificadas como &lt;em&gt;vw&lt;/em&gt;. Esta situação também será corrigida.&lt;/p&gt;
-&lt;p&gt;Depois de efetuadas as correções iniciais, ficamos com a informação de 8900 viaturas, uma redução de 28.6%, sendo que 3294 viaturas foram recolhidas do &lt;strong&gt;site1&lt;/strong&gt; e 5606 do &lt;strong&gt;site2&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Mas ainda não terminamos. Existem questões adicionais que devem ser abordadas, nomeadamente:&lt;/p&gt;
+&lt;p&gt;Em conformidade recolhi informação sobre viaturas usadas em dois sites de referência em Portugal e extrai os dados relativos às viaturas que cumpriam os seguintes pressupostos (os meus requisitos mínimos):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;modelos de marca com poucas viaturas&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;anos de matricula muito antigos&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Carros a gasóleo;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Carros com mais de 20 000kms e menos de 200 000 kms;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Preços entre 4 000€ e 15 000€;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sem preferências por marca ou modelo&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Relativamente à primeira questão, para já não vamos fazer nada. No que diz respeito ao ano de matricula, existem de facto um número reduzido de viaturas com matricula anterior a 2000, que sendo muito antigas, pese embora estarem dentro do intervalo de kms inicialmente definido, não nos interessam. Assim iremos eliminar as viaturas anteriores com matricula anterior ao ano 2000.&lt;/p&gt;
-&lt;p&gt;Depois de um novo &lt;em&gt;round&lt;/em&gt; de alterações, ficamos com a informação de 8869 viaturas, uma redução de 28.8% relativamente ao número inicial.&lt;/p&gt;
-&lt;p&gt;Uma outra alteração que vamos fazer e que nos poderá ser util, nesta fase não sabemos, é criar novas variáveis com base na informação existente:&lt;/p&gt;
+&lt;p&gt;Das viaturas recolhidas selecionei as marcas que tivessem pelo menos 235 viaturas e foi efetuado algum trabalho de transformação de forma a ter dados estandardizados e devidamente preparados para análise. Entre estas transformações estão a eliminação de viaturas muito antigas, marcas com poucas viaturas, normalização de nomes, etc.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; &lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Recolha de dados &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Da análise prévia ficamos a saber algumas coisas da estrutura dos nossos dados, nomeadamente:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;a idade da viatura. É um processo muito simples já que a única coisa que fazemos é subtrair a 2017 o ano de matricula. Assim, uma viatura de 2016 têm um ano e outra de 2010 têm 7 anos.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;kms por ano. Variável igualmente simples já que nos limitamos a dividir o número de kms pela idade&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Temos um conjunto de 8869 viaturas que são caracterizadas por 10 variáveis: Descrição, marca, modelo, preço em Euros, Kms realizados, idade em anos, a potência em cavalos, a cilindrada, a média dos kms realizados por ano e qual o site de onde foi extraída a viatura;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A &lt;em&gt;Renault&lt;/em&gt; é a marca que tem mais viaturas, 2184;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Foram extraidas 3284 viaturas do &lt;strong&gt;site1&lt;/strong&gt; e 5585 do &lt;strong&gt;site2&lt;/strong&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A &lt;em&gt;Peugeot&lt;/em&gt; é a marca com mais modelos, 20;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A marca mais cara é a &lt;em&gt;Audi&lt;/em&gt; com uma média de preços de €12,367 e uma mediana de €12,990;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A marca mais barata é a &lt;em&gt;Fiat&lt;/em&gt; com uma média de preços de €9,901 e uma mediana de €9,900;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;É claro que estamos a simplificar e tratar uma viatura de dezembro da mesma forma que tratamos outra do mesmo ano, mas de janeiro. É uma questão de simplificação, mas poderíamos facilmente tratarmos em meses em vez de anos, caso tivéssemos nos nossos dados o mês de matricula (por acaso temos para um dos sites mas não para o outro).&lt;/p&gt;
-&lt;p&gt;A titulo de exemplificação, porque em problemas reais isto acontece com frequência, poderíamos prever o mês de matricula das viaturas em falta (se não fossem muitas) com base nos kms, marca e modelo (por exemplo). Assim poderíamos ter mais uma variável no modelo.&lt;/p&gt;
-&lt;p&gt;Nesta fase já temos um conjunto de dados suficientemente preparados para podermos fazer uma análise exploratória.&lt;/p&gt;
-&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Análise exploratória &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;De que dados dispomos, neste momento?&lt;/p&gt;
-&lt;p&gt;Temos um conjunto de 8869 viaturas que são caracterizadas por 10 variáveis.&lt;/p&gt;
-&lt;p&gt;A estrutura dos nossos dados é a seguinte:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;##    veiculo                 marca          modelo         preco      
-##  Length:8869        renault   :2184   megane :1213   Min.   : 4000  
-##  Class :character   peugeot   :1109   astra  : 484   1st Qu.: 8990  
-##  Mode  :character   opel      :1008   golf   : 446   Median :11850  
-##                     volkswagen: 926   clio   : 402   Mean   :11178  
-##                     citroen   : 904   ibiza  : 399   3rd Qu.:13500  
-##                     ford      : 781   c4     : 345   Max.   :15000  
-##                     (Other)   :1957   (Other):5580                  
-##       kms             idade           potencia       cilindrada   
-##  Min.   :  7484   Min.   : 1.000   Min.   : 50.0   Min.   :1.200  
-##  1st Qu.: 99880   1st Qu.: 5.000   1st Qu.: 90.0   1st Qu.:1.400  
-##  Median :133000   Median : 7.000   Median :105.0   Median :1.500  
-##  Mean   :129368   Mean   : 7.182   Mean   :100.3   Mean   :1.553  
-##  3rd Qu.:161162   3rd Qu.: 9.000   3rd Qu.:110.0   3rd Qu.:1.600  
-##  Max.   :200000   Max.   :17.000   Max.   :225.0   Max.   :3.000  
-##                                                                   
-##     kms_ano         site     
-##  Min.   : 1156   site1:3284  
-##  1st Qu.:14286   site2:5585  
-##  Median :18200               
-##  Mean   :20095               
-##  3rd Qu.:24250               
-##  Max.   :99148               
-## &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Podemos igualmente dar uma espreitadela a 20 registos selecionados de forma aleatória.&lt;/p&gt;
-&lt;iframe src=&#34;../../../../datatable/dt1&#34; width=&#34;900&#34; height=&#34;600&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Por marca &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Podemos verificar que a maioria das viaturas que fazem parte da nossa amostra são da marca &lt;strong&gt;Renault&lt;/strong&gt; e representam 24.6%.&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc1&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Não é de mais destacar que nós temos misturadas viaturas sedan, compactas, de serviço e carrinhas de diferentes modelos na amostra e que esse facto tem obviamente impacto nas análises e conclusões que tiramos.&lt;/p&gt;
-&lt;p&gt;Apesar de termos retirado da amostra as marcas com poucas viaturas, temos modelos dentro das marcas que possuem muito poucas viaturas. Para percebermos melhor esse fenómeno, apresentamos a &lt;em&gt;treemap&lt;/em&gt; seguinte onde poderão com o cursor em cima do conjunto de modelos de uma marca, clicar e ver apenas os modelos dessa marca.&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc_tm&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;p&gt;O gráfico seguinte ajuda-nos a perceber melhor as possíveis correlações entre as variáveis quantitativas:&lt;/p&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc2&#34; width=&#34;850&#34; height=&#34;550&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
-&lt;p&gt;A &lt;em&gt;peugeot&lt;/em&gt; é a marca com mais modelo (20), seguida da &lt;em&gt;fiat&lt;/em&gt; (18) e da &lt;em&gt;citroen&lt;/em&gt; (15).&lt;/p&gt;
-&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Por preço &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Relativamente aos preços, encontrei algumas surpresas nos dados. Eu não percebo muito do mercado de carros usados, mas considerando que estamos perante carros a gasóleo com até 17 anos de idade e com até 200 000km, e considerando as análises já efetuadas em que a maioria das marcas e modelos presentes na nossa amostra são da gama média, num mercado como o português, devo ser sincero, estava à espera de valores mais baixos.&lt;/p&gt;
-&lt;p&gt;Vamos ver então a distribuição das nossas viaturas por preço:&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc2&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;Podem utilizar o rato para fazer zoom. Os &lt;em&gt;bins&lt;/em&gt; são de 200€ cada. Este histograma é muito interessante porque mostra claramente a &lt;em&gt;jogada&lt;/em&gt; do preço psicológico. Existe, para todos os intervalos de 1000€, um padrão: muito poucas viaturas a seguir a cada milhar e depois a grande maioria das viaturas está concentrada próxima do milhar seguinte.&lt;/p&gt;
-&lt;p&gt;Mas esta distribuição não será igual para todas as marcas. E queremos também perceber isso e de que forma os preços variam por marca. É o que tentaremos verificar no gráfico seguinte:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/Quero-comprar-um-carro-usado-parte1_files/figure-html/unnamed-chunk-12-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Uma explicação prévia. Como existem marcas com muito mais viaturas que outras, nomeadamente a &lt;em&gt;Renault&lt;/em&gt;, se me limitasse a criar o gráfico na escala normal, o grande número de viaturas &lt;em&gt;Renault&lt;/em&gt; iria impedir que conseguíssemos perceber a distribuição dos preços para a maioria das marcas. Assim, fiz uma &lt;em&gt;normalização&lt;/em&gt; prévia à escala de contagem: como podem verifica a escala varia de 0 a 4 e representa, em cada marca, o numero de viaturas de cada escalão de preços a dividir pela média de viaturas por escalão de cada marca.&lt;/p&gt;
-&lt;p&gt;Por exemplo, no caso da &lt;em&gt;Audi&lt;/em&gt;, o ultimo escalão de preços, de 14500€ a 15000€ têm 4 vezes mais viaturas que a média dos escalões da Audi. Se for inferior a um, significa que está abaixo da média.&lt;/p&gt;
-&lt;p&gt;Desta forma a escola apresentada é idêntica para todas as marcas.&lt;/p&gt;
-&lt;p&gt;Podemos claramente verificar que na Audi as viaturas estão concentradas nos últimos escalões, o que seria de esperar.&lt;/p&gt;
-&lt;p&gt;A &lt;em&gt;Fiat&lt;/em&gt;, &lt;em&gt;Ford&lt;/em&gt;, &lt;em&gt;Opel&lt;/em&gt; e Toyota_ apresentam uma distribuição por preços relativamente uniforme.&lt;/p&gt;
-&lt;p&gt;A &lt;em&gt;Volkswagen&lt;/em&gt; e a &lt;em&gt;Volvo&lt;/em&gt; também apresentam uma concentração das viaturas nos escalões de preços mais elevados.&lt;/p&gt;
-&lt;p&gt;De forma surpreendente, pelo menos para mim, a &lt;em&gt;Renault&lt;/em&gt; apresenta alguma concentração nos preços mais elevados. É surpreendente porque sendo uma marca generalista com os principais modelos no segmento médio e sendo a marca com maior número de viaturas à venda, esperaria um menor preço.&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc3&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;O &lt;em&gt;boxplot&lt;/em&gt; acima confirma a análise feita relativamente aos preços no histograma anterior, embora com informação diferente.&lt;/p&gt;
-&lt;p&gt;A marca com preços mais altos é a &lt;em&gt;Audi&lt;/em&gt; e a &lt;em&gt;Fiat&lt;/em&gt; é a que têm os preços mais baratos.&lt;/p&gt;
-&lt;p&gt;A diferença de preços em termos de mediana, se retirarmos a &lt;em&gt;Audi&lt;/em&gt; e a &lt;em&gt;Fiat&lt;/em&gt; não é muito grande. A &lt;em&gt;Toyota&lt;/em&gt; e a &lt;em&gt;Seat&lt;/em&gt; têm a menor dispersão de preços quando avaliada pela diferença entre o 1º e 3º quartil.&lt;/p&gt;
-&lt;p&gt;A &lt;em&gt;Audi&lt;/em&gt;, &lt;em&gt;Seat&lt;/em&gt;, &lt;em&gt;Volkswagen&lt;/em&gt; e &lt;em&gt;Volvo&lt;/em&gt; apresentam &lt;em&gt;outliers&lt;/em&gt;, viaturas com preços demasiado baixos.&lt;/p&gt;
-&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Por kms &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Sabemos que a idade das viaturas presentes varia entre 1 e 17 anos. Mas será que as viaturas estão distribuídas de forma uniforme por idade? ou existem idades mais comuns? E o comportamento geral é igual para todas as marcas?&lt;/p&gt;
-&lt;p&gt;Vamos tentar perceber.&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc4&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;Mais uma vez temos um comportamento &lt;em&gt;kms psicológicos&lt;/em&gt; tal como nos preços. Embora esse comportamento só é mais notório a partir dos 120000kms, é muito claro que o número de viaturas aumenta significativamente antes de ultrapassar a dezena de milhar de kms. Se isto era algo plausível nos preços, nos kms é mais difícil de aceitar como correspondendo à realidade. O mais provável que esteja a acontecer é os potencias vendedores indicarem no site um número de kms que é inferior à quilometragem real.&lt;/p&gt;
-&lt;p&gt;De qualquer forma, a maioria das viaturas da nossa amostra tem um número de kms razoável, ente os 115000kms e os 180000kms.&lt;/p&gt;
-&lt;p&gt;E qual é a distribuição por marca? Querem tentar adivinhar qual a marca que, em média, faz mais kms?&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/Quero-comprar-um-carro-usado-parte1_files/figure-html/unnamed-chunk-15-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;É a &lt;em&gt;Audi&lt;/em&gt; que se destaca na distribuição dos kms tendo uma boa parte das suas viaturas mais de 170000kms.&lt;/p&gt;
-&lt;p&gt;A &lt;em&gt;Ford&lt;/em&gt; também se destaca com uma distribuição dos kms efetuados bastante homogéneos.&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc5&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;A &lt;em&gt;Audi&lt;/em&gt;, al como verificado na analise anterior, tem a viaturas com mais kms, com uma mediana de 163000 kms.&lt;/p&gt;
-&lt;p&gt;Por sua vez é à &lt;em&gt;Fiat&lt;/em&gt; que cabe o prémio da marca com menos kms, com uma mediana de 96000 kms.&lt;/p&gt;
-&lt;p&gt;A &lt;em&gt;Audi&lt;/em&gt; e a &lt;em&gt;Renault&lt;/em&gt; apresentam a menor distancia entre o 1º e 3º quartil o que representa uma menor variabilidade nos kms percorridos, sendo precisamente estas duas marcas que apresentam viaturas com kms fora do comum (&lt;em&gt;outliers&lt;/em&gt; no caso concreto com poucos kms).&lt;/p&gt;
-&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Por idade &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;As viaturas à vendas nos dois sites analisados não são muito antigas. Aparentemente a altura mais comum para venda está entre os 4 e os 7 anos.&lt;/p&gt;
-&lt;p&gt;Vamos encontrar, tal como para os preços e kms, uma distribuição por idades diferenciada por marca?&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc6&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;Tal como para os preços e kms, quando analisamos por marca utilizamos a escala &lt;em&gt;normalizada&lt;/em&gt;, já explicada na parte referente aos preços.&lt;/p&gt;
-&lt;p&gt;E efetivamente, a distribuição por idades varia por marca.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/Quero-comprar-um-carro-usado-parte1_files/figure-html/unnamed-chunk-18-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Podemos verificar que a &lt;em&gt;Renault&lt;/em&gt; tem a maioria das viaturas com 4 e 5 anos e a &lt;em&gt;Volkswagen&lt;/em&gt; com 5 e 6 anos.&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc7&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;É curioso que a &lt;em&gt;Audi&lt;/em&gt; tem claramente os carros mais antigos da nossa amostra, seguida da &lt;em&gt;Toyota&lt;/em&gt;. Nas restantes marcas não existem grandes diferenças, pese embora a &lt;em&gt;Renault&lt;/em&gt;, &lt;em&gt;Seat&lt;/em&gt; e &lt;em&gt;Volkswagen&lt;/em&gt; registarem &lt;em&gt;outliers&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Apesar de registarem &lt;em&gt;Outliers&lt;/em&gt;, a &lt;em&gt;Citroen&lt;/em&gt;, &lt;em&gt;Seat&lt;/em&gt; e &lt;em&gt;Toyota&lt;/em&gt; tem a menor variabilidade na idade.&lt;/p&gt;
-&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Relação entre o Preço e kms &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Uma das questões fundamentais que se irá colocar na criação dos modelos é perceber quais as variáveis independentes que explicam a variação na nossa variável dependente que é o preço.&lt;/p&gt;
-&lt;p&gt;Nesta fase e pretendendo perceber essa relação iremos comparar algumas das variáveis começando pelos kms.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/Quero-comprar-um-carro-usado-parte1_files/figure-html/unnamed-chunk-20-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Cada ponto representa uma viatura e as cores representam os modelos. A inclinação representa o valor que a marca perde com os kms realizados (o número indicado representa a variação no valor por cada 1000kms percorridos). &lt;br&gt; Conseguimos perceber rapidamente as marcas com mais ou menos observações na nossa amostra, as que tem mais ou menos modelos e a inclinação da reta.&lt;/p&gt;
-&lt;p&gt;A marca que perde menos valor com os kms percorridos é a &lt;em&gt;Volkswagen&lt;/em&gt; (18€), valor que é menos de metade quando comparada com a marca que perde mais que é a &lt;em&gt;Fiat&lt;/em&gt; (40€).&lt;/p&gt;
-&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Relação entre o Preço e idade &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;E relativamente à idade? qual o valor que cada marca perde a cada ano que passa?&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/Quero-comprar-um-carro-usado-parte1_files/figure-html/unnamed-chunk-21-1.png&#34; width=&#34;691.2&#34; /&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Como podem reparar, algumas marcas, com destaque para a &lt;em&gt;Audi&lt;/em&gt; e &lt;em&gt;Volvo&lt;/em&gt;, não tem na nossa amostra viaturas muito novas, enquanto outras tem viaturas muto novas como é o caso da &lt;em&gt;Opel&lt;/em&gt;. Tal facto deve-se, penso eu, por termos limitado o valor a 15000€ e com poucos anos o valor das viaturas usadas quer da &lt;em&gt;Audi&lt;/em&gt; como da &lt;em&gt;Volvo&lt;/em&gt; ultrapassam o limite que fixamos.&lt;/p&gt;
-&lt;p&gt;No entanto é interessante verificar que com base nos nossos dados, as viaturas que menos valor perdem com o passar dos anos são a &lt;em&gt;Volkswagen&lt;/em&gt;, &lt;em&gt;Toyota&lt;/em&gt; e a &lt;em&gt;Seat&lt;/em&gt; (uma surpresa).&lt;/p&gt;
-&lt;p&gt;No lado oposto as marcas que perdem mais valor com o passar do tempo é a &lt;em&gt;Peugeot&lt;/em&gt; e a &lt;em&gt;Renault&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Correlações &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Podemos tentar perceber outras correlações, nomeadamente entre as variáveis quantitativas:&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc10&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
-&lt;/iframe&gt;
-&lt;p&gt;Confirmando as analises anteriores, temos que o preço se correlaciona negativamente com os kms realizados e a idade, embora essa correlação seja mais forte com a idade (-0.72 versus -0.41), i.e., é mais importante a idade que os kms no preço de venda.&lt;/p&gt;
+&lt;p&gt;O preço correlaciona-se negativamente com os kms realizados e a idade, embora essa correlação seja mais forte com a idade (-0.72 versus -0.41), i.e., é mais importante a idade que os kms no preço de venda.&lt;/p&gt;
 &lt;p&gt;Mas temos uma descoberta que é contrária ao censo comum: o preço correlaciona-se positivamente com a média dos kms anuais, i.e., as viaturas que fazem mais kms por ano tem preços mais elevados.&lt;/p&gt;
 &lt;p&gt;Se repararmos, a média dos kms por ano correlaciona-se negativamente com a idade e essa pode ser a razão que explica esta estranha descoberta: os carros mais novos são mais utilizados e fazem em média mais kms e quando vão ficando mais velhos a sua utilização vai diminuindo. Parece ser uma explicação razoável e que faz sentido.&lt;/p&gt;
-&lt;p&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Podemos também relacionar as marcas calculando a distância entre elas. Neste caso foi calculada a distância euclidiana entre as marcas considerando as variáveis preço, kms realizados, idade, potencia e cilindrada.&lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/hc11&#34; width=&#34;750&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc3&#34; width=&#34;850&#34; height=&#34;550&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
-&lt;p&gt;&lt;br&gt; A Matriz está ordenada por distância e os estremos são a &lt;em&gt;Fiat&lt;/em&gt; e a &lt;em&gt;Audi&lt;/em&gt;. A distância vai de zero (quando comparamos uma marca com ela própria, representada pela diagonal do quadrado) até 8.33 que é a distância que separa a &lt;em&gt;Fiat&lt;/em&gt; da &lt;em&gt;Audi&lt;/em&gt;. &lt;br&gt; Interessante verificar que depois de contabilizados os kms, idade e preço de usado a &lt;em&gt;Citroen&lt;/em&gt; e a &lt;em&gt;Peugeot&lt;/em&gt; continuam muito próximas.&lt;/p&gt;
-&lt;p&gt;Apesar da &lt;em&gt;Volvo&lt;/em&gt; e &lt;em&gt;Volkswagen&lt;/em&gt; serem as marcas mais próximas da &lt;em&gt;Audi&lt;/em&gt;, a distância que as separa é significativa.&lt;/p&gt;
-&lt;p&gt;Podem verificar as distâncias entre marcas colocando o cursor em cima da célula ente linhas e colunas.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; Confirmando o censo comum, a &lt;em&gt;Volkswagen&lt;/em&gt; é a marca que menos desvaloriza quer em termos da idade quer em termos dos kms realizados.&lt;/p&gt;
+&lt;p&gt;Podemos também constatar que a desvalorização da idade e dos kms está correlacionada positivamente, conforme análise de correlação anterior, embora se verifique um &lt;em&gt;outlier&lt;/em&gt; com a &lt;em&gt;Fiat&lt;/em&gt; que desvaloriza mais com os kms do que com a idade.&lt;/p&gt;
+&lt;p&gt;Por ultimo conseguimos claramente identificar 3 grupos de marcas, 3 com pouca desvalorização, 3 com média desvalorização e 5 com forte desvalorização.&lt;/p&gt;
+&lt;p&gt;Se o vosso interesse é escolher uma viatura que desvalorize pouco, o número de marcas com potencial interesse reduziu-se substancialmente.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Quais são as melhores alternativas?&lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Retomando a questão inicialmente colocada e considerando que resultou da minha pesquisa de mercado 8869 alternativas possíveis, o que devo fazer?&lt;/p&gt;
+&lt;p&gt;Certamente que não será viável ver as fotos ou consultar o equipamento e observações de todas estas viaturas, muito menos inspeciona-las fisicamente.&lt;/p&gt;
+&lt;p&gt;Mas e se conseguíssemos reduzir esse universo a apenas às 10 melhores alternativas em função de um determinado critério?&lt;/p&gt;
+&lt;p&gt;Para responder a essa questão vou considerar 4 cenários possíveis, nos quais as variáveis de decisão são o preço, a idade, os kms e a potência:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Cenário 1: Não sei bem o que quero e, portanto, as variáveis de decisão valem todas o mesmo para mim;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cenário 2: valorizo mais o preço, i.e., o carro é para o meu filho e não quero gastar muito dinheiro;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cenário 3: valorizo mais os kms realizados, i.e., prefiro os carros com menos kms;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cenário 4: valorizo mais a potência, i.e, o carro é para mim e eu gosto mais dos carros mais potentes.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mas mesmo tendo preferências, não tenho a certeza exata de quanto valorizo uma variável mais do que as outras (isto é, não consigo dizer que o preço é exatamente 3 vezes mais importante que a idade, apenas sei que para mim é um bocado mais importante) e portanto existe algum incerteza nas alternativas.&lt;/p&gt;
+&lt;p&gt;Utilizando uma das ferramentas mais uteis ao dispor do decisor, a &lt;a href=&#34;https://pt.wikipedia.org/wiki/Simula%C3%A7%C3%A3o&#34; target=&#34;_blank&#34;&gt;simulação&lt;/a&gt;, realizei 100 simulações para cada cenário em que defini um peso que espelhe as minhas preferências. No entanto esse peso tem alguma variabilidade e no caso concreto ela varia conforme uma &lt;a href=&#34;https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_uniforme&#34; target=&#34;_blank&#34;&gt;distribuição uniforme&lt;/a&gt;. A valorização de cada viatura em cada variável de decisão foi feita com base numa &lt;a href=&#34;https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_distribui%C3%A7%C3%A3o_acumulada&#34; target=&#34;_blank&#34;&gt;função de distribuição acumulada&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Terminadas as simulações, estes são as 10 viaturas recomendadas para cada cenário:&lt;/p&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc4_1&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc4_2&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc4_3&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc4_4&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Podem reparar, analisando as diferentes variáveis, que as viaturas selecionadas favorecem as prioridades definidas em cada cenário mas sempre considerando as restantes variáveis. Por exemplo, no cenário de melhor preço as viaturas escolhidas não são as mais baratas: são as que apresentam os melhores preços considerando igualmente os kms feitos, a potência e a idade.&lt;/p&gt;
+&lt;p&gt;Reduzimos as nossas alternativas de 8869 viaturas para apenas 10 em cada cenário, selecionadas em função das nossas prioridades. Podemos agora analisar com detalhe as 10 viaturas propostas e eventualmente inspeciona-las fisicamente antes da decisão final.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Qual o preço a que devo colocar à venda o meu carro? &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Mas e se eu quiser ter uma ideia do preço que custaria uma viatura que reúne um conjunto de características que não estão presentes nas viaturas à venda nos dois sites que pesquisei?&lt;/p&gt;
+&lt;p&gt;Ou, melhor ainda, se eu tiver um carro que quero vender, qual o preço que devo pedir?&lt;/p&gt;
+&lt;p&gt;Foi construido um modelo para prever o valor de venda esperado, modelo que considerou as variaveis kms, idade, potencia, cilindrada, marca e modelo. O modelo consegue explicar &lt;strong&gt;82.40%&lt;/strong&gt; da variação do valor, o que é bastante positivo.&lt;/p&gt;
+&lt;p&gt;Com base no modelo podemos prever o valor de venda para viaturas com as caracteristicas que estejam dentro dos intervalos utilizados na construção do modelo. Para teste simulei 4 viaturas com as seguintes caracteristicas: volkswagen golf 1.9cc 110cv 74213kms 5 anos, peugeot 208 1.6cc 92cv 155909kms 7 anos, renault megane 1.5cc 90cv 47157kms 9 anos, opel astra 1.7cc 125cv 143782kms 12 anos.&lt;/p&gt;
+&lt;p&gt;O valor de venda previsto, se pretendermos praticar preços de acordo com os que estavam a ser praticados à data da recolha dos dados nos dois sites de onde extraimos a informação, assim como o intervalo de confiança de 90% para esse valor médio (probabilidade de um carro com aquelas caracteristicas ser vendido dentro do nosso intervalo), constam do seguinte gráfico:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/Um-bom-negocio_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Podemos a partir daqui decidir qual o preço que podemos praticar, definindo o preço final em função de termos ou não urgência na venda, o carro ter mais ou menos equipamento que o normal, o estado da viatura ser bom ou mau, etc. Mas temos um bom ponto de partida com o intervalo calculado.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Questões finais &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Não diria que foi uma análise exaustiva, mas foi longa e espero que a tenham lido até ao fim.&lt;/p&gt;
-&lt;p&gt;Julgo que conseguimos perceber coisas interessantes a compreender melhor a estrutura e distribuição dos dados, conhecimento que será bastante útil para a 2ª parte deste trabalho, parte essa onde iremos construir alguns modelos e realizar algumas simulações que nos ajudem a responder a questões concretas que irei colocar.&lt;/p&gt;
-&lt;p&gt;Vemo-nos na parte 2 deste exemplo.&lt;/p&gt;
+&lt;p&gt;Tentei não me alongar muito para não vos cansar.&lt;/p&gt;
+&lt;p&gt;Na presença de outros dados, por exemplo, se a viatura foi ou não vendida, quanto tempo esteve à venda sem ser vendida, qual o preço final de venda (dados que certamente um stand ou marca disporá), poderia responder a questões interessantes, como por exemplo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Se colocar o meu carro à venda por x Euros, quanto tempo tenho de esperar para fechar negócio?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Qual o preço que devo pedir se quiser fechar negócio nos próximos 15 dias?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Com este exemplo simples, espero ter conseguido demonstrar, com utilização de algumas técnicas, a importância da informação para extrair conhecimento e potenciar a boa decisão.&lt;/p&gt;
 
 
 

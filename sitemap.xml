@@ -2,8 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://value-from-data.com/blog/2017/01/quero-comprar-um-carro-usado-parte1/</loc>
-    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+    <loc>http://value-from-data.com/blog/2017/01/um-bom-negocio/</loc>
+    <lastmod>2017-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -14,6 +14,10 @@
   <url>
     <loc>http://value-from-data.com/blog/2017/01/inteligencia-artificial/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/blog/1/01/um_bom_negocio/</loc>
   </url>
   
   <url>
@@ -41,32 +45,24 @@
   </url>
   
   <url>
-    <loc>http://value-from-data.com/htmlwidget/hc4/</loc>
+    <loc>http://value-from-data.com/htmlwidget/hc4_1/</loc>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/htmlwidget/hc5/</loc>
+    <loc>http://value-from-data.com/htmlwidget/hc4_2/</loc>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/htmlwidget/hc6/</loc>
+    <loc>http://value-from-data.com/htmlwidget/hc4_3/</loc>
   </url>
   
   <url>
-    <loc>http://value-from-data.com/htmlwidget/hc7/</loc>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/htmlwidget/hc_tm/</loc>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/contact/</loc>
+    <loc>http://value-from-data.com/htmlwidget/hc4_4/</loc>
   </url>
   
   <url>
     <loc>http://value-from-data.com/blog/</loc>
-    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -88,7 +84,7 @@
   
   <url>
     <loc>http://value-from-data.com/categories/exemplos/</loc>
-    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -120,19 +116,23 @@
   </url>
   
   <url>
+    <loc>http://value-from-data.com/contact/</loc>
+  </url>
+  
+  <url>
     <loc>http://value-from-data.com/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://value-from-data.com/tags/use-case/</loc>
-    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://value-from-data.com/</loc>
-    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
