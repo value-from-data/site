@@ -1,0 +1,123 @@
+---
+title: "A era da Inteligência artificial"
+date: "2017-01-01"
+author: "António Cruz"
+tags: ["Inteligência Artificial"]
+categories: ["Geral"]
+banner: "img/banners/ai.png"
+---
+
+
+_Andrew Ng_ (VP & Chief Scientist of Baidu; Co-Chairman and Co-Founder of Coursera; Adjunct Professor at Stanford University) um dos mais reputados especialistas em __Inteligência Artificial__ disse em Maio de 2016 que, "__IA__ é a nova eletricidade! A eletricidade transformou incontáveis industrias; a __IA__ vai fazer o mesmo." 
+
+A __Inteligência Artificial (IA)__ pode ser a tecnologia mais disruptiva que o mundo viu desde a Revolução Industrial. Eu acredito que a _IA_ vai mudar positivamente e materialmente como nos relacionamos com o mundo que nos rodeia, quer em termos pessoais quer em termos de negócio. 
+
+Mas como todas as mudanças disruptivas, ela não será feita sem sacrifícios ou custos.
+
+<font size="4" color="grey"> <b> Machine Learning</b></font>
+
+<div id="bg">
+  <img align="right" style="width:35%;height:35%;margin:20px 30px" src="../../../../img/ai.png" alt="Inteligência Artificial">
+</div>  
+
+<br>
+A área da __IA__ é enorme e vamos simplificar e generalizar como sendo um conjunto de técnicas que permitem aos computadores imitar o comportamento humano. 
+
+Dentro das técnica de _IA_ temos um subconjunto designado de _machine learning_ que são metodos estatisticas que permitem aos computadores aprender com exemplos ou experiências.
+
+E dento do _machine learning_ ainda temos uma subconjunto mais especifico de técnicas que habilitam a computação de redes neurais multicamada.
+
+Será na area de _Machine Learning_ que tentarei partilhar convosco artigos, ideias, exemplos e visões. 
+
+
+<font size="4" color="grey"> <b> Big Data  </b></font>
+
+As mudanças potenciadas pela _IA_ só foram possíveis pela colisão de duas tendências ou acontecimentos:
+
+* O aumento exponencial dos dados existentes, nomeadamente através da Internet das coisas. Agora, temos eletrónica e sensores de rastreamento em quase tudo. E como consequência do aumento do número de "coisas" inteligentes e conectadas, temos uma enorme quantidade de dados comportamentais disponíveis.
+
+* O aumento da capacidade computacional e do seu custo. Hoje em dia é possível em 10 minutos ter disponível uma maquina virtual com uma capacidade computacional tremenda e a preços competitivos, que à 5 anos atrás nos obrigaria a dispendiosos e demorados investimentos.
+
+E ter dados e capacidade para os processar permite desenvolver modelos de comportamentos que nos permitem contruir melhores sistemas sociais que melhoram a nossa vida.
+
+Como curiosidade, apresento apenas dois dados:
+
+* Criou-se mais informação nos últimos dois anos que em toda a história da humanidade até essa altura.  Menos de 1% destes dados são hoje analisados e utilizados;
+
+* A Internet das coisas veio para ficar e estima-se que nos próximos cinco anos existirão mais de 50 biliões de dispositivos inteligentes a recolherem e tratarem dados, em todo o mundo;
+
+Por eestas e outras razões o termo  __"Big Data"__  está na moda. Ela é muitas vezes caracterizada com o modelo dos 4Vs:
+
+* Volume - conjunto de dados cujo tamanho ultrapassa a capacidade que maioria dos softwares pode tratar;
+
+* Velocidade - Velocidade com que a informação é criada e alterada, nomeadamente pela _Internet das coisas_;
+
+* Variedade - longe vai o tempo que a única informação que possuíamos era a residente em base de dados transacionais e muitas vezes relacionada com a área de gestão. Hoje uma grande parte dos dados não é estruturado e esse tipo de dados tem vindo a ganhar preponderância no tratamento da informação. Falamos do vídeo, da voz, da informação presente nas rede sociais, etc;
+
+* Veracidade - As fontes de dados são cada vez mais variadas e dispersas e uma questão fundamental é se podemos confiar nos dados que recolhemos (se representam a realidade) e se podemos tomar decisões com base neles.
+
+Eu pessoalmente não gosto muito do termo __Big Data__, pois o que nos chama a atenção é o __Big__ e essa é talvez a característica menos relevante, certamente para mim a menos interessante.
+
+Sim, é verdade que em muitas situações os alegoritmos de  _machine learning_ precisam de muitos exemplos e portanto o volume é relevante. Mas estamos a falar de quantidades perfeitamente razoaveis que consigo processar no meu portátil.
+
+O que é verdadeiramente importante é se a informação leva ao conhecimento e esse só será relevante se nos levar à ação (tomada de decisões). Por vezes isso consegue-se com __small data__.
+
+Por esse motivo gosto mais do termo __Data Analytics__ porque de facto o relevante está na analítica dos dados. É ela que nos leva ao conhecimento e, esperamos, à decisão que leva à mudança e que possibilita a melhoria.
+
+
+
+<font size="4" color="grey"> <b> Informação como diferenciador estratégico  </b></font>
+
+A informação é a principal matéria-prima para qualquer organização, publica, industrial, comerical ou de serviços. O conhecimento que resulta da __informação__ é uma vantagem competitiva. Um diferenciador estratégico para qualquer atividade.
+
+Vivemos tempos extraordinários. Julgo que somos privilegiados por podermos assistir na primeira fila em mudanças que a nossa geração e a anterior nunca viveu.
+
+Essas mudanças já contecem à algum tempo mas vão evoluir a uma velocidade vertiginosa.
+
+<div id="bg">
+  <img align="left" style="width:60%;height:60%;margin:20px 30px" src="../../../../img/ageoftech.png" alt="Inteligência Artificial">
+</div>  
+
+<br><br><br>
+O mundo está muito diferente e não precisamos de recurar 50 anos para perceber isso. 
+
+Atentem ao quadro seguinte que nos mostra as empresas mais valiosas em termos de capitalização bolsista de 2006 para 2016.
+
+Em 2006 apenas existia uma empresa tecnologica nas seis mais valiosas do mundo. Em 2016 apenas existe uma não tecnologica. 
+
+E apenas passaram 10 anos. Extraordinário, não é?
+
+<br>
+
+Um outro exemplo muito interessante é o da <a href="https://www.airbnb.pt/" target="_blank">Airbnb</a>: não possuiu um único quarto de hotel, mas vale mais que os gigantes Marriott e Hilton. 
+
+Os exemplos de sucesso que encontramos são quase todos de organizações que sabem gerir muito bem a informação e dela tirar o conhecimento para a boa decisão. Pelo menos fazem-no melhor que os seus concorrentes.
+
+O valor contabilistico ou patrimonial das empresas (o valor dos seus ativos, nomeadamente fisicos) é cada vez menos relevante.
+
+<font size="4" color="grey"> <b> Como será o novo mundo?  </b></font>
+
+Muitos de nós não repara, mas a __IA__ está presente de inúmeras formas na nossa vida: quando traduzimos um texto na net, quando falamos para o nosso telemóvel, quando a <a href="https://www.netflix.com/pt/" target="_blank">_Netflix_</a> nos recomenda um filme, quando fazemos uma compra na <a href="https://www.amazon.com/" target="_blank">_Amazon_</a>, quando o Picasa reconhece as pessoas nas fotos que tiramos, etc.
+
+Podemos achar que estes feitos são banais, mas o facto é que o mesmo tipo de algoritmos é utilizado nos automóveis auto conduzidos e na realização de diagnósticos médicos.
+
+Julgo mesmo que o automóvel e a saúde serão as áreas que irão, a muito curto prazo, produzir o maior impacto nas nossas vidas.
+
+Atualmente, muitos diagnósticos médicos já são feitos por computadores com recurso a algoritmos de __IA__. Embora os médicos estejam sempre envolvidos nestes processos, no futuro próximo uma percentagem significativa dos diagnósticos resultará da _IA_ ou com grande suporte dela.
+
+Na industria automovel temos cada vez mais experiências de taxis e autocarros autonomos por todo o mundo. Os regulamentos e leis parecem ser o entrava a uma mais rápida adoção.
+
+Um exemplo recente na industria automóvel vêm da _Tesla_ com a versão 8.0 do _AutoPilot_, o software de _IA_ que guia os carros. Neste <a href="https://t.co/70MySRiHGR" target="_blank">video</a> podemos perceber o _AutoPilot_ a prever o acidente e cerca de um segundo antes avisar com 3 apitos sonoros o condutor e a reduzir a velocidade. Espantoso!!
+
+Em setores mais tradicionais e que à partida não consideraríamos os mais prováveis na adoção da _IA_, temos a companhia mineira <a href="http://www.riotinto.com/" target="_blank">Rio Tinto</a>, das maiores do mundo, com 73 dumpers gigantes a operar de forma autónoma e 24h por dia em minas da _Austrália_. A _Rio Tinto_ está igualmente a atualizar o seu sistema de comboios para operarem autonomamente, incluindo o processo de carregar e descarregar os comboios.
+
+Uma outra area que terá provocará uma grande alteração na forma como as nossas vidas irão evoluir é a da educação. 
+Tenho a convicção que as alterações serão profundas. Atualmente vivemos um processo educacional que é sequencial e predefinido. Começamos a estudar e seguimos uma carreira académica até um determinado momento em que ingressamos no mercado de trabalho (isto é uma generalização. O caminho académico de uns é mais longo que de outros e alguns desenvolvem a sua carreira profissional no meio académico).
+Mas eu diria que para muitos, a formação formal termina com o inicio da carreira profissional. 
+No futuro a aprendizagem será constante e ela intercalará momentos de desenvolvimento profissional com outros de desenvolvimento académico, por vezes simultâneos. E isso ocorrerá durante toda a nossa vida.
+
+O ensino tradicional que ocorre hoje nas escolas e faculdades de pedra e cimento perderá para o ensino à distância. Já hoje a qualidade, oferta e custo dos MOOC ( <a href="www.coursera.org" target="_blank">Coursera</a>, <a href="www.edx.org" target="_blank">Edx</a> entre outros) supera em alguns casos o das universidades tradicionais (minha opinião). Para além das vantagens obvias de eu poder aprender em qualquer universidade do mundo, incluindo as mais reputadas, nos dias e horas à minha escolha (nos últimos anos tirei diversos cursos com a chancela do <a href="http://web.mit.edu/" target="_blank">MIT</a> e <a href="https://www.stanford.edu/" target="_blank">Stanford</a>, para dar apenas 2 exemplos).
+
+Existem inúmeros exemplos dos benefícios que a _IA_ proporciona já hoje (e que irei partilhar) e certamente que muitos mais existirão num futuro que está muito mais próximo do que pensamos.
+
+Em alguns casos, a realidade supera ficção. Bem vindos ao futuro.
