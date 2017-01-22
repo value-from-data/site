@@ -1,15 +1,5 @@
 /* your styles go here */
 
-.box-image-text .image {
-  min-height: 200px;
-  max-height: 200px;
-}
-
-.box-simple {
-  min-height: 230px;
-}
-
-
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
   display: block; }
 
@@ -27,14 +17,6 @@ audio:not([controls]) {
 
 /* Basic Styles
  * ------------------------------------	 */
-body {
-  background: #fff;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: "Open Sans" sans-serif;
-  color: #666;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
 
 svg {
   height: 100%;

@@ -112,17 +112,23 @@
   </url>
   
   <url>
+    <loc>http://value-from-data.com/tags/regress%C3%A3o/</loc>
+    <lastmod>2017-01-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/tags/simula%C3%A7%C3%A3o/</loc>
+    <lastmod>2017-01-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://value-from-data.com/contact/</loc>
   </url>
   
   <url>
     <loc>http://value-from-data.com/tags/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/tags/use-case/</loc>
-    <lastmod>2017-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

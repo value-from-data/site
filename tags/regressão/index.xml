@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regressão on value-from-data</title>
+    <link>http://value-from-data.com/tags/regress%C3%A3o/index.xml</link>
+    <description>Recent content in Regressão on value-from-data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2017, value-from-data; all rights reserved.</copyright>
+    <atom:link href="http://value-from-data.com/tags/regress%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Um bom negócio?</title>
+      <link>http://value-from-data.com/blog/2017/01/um-bom-negocio/</link>
+      <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://value-from-data.com/blog/2017/01/um-bom-negocio/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;Vamos supor que você pretende comprar um carro usado. O que faz?&lt;/p&gt;
+&lt;p&gt;Bem, presumo que das primeiras coisas é consultar algum site de compra e venda de carros usados e procurar algum carro com as características que considera relevantes de forma a ter uma ideia das alternativas e preços. Provavelmente até visitará algum stand recomendado por um amigo seu ou que fica perto da sua casa ou trabalho.&lt;/p&gt;
+&lt;p&gt;Mas, qual a melhor compra que pode fazer?&lt;/p&gt;
+&lt;p&gt;E se que quiser vender o carro? qual o preço que deve pedir?&lt;/p&gt;
+&lt;p&gt;Dependendo dos seus objetivos, se é comprar ou vender, se já escolheu a marca e modelo ou se apenas tem um limite de valor, se privilegia o preço, a idade ou os kms, todas estas questões vão influenciar a sua decisão final e eventualmente gerar alternativas demasiado numerosas que permitam um enfoque nas propostas mais interessantes. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A compra ou venda de um carro é apenas o pretexto para exemplificar algumas técnicas da ciência de dados que poderão ser aplicadas perante situações de incerteza, nomeadamente a simulação e a regressão linear. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;A mesma lógica poderia ser aplicada se estivéssemos a falar de casas, de escolhas a serem feitas por departamento de compras de uma organização, a decidir quantos funcionários devem estar na loja a um determinado dia ou hora, qual a quantidade a armazenar de determinado produto ou a tentar perceber qual o melhor preço a praticar. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Embora este seja um exercício académico no sentido em que coloco questões que certamente seriam diferentes das colocadas por alguém que efetivamente quisesse comprar ou vender um carro, os dados são reais e as questões colocadas parecem-me suficientemente práticas para acrescentarem valor.&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Recolha de dados &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Como em todos os processos de decisão, é necessário obter alguma informação prévia para podermos tomar uma decisão informada.&lt;/p&gt;
+&lt;p&gt;Em conformidade recolhi informação sobre viaturas usadas em dois sites de referência em Portugal e extrai os dados relativos às viaturas que cumpriam os seguintes pressupostos (os meus requisitos mínimos):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Carros a gasóleo;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Carros com mais de 20 000 kms e menos de 200 000 kms;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Preços entre 4 000€ e 15 000€;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Sem preferências por marca ou modelo.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Das viaturas recolhidas selecionei as marcas que tivessem pelo menos 235 viaturas e foi efetuado algum trabalho de transformação de forma a ter dados estandardizados e devidamente preparados para análise. Entre estas transformações estão a eliminação de viaturas muito antigas, marcas com poucas viaturas, normalização de nomes, etc.&lt;/p&gt;
+&lt;p&gt;Da análise prévia ficamos a saber algumas coisas da estrutura dos nossos dados, nomeadamente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Temos um conjunto de 8869 viaturas que são caracterizadas por 10 variáveis: Descrição, marca, modelo, preço em Euros, Kms realizados, idade em anos, a potência em cavalos, a cilindrada, a média dos kms realizados por ano e qual o site de onde foi extraída a viatura;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A &lt;em&gt;Renault&lt;/em&gt; é a marca que tem mais viaturas, 2184;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Foram extraidas 3284 viaturas do &lt;strong&gt;site1&lt;/strong&gt; e 5585 do &lt;strong&gt;site2&lt;/strong&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A &lt;em&gt;Peugeot&lt;/em&gt; é a marca com mais modelos, 20;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A marca mais cara é a &lt;em&gt;Audi&lt;/em&gt; com uma média de preços de €12,367 e uma mediana de €12,990;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A marca mais barata é a &lt;em&gt;Fiat&lt;/em&gt; com uma média de preços de €9,901 e uma mediana de €9,900;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;O gráfico seguinte ajuda-nos a perceber melhor as possíveis correlações entre as variáveis quantitativas:&lt;/p&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc2&#34; width=&#34;850&#34; height=&#34;550&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;O preço correlaciona-se negativamente com os kms realizados e a idade, embora essa correlação seja mais forte com a idade (-0.72 versus -0.41), i.e., é mais importante a idade que os kms no preço de venda.&lt;/p&gt;
+&lt;p&gt;Mas temos uma descoberta que é contrária ao senso comum: o preço correlaciona-se positivamente com a média dos kms anuais, i.e., as viaturas que fazem mais kms por ano tem preços mais elevados.&lt;/p&gt;
+&lt;p&gt;Se repararmos, a média dos kms por ano correlaciona-se negativamente com a idade e essa pode ser a razão que explica esta estranha descoberta: os carros mais novos são mais utilizados e fazem em média mais kms e quando vão ficando mais velhos a sua utilização vai diminuindo. Parece ser uma explicação razoável e que faz sentido.&lt;/p&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc3&#34; width=&#34;850&#34; height=&#34;550&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;br&gt; Confirmando o senso comum, a &lt;em&gt;Volkswagen&lt;/em&gt; é a marca que menos desvaloriza quer em termos da idade quer em termos dos kms realizados.&lt;/p&gt;
+&lt;p&gt;Podemos também constatar que a desvalorização da idade e dos kms está correlacionada positivamente, conforme análise de correlação anterior, embora se verifique um &lt;em&gt;outlier&lt;/em&gt; com a &lt;em&gt;Fiat&lt;/em&gt; que desvaloriza mais com os kms do que com a idade.&lt;/p&gt;
+&lt;p&gt;Por último conseguimos claramente identificar 3 grupos de marcas, 3 com pouca desvalorização, 3 com média desvalorização e 5 com forte desvalorização.&lt;/p&gt;
+&lt;p&gt;Se o vosso interesse é escolher uma viatura que desvalorize pouco, o número de marcas com potencial interesse reduziu-se substancialmente.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Quais são as melhores alternativas?&lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Retomando a questão inicialmente colocada e considerando que resultou da minha pesquisa de mercado 8869 alternativas possíveis, o que devo fazer?&lt;/p&gt;
+&lt;p&gt;Certamente que não será viável ver as fotos ou consultar o equipamento e observações de todas estas viaturas, muito menos inspeciona-las fisicamente.&lt;/p&gt;
+&lt;p&gt;Mas e se conseguíssemos reduzir esse universo a apenas às 10 melhores alternativas em função de um determinado critério?&lt;/p&gt;
+&lt;p&gt;Para responder a essa questão vou considerar 4 cenários possíveis, nos quais as variáveis de decisão são o preço, a idade, os kms e a potência:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Cenário 1: Não sei bem o que quero e, portanto, as variáveis de decisão valem todas o mesmo para mim;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cenário 2: valorizo mais o preço, i.e., o carro é para o meu filho e não quero gastar muito dinheiro;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cenário 3: valorizo mais os kms realizados, i.e., prefiro os carros com menos kms;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Cenário 4: valorizo mais a potência, i.e, o carro é para mim e eu gosto mais dos carros mais potentes.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mas mesmo tendo preferências, não tenho a certeza exata de quanto valorizo uma variável mais do que as outras (isto é, não consigo dizer que o preço é exatamente 3 vezes mais importante que a idade, apenas sei que para mim é um bocado mais importante) e portanto existe algum incerteza nas alternativas.&lt;/p&gt;
+&lt;p&gt;Utilizando uma das ferramentas mais úteis ao dispor do decisor, a &lt;a href=&#34;https://pt.wikipedia.org/wiki/Simula%C3%A7%C3%A3o&#34; target=&#34;_blank&#34;&gt;simulação&lt;/a&gt;, realizei 100 simulações para cada cenário em que defini um peso que espelhe as minhas preferências. No entanto, esse peso tem alguma variabilidade e no caso concreto ele varia conforme uma &lt;a href=&#34;https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_uniforme&#34; target=&#34;_blank&#34;&gt;distribuição uniforme&lt;/a&gt;. A valorização de cada viatura em cada variável de decisão foi feita com base numa &lt;a href=&#34;https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_distribui%C3%A7%C3%A3o_acumulada&#34; target=&#34;_blank&#34;&gt;função de distribuição acumulada&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Terminadas as simulações, estes são as 10 viaturas recomendadas para cada cenário:&lt;/p&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc4_1&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc4_2&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc4_3&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/hc4_4&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Podem reparar, analisando as diferentes variáveis, que as viaturas selecionadas favorecem as prioridades definidas em cada cenário mas sempre considerando as restantes variáveis. Por exemplo, no cenário de melhor preço as viaturas escolhidas não são as mais baratas: são as que apresentam os melhores preços considerando igualmente os kms feitos, a potência e a idade.&lt;/p&gt;
+&lt;p&gt;Reduzimos as nossas alternativas de 8869 viaturas para apenas 10 em cada cenário, selecionadas em função das nossas prioridades. Podemos agora analisar com detalhe as 10 viaturas propostas e eventualmente inspeciona-las fisicamente antes da decisão final.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Qual o preço a que devo colocar à venda o meu carro? &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Mas e se eu quiser ter uma ideia do preço que custaria uma viatura que reúne um conjunto de características que não estão presentes nas viaturas à venda nos dois sites que pesquisei?&lt;/p&gt;
+&lt;p&gt;Ou, melhor ainda, se eu tiver um carro que quero vender, qual o preço que devo pedir?&lt;/p&gt;
+&lt;p&gt;Foi construido um modelo para prever o valor de venda esperado, modelo que considerou as variáveis kms, idade, potência, cilindrada, marca e modelo. O modelo consegue explicar &lt;strong&gt;82.40%&lt;/strong&gt; da variação do valor, o que é bastante positivo.&lt;/p&gt;
+&lt;p&gt;Com base no modelo podemos prever o valor de venda para viaturas com as caracteristicas que estejam dentro dos intervalos utilizados na construção do modelo. Para teste simulei 4 viaturas com as seguintes caracteristicas: volkswagen golf 1.9cc 110cv 105099kms 5 anos, peugeot 208 1.6cc 92cv 155934kms 7 anos, renault megane 1.5cc 90cv 112593kms 9 anos, opel astra 1.7cc 125cv 139534kms 12 anos.&lt;/p&gt;
+&lt;p&gt;O valor de venda previsto, se pretendermos praticar preços de acordo com os que estavam a ser praticados à data da recolha dos dados nos dois sites de onde extraimos a informação, assim como o intervalo de confiança de 90% para esse valor médio (probabilidade de um carro com aquelas caracteristicas ser vendido dentro do nosso intervalo), constam do seguinte gráfico:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/Um-bom-negocio_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Podemos a partir daqui decidir qual o preço que podemos praticar, definindo o preço final em função de termos ou não urgência na venda, o carro ter mais ou menos equipamento que o normal, o estado da viatura ser bom ou mau, etc. Mas temos um bom ponto de partida com o intervalo calculado.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Questões finais &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Tentei não me alongar muito para não vos cansar.&lt;/p&gt;
+&lt;p&gt;Na presença de outros dados, por exemplo, se a viatura foi ou não vendida, quanto tempo esteve à venda sem ser vendida, qual o preço final de venda (dados que certamente um stand ou marca disporá), poderia responder a questões interessantes, como por exemplo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Se colocar o meu carro à venda por x Euros, quanto tempo tenho de esperar para fechar negócio?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Qual o preço que devo pedir se quiser fechar negócio nos próximos 15 dias?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Com este exemplo simples, espero ter conseguido demonstrar, com utilização de algumas técnicas, a importância da informação para extrair conhecimento e potenciar a boa decisão.&lt;/p&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
