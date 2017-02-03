@@ -102,7 +102,7 @@ div.section {
   border-bottom: solid 5px #467fbf;
   line-height: 1.1;
   margin-bottom: 0;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   vertical-align: middle;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -132,8 +132,10 @@ div.section {
   border-radius: 40px;
   border: solid 1px #fff;
   font-size: 20px;
+  text-align:center;
 }
 .icon.icon-lg {
+  display: inline-block;
   font-size: 30px;
   border-width: 2px;
 }
@@ -1774,6 +1776,11 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .bar.background-image-fixed-2 {
   background: url('../img/fixed-background-2.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.bar.background-image-newsletter {
+  background: url('../img/newsletter.jpg') center top no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -3558,8 +3565,8 @@ a.list-group-item.active > .badge,
 /* CSS for newsletter page */
 
 section#newsletter {
-    background-color: #222;
-    background-image: url(../img/map-image.png);
+    /*background-color: #222;*/
+    background-image: url(../img/newsletter.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -3635,11 +3642,20 @@ section h2.section-heading {
 
 section h3.section-subheading {
     color: #ffffff;
-	margin-bottom: 25px;
+	margin-bottom: 15px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
+}
+
+section h4.section-subheading {
+    color: #ffffff;
+	margin-bottom: 5px;
+    text-transform: none;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 100;
 }
 
 .btn-xl {

@@ -1,7 +1,7 @@
 /**
  * @license http://creativecommons.org/licenses/by-sa/4.0/ Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
  * @author  Lars Cabrera
- * @version 1.0.8
+ * @version 1.0.9
  */
 
 // JSLint options:
@@ -27,7 +27,7 @@
         Highcharts.each(this.chart.series, function (series, index) {
             if (motion.options.series.indexOf(index) >= 0) {
                 motion.dataSeries[index] = series;
-                for (i = 0; i < series.data.length; i++) {
+                for (var i = 0; i < series.data.length; i++) {
                     if (series.data[i].sequence) {
                         motion.dataLength = Math.max(motion.dataLength, series.data[i].sequence.length);
                     }
@@ -45,7 +45,7 @@
             id: 'play-pause-button',
             title: 'play'
         }, null, this.playControls, null);
-        this.playPauseBtn.className = "fa fa-play";
+        this.playPauseBtn.className = this.options.playIcon;
 
         // Play-range HTML-input
         this.playRange = H.createElement('input', {
@@ -131,7 +131,9 @@
         magnet: {
             round: 'round',
             step: 0.01
-        }
+        },
+        playIcon: "fa fa-play",
+        pauseIcon: "fa fa-pause"
     };
 
     // Toggles between Play and Pause states, and makes calls to changeButtonType()
@@ -170,7 +172,12 @@
     // Updates a button's title, innerHTML and CSS class to a certain value
     Motion.prototype.changeButtonType = function (value) {
         this.playPauseBtn.title = value;
-        this.playPauseBtn.className = value + " fa fa-" + value;
+        this.playPauseBtn.className = value + " ";
+        if (value == 'play') {
+            this.playPauseBtn.className += this.options.playIcon;
+        } else if (value == 'pause') {
+            this.playPauseBtn.className += this.options.pauseIcon;;
+        }
     };
 
     // Called continuously while playing

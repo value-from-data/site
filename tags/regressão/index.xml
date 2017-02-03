@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Regressão on value-from-data</title>
+    <title>Regressão on Melhores decisões</title>
     <link>http://value-from-data.com/tags/regress%C3%A3o/index.xml</link>
-    <description>Recent content in Regressão on value-from-data</description>
+    <description>Recent content in Regressão on Melhores decisões</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017, value-from-data; all rights reserved.</copyright>
@@ -15,7 +15,17 @@
       <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/um-bom-negocio/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+      <description>---
+title: &#34;Um bom negócio?&#34;
+date: &#34;2017-01-16&#34;
+author: &#34;António Cruz&#34;
+tags: [&#34;Simulação&#34;, &#34;Regressão&#34;]
+categories: [&#34;Exemplos&#34;]
+banner: &#34;img/banners/viatura3.jpg&#34;
+---
+
+
+&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
 

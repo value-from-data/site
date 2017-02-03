@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blogs on value-from-data</title>
+    <title>Blogs on Melhores decisões</title>
     <link>http://value-from-data.com/blog/index.xml</link>
-    <description>Recent content in Blogs on value-from-data</description>
+    <description>Recent content in Blogs on Melhores decisões</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2017, value-from-data; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 16 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Feb 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://value-from-data.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Prever quais os artigos do blog do New York Times blog que serão mais populares</title>
+      <link>http://value-from-data.com/blog/2017/02/new-york-times-blog-articles/</link>
+      <pubDate>Wed, 01 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://value-from-data.com/blog/2017/02/new-york-times-blog-articles/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Enquadramento &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;O que torna os artigos de notícias on-line populares?&lt;/p&gt;
+&lt;p&gt;Esta competição que decorreu entre 14 de Abril de 2015 e 4 de maio do mesmo ano, era uma competição privada e fazia parte do curso &lt;a href=&#34;https://www.edx.org/course/analytics-edge-mitx-15-071x-2&#34;&gt;The Analytics Edge&lt;/a&gt; da &lt;em&gt;edX&lt;/em&gt;. Esta competição era o projeto final e contava para a avaliação do curso.&lt;/p&gt;
+&lt;p&gt;Jornais e agregadores de notícias on-line como o &lt;em&gt;Google News&lt;/em&gt; precisam de entender quais os artigos de notícias que serão os mais populares, para que eles possam priorizar a ordem em que as histórias aparecem. Muitos artigos de blog são publicados a cada dia e o New York Times tem que decidir quais os artigos que devem ser apresentados.&lt;/p&gt;
+&lt;p&gt;O objetivo da competição era desenvolver um modelo que permitisse prever a popularidade de um conjunto de artigos do blog do New York Times do período de setembro de 2014 a dezembro de 2014 e ajudar a entender as características que tornam um &lt;em&gt;post&lt;/em&gt; popular.&lt;/p&gt;
+&lt;p&gt;A variavel dependente, a que se pretendia prever, era uma variavel categorica que podia assumir um de dois valores:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;1&lt;/strong&gt; se o artigo tinha tido mais de 25 comentários;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;0&lt;/strong&gt; se o artigo tinha tido menos de 25 comentários.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;O objetivo era portanto prever para um conjunto alargado de artigos, dos quais nós desconheciamos o número de comentários, se teriam mais ou menos de 25 comentários. Conseguir prever os artigos que vão ter mais comentários permite uma mais efetiva seleção dos artigos a publicar.&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Dados &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;Como é normal nas competições de &lt;em&gt;machine learning&lt;/em&gt;, foram disponibilizados dois ficheiros com os dados da competição:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Um ficheiro com os dados de treino, ficheiro que continha a variavel dependente que pretendiamos prever;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Um ficheiro de teste, ficheiro que não continha a variavel dependente e que seria, utilizando o modelo construido, utilizada para prever se os artigos iriam ter mais ou menos de 25 comentários.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Transformação e análise exploratória de dados &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Feature Engeneering &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Os modelos &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Resultado &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
     
     <item>
       <title>Um bom negócio?</title>
@@ -16,7 +61,17 @@
       <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/um-bom-negocio/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+      <description>---
+title: &#34;Um bom negócio?&#34;
+date: &#34;2017-01-16&#34;
+author: &#34;António Cruz&#34;
+tags: [&#34;Simulação&#34;, &#34;Regressão&#34;]
+categories: [&#34;Exemplos&#34;]
+banner: &#34;img/banners/viatura3.jpg&#34;
+---
+
+
+&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
 
