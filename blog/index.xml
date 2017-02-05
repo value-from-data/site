@@ -16,17 +16,7 @@
       <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/um-bom-negocio/</guid>
-      <description>---
-title: &#34;Um bom negócio?&#34;
-date: &#34;2017-01-16&#34;
-author: &#34;António Cruz&#34;
-tags: [&#34;Simulação&#34;, &#34;Regressão&#34;]
-categories: [&#34;Exemplos&#34;]
-banner: &#34;img/banners/viatura3.jpg&#34;
----
-
-
-&lt;!-- BLOGDOWN-BODY-BEFORE
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
 
 /BLOGDOWN-BODY-BEFORE --&gt;
 
@@ -50,9 +40,9 @@ banner: &#34;img/banners/viatura3.jpg&#34;
 &lt;p&gt;Das viaturas recolhidas selecionei as marcas que tivessem pelo menos 235 viaturas e foi efetuado algum trabalho de transformação de forma a ter dados estandardizados e devidamente preparados para análise. Entre estas transformações estão a eliminação de viaturas muito antigas, marcas com poucas viaturas, normalização de nomes, etc.&lt;/p&gt;
 &lt;p&gt;Da análise prévia ficamos a saber algumas coisas da estrutura dos nossos dados, nomeadamente:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Temos um conjunto de 8869 viaturas que são caracterizadas por 10 variáveis: Descrição, marca, modelo, preço em Euros, Kms realizados, idade em anos, a potência em cavalos, a cilindrada, a média dos kms realizados por ano e qual o site de onde foi extraída a viatura;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Temos um conjunto de 8868 viaturas que são caracterizadas por 10 variáveis: Descrição, marca, modelo, preço em Euros, Kms realizados, idade em anos, a potência em cavalos, a cilindrada, a média dos kms realizados por ano e qual o site de onde foi extraída a viatura;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;A &lt;em&gt;Renault&lt;/em&gt; é a marca que tem mais viaturas, 2184;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Foram extraidas 3284 viaturas do &lt;strong&gt;site1&lt;/strong&gt; e 5585 do &lt;strong&gt;site2&lt;/strong&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Foram extraidas 3284 viaturas do &lt;strong&gt;site1&lt;/strong&gt; e 5584 do &lt;strong&gt;site2&lt;/strong&gt;;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;A &lt;em&gt;Peugeot&lt;/em&gt; é a marca com mais modelos, 20;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;A marca mais cara é a &lt;em&gt;Audi&lt;/em&gt; com uma média de preços de €12,367 e uma mediana de €12,990;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;A marca mais barata é a &lt;em&gt;Fiat&lt;/em&gt; com uma média de preços de €9,901 e uma mediana de €9,900;&lt;/p&gt;&lt;/li&gt;
@@ -71,7 +61,7 @@ banner: &#34;img/banners/viatura3.jpg&#34;
 &lt;p&gt;Por último conseguimos claramente identificar 3 grupos de marcas, 3 com pouca desvalorização, 3 com média desvalorização e 5 com forte desvalorização.&lt;/p&gt;
 &lt;p&gt;Se o vosso interesse é escolher uma viatura que desvalorize pouco, o número de marcas com potencial interesse reduziu-se substancialmente.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Quais são as melhores alternativas?&lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Retomando a questão inicialmente colocada e considerando que resultou da minha pesquisa de mercado 8869 alternativas possíveis, o que devo fazer?&lt;/p&gt;
+&lt;p&gt;Retomando a questão inicialmente colocada e considerando que resultou da minha pesquisa de mercado 8868 alternativas possíveis, o que devo fazer?&lt;/p&gt;
 &lt;p&gt;Certamente que não será viável ver as fotos ou consultar o equipamento e observações de todas estas viaturas, muito menos inspeciona-las fisicamente.&lt;/p&gt;
 &lt;p&gt;Mas e se conseguíssemos reduzir esse universo a apenas às 10 melhores alternativas em função de um determinado critério?&lt;/p&gt;
 &lt;p&gt;Para responder a essa questão vou considerar 4 cenários possíveis, nos quais as variáveis de decisão são o preço, a idade, os kms e a potência:&lt;/p&gt;
@@ -94,12 +84,12 @@ banner: &#34;img/banners/viatura3.jpg&#34;
 &lt;iframe src=&#34;../../../../htmlwidget/hc4_4&#34; width=&#34;800&#34; height=&#34;450&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;p&gt;Podem reparar, analisando as diferentes variáveis, que as viaturas selecionadas favorecem as prioridades definidas em cada cenário mas sempre considerando as restantes variáveis. Por exemplo, no cenário de melhor preço as viaturas escolhidas não são as mais baratas: são as que apresentam os melhores preços considerando igualmente os kms feitos, a potência e a idade.&lt;/p&gt;
-&lt;p&gt;Reduzimos as nossas alternativas de 8869 viaturas para apenas 10 em cada cenário, selecionadas em função das nossas prioridades. Podemos agora analisar com detalhe as 10 viaturas propostas e eventualmente inspeciona-las fisicamente antes da decisão final.&lt;/p&gt;
+&lt;p&gt;Reduzimos as nossas alternativas de 8868 viaturas para apenas 10 em cada cenário, selecionadas em função das nossas prioridades. Podemos agora analisar com detalhe as 10 viaturas propostas e eventualmente inspeciona-las fisicamente antes da decisão final.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Qual o preço a que devo colocar à venda o meu carro? &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Mas e se eu quiser ter uma ideia do preço que custaria uma viatura que reúne um conjunto de características que não estão presentes nas viaturas à venda nos dois sites que pesquisei?&lt;/p&gt;
 &lt;p&gt;Ou, melhor ainda, se eu tiver um carro que quero vender, qual o preço que devo pedir?&lt;/p&gt;
 &lt;p&gt;Foi construido um modelo para prever o valor de venda esperado, modelo que considerou as variáveis kms, idade, potência, cilindrada, marca e modelo. O modelo consegue explicar &lt;strong&gt;82.40%&lt;/strong&gt; da variação do valor, o que é bastante positivo.&lt;/p&gt;
-&lt;p&gt;Com base no modelo podemos prever o valor de venda para viaturas com as caracteristicas que estejam dentro dos intervalos utilizados na construção do modelo. Para teste simulei 4 viaturas com as seguintes caracteristicas: volkswagen golf 1.9cc 110cv 105099kms 5 anos, peugeot 208 1.6cc 92cv 155934kms 7 anos, renault megane 1.5cc 90cv 112593kms 9 anos, opel astra 1.7cc 125cv 139534kms 12 anos.&lt;/p&gt;
+&lt;p&gt;Com base no modelo podemos prever o valor de venda para viaturas com as caracteristicas que estejam dentro dos intervalos utilizados na construção do modelo. Para teste simulei 4 viaturas com as seguintes caracteristicas: volkswagen golf 1.9cc 110cv 117046kms 5 anos, peugeot 208 1.6cc 92cv 84225kms 7 anos, renault megane 1.5cc 90cv 44947kms 9 anos, opel astra 1.7cc 125cv 53819kms 12 anos.&lt;/p&gt;
 &lt;p&gt;O valor de venda previsto, se pretendermos praticar preços de acordo com os que estavam a ser praticados à data da recolha dos dados nos dois sites de onde extraimos a informação, assim como o intervalo de confiança de 90% para esse valor médio (probabilidade de um carro com aquelas caracteristicas ser vendido dentro do nosso intervalo), constam do seguinte gráfico:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;#####../content/blog/Um-bom-negocio_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Podemos a partir daqui decidir qual o preço que podemos praticar, definindo o preço final em função de termos ou não urgência na venda, o carro ter mais ou menos equipamento que o normal, o estado da viatura ser bom ou mau, etc. Mas temos um bom ponto de partida com o intervalo calculado.&lt;/p&gt;

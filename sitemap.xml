@@ -17,22 +17,6 @@
   </url>
   
   <url>
-    <loc>http://value-from-data.com/datatable/dt1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/htmlwidget/hc1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/htmlwidget/hc10/</loc>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/htmlwidget/hc11/</loc>
-  </url>
-  
-  <url>
     <loc>http://value-from-data.com/htmlwidget/hc2/</loc>
   </url>
   
@@ -75,11 +59,6 @@
   
   <url>
     <loc>http://value-from-data.com/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>http://value-from-data.com/datatable/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
