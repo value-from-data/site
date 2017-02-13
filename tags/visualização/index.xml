@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualização on Melhores decisões</title>
+    <link>http://value-from-data.com/tags/visualiza%C3%A7%C3%A3o/index.xml</link>
+    <description>Recent content in Visualização on Melhores decisões</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-pt</language>
+    <copyright>Copyright (c) 2017, value-from-data; all rights reserved.</copyright>
+    <atom:link href="http://value-from-data.com/tags/visualiza%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Daqui, a vista é diferente, não é?</title>
+      <link>http://value-from-data.com/blog/2017/02/anscombe_quartets/</link>
+      <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://value-from-data.com/blog/2017/02/anscombe_quartets/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p&gt;Quando temos de analisar dados e tentar extrair conhecimento, depois de obviamente os recolher e importar, das primeiras coisas que fazemos é efetuar um sumário com as informações mais relevantes.&lt;/p&gt;
+&lt;p&gt;Nesses sumários é muito comum elaborarmos estatísticas que representem a centralidade e dispersão dos dados, características fundamentais para a compreensão dos mesmos e ponto de partida para posteriores análises.&lt;/p&gt;
+&lt;p&gt;Mas por vezes esses sumários são enganadores e podem levar a conclusões ou ilações que não representam a realidade.&lt;/p&gt;
+&lt;p&gt;Para exemplificar esta questão, vamos supor que eu estou a analisar um conjunto de entidades e quero perceber se existem diferenças entre elas. Podem ser, por exemplo, comparar alunos com base em notas de diferentes disciplinas, países com base em diferentes variáveis macroeconómicas ou produtos com base nos dados de vendas. Vocês percebem a ideia.&lt;/p&gt;
+&lt;p&gt;Vamos então considerar para o nosso exemplo que tenho 11 meses de venda de 4 produtos distintos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Bifana&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Prego&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Hambúrguer&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Tosta mista&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;E para cada um dos produtos e mês em análise, vamos igualmente supor, que tenho a soma das unidades e o valor total vendido por cada um dos 11 meses.&lt;/p&gt;
+&lt;p&gt;Como este nosso negócio é muito concorrencial, o preço pode ter variado no mesmo dia, ou pode ter acontecido alguma promoção ou desconto em função de uma data especifica.&lt;/p&gt;
+&lt;p&gt;Primeiro vamos analisar a média e desvio padrão da quantidade vendida por mês, para os quatro produtos.&lt;/p&gt;
+&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
+&lt;!-- Sun Feb 12 16:55:49 2017 --&gt;
+&lt;table width=&#34;300&#34;&gt;
+&lt;caption align=&#34;top&#34;&gt;
+Tabela 1: Estatisticas sumárias para quantidades
+&lt;/caption&gt;
+&lt;tr&gt;
+&lt;th&gt;
+Produto
+&lt;/th&gt;
+&lt;th&gt;
+Média
+&lt;/th&gt;
+&lt;th&gt;
+Desvio Padrão
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Bifana
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+9.00
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+3.32
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Hambúrguer
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+9.00
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+3.32
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Prego
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+9.00
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+3.32
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Tosta mista
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+9.00
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+3.32
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Vamos repetir a análise, mas agora para o valor médio das vendas mensais:&lt;/p&gt;
+&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
+&lt;!-- Sun Feb 12 16:55:49 2017 --&gt;
+&lt;table width=&#34;300&#34;&gt;
+&lt;caption align=&#34;top&#34;&gt;
+Tabela 2: Estatísticas sumárias para valores
+&lt;/caption&gt;
+&lt;tr&gt;
+&lt;th&gt;
+Produto
+&lt;/th&gt;
+&lt;th&gt;
+Média
+&lt;/th&gt;
+&lt;th&gt;
+Desvio Padrão
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Bifana
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+7.50
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+2.03
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Hambúrguer
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+7.50
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+2.03
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Prego
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+7.50
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+2.03
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Tosta mista
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+7.50
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+2.03
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Podemos verificar pela sumarização dos dados que os 4 produtos obtêm resultados idênticos para o período dos 11 meses em análise.&lt;/p&gt;
+&lt;p&gt;Em media vendemos 9 unidades e um valor total de 7.5€ por mês (sim eu sei. Com estas quantidades e valores mais vale criar outro negócio)&lt;/p&gt;
+&lt;p&gt;Mas vamos aprofundar a nossa análise. Vamos tentar perceber qual a correlação entre a quantidade e valor para cada um dos produtos vendidos.&lt;/p&gt;
+&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
+&lt;!-- Sun Feb 12 16:55:49 2017 --&gt;
+&lt;table width=&#34;300&#34;&gt;
+&lt;caption align=&#34;top&#34;&gt;
+Tabela 3: Correlação entre quantidade e valor
+&lt;/caption&gt;
+&lt;tr&gt;
+&lt;th&gt;
+Produto
+&lt;/th&gt;
+&lt;th&gt;
+Correlação
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Bifana
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.82
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Hambúrguer
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.82
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Prego
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.82
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Tosta mista
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.82
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Mais uma vez os dados mostram que os quatro produtos são idênticos. Mas também podemos perceber que o valor não depende exclusivamente da quantidade vendida.&lt;/p&gt;
+&lt;p&gt;Mas como ainda não estamos satisfeitos, vamos criar uma regressão linear em que a variável explicada ou dependente é o valor das vendas e a variável explicativa ou independente é a quantidade vendida, i.e., vamos tentar perceber em que medida a quantidade explica o valor das vendas.&lt;/p&gt;
+&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
+&lt;!-- Sun Feb 12 16:55:49 2017 --&gt;
+&lt;table width=&#34;300&#34;&gt;
+&lt;caption align=&#34;top&#34;&gt;
+Tabela 4: Regressão linear
+&lt;/caption&gt;
+&lt;tr&gt;
+&lt;th&gt;
+Produto
+&lt;/th&gt;
+&lt;th&gt;
+R2
+&lt;/th&gt;
+&lt;th&gt;
+Ordenada
+&lt;/th&gt;
+&lt;th&gt;
+Declive
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Bifana
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.67
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+3.00
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.50
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Hambúrguer
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.67
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+3.00
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.50
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Prego
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.67
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+3.00
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.50
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+Tosta mista
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.67
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+3.00
+&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;
+0.50
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Como podemos verificar, quer o &lt;span class=&#34;math inline&#34;&gt;\(R^2\)&lt;/span&gt; quer o ponto de interceção da reta com o eixo vertical, quer o declive, são iguais para todos os produtos e basicamente temos um modelo que nos diz que para cada uma bifana, prego, hambúrguer ou tosta mista vendida o valor faturado sobe 0.5 Euros. O exemplo não é brilhante, mas o importante é que os modelos que resultam dos dados são iguais para todos os produtos.&lt;/p&gt;
+&lt;p&gt;Concluindo, se olharmos para a média, desvio padrão, correlação entre quantidade e valor, e um modelo de regressão que explica o valor em função da quantidade, os produtos são iguais.&lt;/p&gt;
+&lt;p&gt;Mas serão mesmo?&lt;/p&gt;
+&lt;p&gt;Vamos então visualizar os dados que estão na base destes cálculos.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/anscombe_quartets_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; &lt;br&gt; Afinal, vender bifanas, pregos, hambúrgueres ou tostas mistas, não é a mesma coisa.&lt;/p&gt;
+&lt;p&gt;Podemos ver que a relação é de facto linear para a Bifana. O mesmo acontece com os Hambúrgueres, mas neste caso especifico temos um mês que é um &lt;a href=&#34;https://pt.wikipedia.org/wiki/Outlier&#34; target=&#34;_blank&#34;&gt;outlier&lt;/a&gt; e que cria uma variabilidade na relação entre quantidade e preço que não existe nos restantes meses. Talvez naquele mês tenha existido um conjunto de atividades culturais realizadas a horas pouco comuns o que nos permitiu praticar um preço acima do normal e como tal faturar mais com a mesma quantidade. Mas, se calhar, esse mês já não se vai repetir.&lt;/p&gt;
+&lt;p&gt;No caso dos pregos o que aconteceu é curioso: porque a partir de determinada quantidade vendida o valor faturado começa a descer. Talvez tenha sido necessário baixar os preços porque as pessoas deixaram de comer tantos pregos !!&lt;/p&gt;
+&lt;p&gt;Na tosta mista, tirando um mês bastante anormal, vendemos sempre a mesma quantidade mas o valor variou bastante. Portanto, a quantidade não parece ter influência no valor.&lt;/p&gt;
+&lt;p&gt;Os dados utilizados neste exemplo foram construídos pelo estatístico &lt;a href=&#34;https://en.wikipedia.org/wiki/Frank_Anscombe&#34; target=&#34;_blank&#34;&gt;Francis Anscombe&lt;/a&gt;, em 1973, para exemplificar a importância da visualização na fase inicial de análise e o efeito de outliers nas propriedades estatísticas dos dados.&lt;/p&gt;
+&lt;p&gt;Esta análise ou principio é conhecido como &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34; target=&#34;_blank&#34;&gt;Anscombe’s quartet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Este exemplo pretende apenas chamar a atenção para a importância da visualização dos dados em qualquer análise e o cuidado que é necessário ter antes de tirarmos conclusões e tomarmos decisões com base nos dados.&lt;/p&gt;
+&lt;p&gt;Os números também enganam e o que nós, certamente, não queremos é tomarmos uma decisão que terá um impacto relevante no futuro, com base em informação que não representa a realidade.&lt;/p&gt;
+
+
+&lt;!-- dynamically load mathjax for compatibility with self-contained --&gt;
+&lt;script&gt;
+  (function () {
+    var script = document.createElement(&#34;script&#34;);
+    script.type = &#34;text/javascript&#34;;
+    script.src  = &#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;;
+    if (location.protocol !== &#34;file:&#34; &amp;&amp; /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, &#39;&#39;);
+    document.getElementsByTagName(&#34;head&#34;)[0].appendChild(script);
+  })();
+&lt;/script&gt;
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
