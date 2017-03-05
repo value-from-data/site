@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://value-from-data.com/blog/2017/03/new-york-times-blog-articles/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://value-from-data.com/blog/2017/02/anscombe_quartets/</loc>
     <lastmod>2017-02-13T00:00:00+00:00</lastmod>
   </url>
@@ -19,6 +24,14 @@
   <url>
     <loc>http://value-from-data.com/blog/2017/01/inteligencia-artificial/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/datatable/dt1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/datatable/dt2/</loc>
   </url>
   
   <url>
@@ -47,7 +60,7 @@
   
   <url>
     <loc>http://value-from-data.com/blog/</loc>
-    <lastmod>2017-02-13T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -58,7 +71,7 @@
   
   <url>
     <loc>http://value-from-data.com/categories/competi%C3%A7%C3%B5es/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -70,6 +83,11 @@
   
   <url>
     <loc>http://value-from-data.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/datatable/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -101,13 +119,19 @@
   
   <url>
     <loc>http://value-from-data.com/tags/kaggle/</loc>
-    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://value-from-data.com/</loc>
-    <lastmod>2017-02-13T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://value-from-data.com/tags/processamento-de-texto/</loc>
+    <lastmod>2017-03-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
