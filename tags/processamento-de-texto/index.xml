@@ -20,7 +20,7 @@
 /BLOGDOWN-BODY-BEFORE --&gt;
 
 &lt;p&gt;O objetivo dos artigos referentes às competições da &lt;em&gt;Kaggle&lt;/em&gt; é de exemplificar o que pode ser feito com o &lt;strong&gt;Machine Learning&lt;/strong&gt;. Embora algumas das competições sejam tutoriais (e mesmo estas utilizam dados reais), a grande maioria é baseada em situações e dados reais e promovidas pelas entidades com objetivos concretos e de negócio.&lt;/p&gt;
-&lt;p&gt;Esta competição que decorreu entre 14 de abril de 2015 e 4 de maio do mesmo ano, era uma competição privada e fazia parte do curso &lt;a href=&#34;https://www.edx.org/course/analytics-edge-mitx-15-071x-2&#34;&gt;The Analytics Edge&lt;/a&gt; da &lt;em&gt;edX&lt;/em&gt;. Esta competição era o projeto final e contava para a avaliação do curso.&lt;/p&gt;
+&lt;p&gt;Esta competição que decorreu entre 14 de abril de 2015 e 4 de maio do mesmo ano, era uma competição privada e fazia parte do curso &lt;a href=&#34;https://www.edx.org/course/analytics-edge-mitx-15-071x-2&#34; target=&#34;_blank&#34;&gt;The Analytics Edge&lt;/a&gt; da &lt;em&gt;edX&lt;/em&gt;. Esta competição era o projeto final e contava para a avaliação do curso.&lt;/p&gt;
 &lt;p&gt;O que torna os artigos de notícias on-line populares?&lt;/p&gt;
 &lt;p&gt;Jornais e agregadores de notícias on-line como o &lt;em&gt;Google News&lt;/em&gt; precisam de entender quais os artigos de notícias que serão os mais populares, para que eles possam priorizar a ordem em que as histórias aparecem. Muitos artigos de blog são publicados a cada dia e o New York Times tem que decidir quais os artigos que devem ser apresentados.&lt;/p&gt;
 &lt;p&gt;O objetivo da competição era desenvolver um modelo que permitisse prever a popularidade de um conjunto de artigos do blog do New York Times do período de setembro de 2014 a dezembro de 2014 e ajudar a entender as características que tornam um &lt;em&gt;post&lt;/em&gt; popular.&lt;/p&gt;
@@ -49,7 +49,7 @@
 &lt;li&gt;&lt;p&gt;As variáveis &lt;em&gt;extrato&lt;/em&gt; e &lt;em&gt;abstrato&lt;/em&gt; são muitas vezes idênticas;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Existem conteúdos das variáveis texto que são números e que neste contexto podem não acrescentam valor.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Os fatores referidos anteriormente tornam esta competição bastante interessante, nomeadamente pelo facto de estarmos dependente de texto, sendo necessário alguma capacidade de &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_language_processing&#34;&gt;NLP&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Os fatores referidos anteriormente tornam esta competição bastante interessante, nomeadamente pelo facto de estarmos dependente de texto, sendo necessário alguma capacidade de &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_language_processing&#34; target=&#34;_blank&#34;&gt;Natural Language Processing&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Podemos também verificar, nos dois seguintes gráficos, que o número e proporção da popularidade dos artigos por departamento varia:&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;#####../content/blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;#####../content/blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
@@ -83,12 +83,12 @@
 &lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Os modelos &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
-&lt;p&gt;A métrica definida para avaliar a qualidade do modelo é a &lt;a href=&#34;http://mlwiki.org/index.php/ROC_Analysis&#34;&gt;AUC&lt;/a&gt; e é uma medida de avaliação da qualidade do modelo, para problemas binários, mais robusta que apenas quantificar a percentagem dos resultados previstos corretamente.&lt;/p&gt;
+&lt;p&gt;A métrica definida para avaliar a qualidade do modelo é a &lt;a href=&#34;http://mlwiki.org/index.php/ROC_Analysis&#34; target=&#34;_blank&#34;&gt;AUC&lt;/a&gt; e é uma medida de avaliação da qualidade do modelo, para problemas binários, mais robusta que apenas quantificar a percentagem dos resultados previstos corretamente.&lt;/p&gt;
 &lt;p&gt;Assim, a AUC é independente da percentagem da população que é positiva (popular) ou não, e portanto adequada a dados desequilibrados (como é o caso).&lt;/p&gt;
 &lt;p&gt;O seu valor varia entre 0 e 1, sendo obviamente 1 o resultado perfeito (prevejo corretamente para todas as situações).&lt;/p&gt;
 &lt;p&gt;Foram feitas várias submissões, utilizando técnicas diferentes e conjunto de dados com transformações diferentes.&lt;/p&gt;
 &lt;p&gt;No total da competição realizei 27 submissões.&lt;/p&gt;
-&lt;p&gt;O meu modelo final foi uma &lt;a href=&#34;https://en.wikipedia.org/wiki/Random_forest&#34;&gt;random forest&lt;/a&gt; com 1000 árvores.&lt;/p&gt;
+&lt;p&gt;O meu modelo final foi uma &lt;a href=&#34;https://en.wikipedia.org/wiki/Random_forest&#34; target=&#34;_blank&#34;&gt;random forest&lt;/a&gt; com 1000 árvores.&lt;/p&gt;
 &lt;p&gt;Os dados seguintes foram calculados com uma versão atual do algoritmo utilizado (e portanto melhor) e com base nos dados do ficheiro de treino.&lt;/p&gt;
 &lt;p&gt;Como não sei a popularidade dos artigos do ficheiro de teste, não posso realizar estes cálculos para esse conjunto de dados.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Calculating AUC ...&amp;quot;
@@ -127,7 +127,7 @@
 ## &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Como podemos verificar a AUC resultante para os dados de treino é de 96%. Nada mau.&lt;/p&gt;
-&lt;p&gt;Podemos também perceber, pela &lt;a href=&#34;https://en.wikipedia.org/wiki/Confusion_matrix&#34;&gt;confusion matrix&lt;/a&gt;, que o modelo previu erradamente 283 artigos como populares que não o eram, e previu 159 artigos como não populares que eram populares. Isso significa que o modelo acerta, para o total de 6532 artigos do ficheiro de treino, em 93% deles.&lt;/p&gt;
+&lt;p&gt;Podemos também perceber, pela &lt;a href=&#34;https://en.wikipedia.org/wiki/Confusion_matrix&#34; target=&#34;_blank&#34;&gt;confusion matrix&lt;/a&gt;, que o modelo previu erradamente 283 artigos como populares que não o eram, e previu 159 artigos como não populares que eram populares. Isso significa que o modelo acerta, para o total de 6532 artigos do ficheiro de treino, em 93% deles.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Resultado &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;Terminado o prazo da competição, a Kaggle calcula o resultado com base nas nossas submissões e num subconjunto dos dados de teste. A primeira submissão por mim apresentada resultou num AUC de 69.3%. Mas a minha AUC final foi de 90.7%.&lt;/p&gt;
