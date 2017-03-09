@@ -176,141 +176,18 @@
 <li><p>Hambúrguer</p></li>
 <li><p>Tosta mista</p></li>
 </ul>
-<p>E para cada um dos produtos e mês em análise, vamos igualmente supor, que tenho a soma das unidades e o valor total vendido por cada um dos 11 meses.</p>
-<p>Como este nosso negócio é muito concorrencial, o preço pode ter variado no mesmo dia, ou pode ter acontecido alguma promoção ou desconto em função de uma data especifica.</p>
-<p>Primeiro vamos analisar a média e desvio padrão da quantidade vendida por mês, para os quatro produtos.</p>
-<!-- html table generated in R 3.3.2 by xtable 1.8-2 package -->
-<!-- Sun Feb 12 16:55:49 2017 -->
-<table width="300">
-<caption align="top">
-Tabela 1: Estatisticas sumárias para quantidades
-</caption>
-<tr>
-<th>
-Produto
-</th>
-<th>
-Média
-</th>
-<th>
-Desvio Padrão
-</th>
-</tr>
-<tr>
-<td>
-Bifana
-</td>
-<td align="center">
-9.00
-</td>
-<td align="center">
-3.32
-</td>
-</tr>
-<tr>
-<td>
-Hambúrguer
-</td>
-<td align="center">
-9.00
-</td>
-<td align="center">
-3.32
-</td>
-</tr>
-<tr>
-<td>
-Prego
-</td>
-<td align="center">
-9.00
-</td>
-<td align="center">
-3.32
-</td>
-</tr>
-<tr>
-<td>
-Tosta mista
-</td>
-<td align="center">
-9.00
-</td>
-<td align="center">
-3.32
-</td>
-</tr>
-</table>
-<p><br><br></p>
-<p>Vamos repetir a análise, mas agora para o valor médio das vendas mensais:</p>
-<!-- html table generated in R 3.3.2 by xtable 1.8-2 package -->
-<!-- Sun Feb 12 16:55:49 2017 -->
-<table width="300">
-<caption align="top">
-Tabela 2: Estatísticas sumárias para valores
-</caption>
-<tr>
-<th>
-Produto
-</th>
-<th>
-Média
-</th>
-<th>
-Desvio Padrão
-</th>
-</tr>
-<tr>
-<td>
-Bifana
-</td>
-<td align="center">
-7.50
-</td>
-<td align="center">
-2.03
-</td>
-</tr>
-<tr>
-<td>
-Hambúrguer
-</td>
-<td align="center">
-7.50
-</td>
-<td align="center">
-2.03
-</td>
-</tr>
-<tr>
-<td>
-Prego
-</td>
-<td align="center">
-7.50
-</td>
-<td align="center">
-2.03
-</td>
-</tr>
-<tr>
-<td>
-Tosta mista
-</td>
-<td align="center">
-7.50
-</td>
-<td align="center">
-2.03
-</td>
-</tr>
-</table>
-<p><br><br></p>
+<p>E para cada um dos produtos e mês em análise vamos igualmente supor que tenho a soma das unidades e o valor total vendido por cada um dos 11 meses.</p>
+<p>Como este negócio é muito concorrencial, o preço pode ter variado no mesmo dia, ou pode ter acontecido alguma promoção ou desconto em função de uma data especifica.</p>
+<p>O quadro seguinte apresenta quantidade e valor das vendas para 11 meses e cada um dos produtos.</p>
+<p>Mas tenham presente que neste exemplo académico são muito poucos dados, mas numa situação real temos milhares de registos e se calhar dezenas de produtos ou variaveis o que impossibilitaria retirar qualquer informação sem a prévia sumarização dos mesmos.</p>
+<p><img src="figures/unnamed-chunk-3-1.png" width="816" /></p>
+<p>Vamos então fazer uma sumarização dos dados utilizando as métricas mais usuais, começando com a média e desvio padrão das quantidades e valores mensais, para os quatro produtos.</p>
+<p><img src="figures/unnamed-chunk-4-1.png" width="576" /></p>
 <p>Podemos verificar pela sumarização dos dados que os 4 produtos obtêm resultados idênticos para o período dos 11 meses em análise.</p>
-<p>Em media vendemos 9 unidades e um valor total de 7.5€ por mês (sim eu sei. Com estas quantidades e valores mais vale criar outro negócio)</p>
+<p>Em media vendemos 9 unidades e um valor de 7.5€ por mês (sim eu sei. Com estas quantidades e valores mais vale criar outro negócio).</p>
 <p>Mas vamos aprofundar a nossa análise. Vamos tentar perceber qual a correlação entre a quantidade e valor para cada um dos produtos vendidos.</p>
 <!-- html table generated in R 3.3.2 by xtable 1.8-2 package -->
-<!-- Sun Feb 12 16:55:49 2017 -->
+<!-- Thu Mar 09 17:34:26 2017 -->
 <table width="300">
 <caption align="top">
 Tabela 3: Correlação entre quantidade e valor
@@ -360,7 +237,7 @@ Tosta mista
 <p>Mais uma vez os dados mostram que os quatro produtos são idênticos. Mas também podemos perceber que o valor não depende exclusivamente da quantidade vendida.</p>
 <p>Mas como ainda não estamos satisfeitos, vamos criar uma regressão linear em que a variável explicada ou dependente é o valor das vendas e a variável explicativa ou independente é a quantidade vendida, i.e., vamos tentar perceber em que medida a quantidade explica o valor das vendas.</p>
 <!-- html table generated in R 3.3.2 by xtable 1.8-2 package -->
-<!-- Sun Feb 12 16:55:49 2017 -->
+<!-- Thu Mar 09 17:34:26 2017 -->
 <table width="300">
 <caption align="top">
 Tabela 4: Regressão linear
