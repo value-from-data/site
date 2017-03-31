@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Paradoxo de Simpson </title>
+  
+  <meta name="author" content="António Cruz" />
+  
+  <meta name="description" content="Importância da visualização" />
+  
+  <meta name="keywords" content="[Visualização para apoiar na tomada de decisões]" />
+  
+
+  <meta name="generator" content="Hugo 0.18" />
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+  
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:458558,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  
+  <link href="http://value-from-data.com/css/animate.css" rel="stylesheet">
+
+  
+  
+    <link href="http://value-from-data.com/css/style.blue.css" rel="stylesheet" id="theme-stylesheet">
+  
+
+
+  
+  <link href="http://value-from-data.com/css/custom.css" rel="stylesheet">
+
+  
+    
+
+  
+  <link rel="shortcut icon" href="http://value-from-data.com/img/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="http://value-from-data.com/img/apple-touch-icon.png" />
+  
+
+  <link href="http://value-from-data.com/css/owl.carousel.css" rel="stylesheet">
+  <link href="http://value-from-data.com/css/owl.theme.css" rel="stylesheet">
+
+  <link rel="alternate" href="http://value-from-data.com/index.xml" type="application/rss+xml" title="Melhores decisões">
+
+  
+  <meta property="og:title" content="Paradoxo de Simpson" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="/blog/2017/03/simpson-paradox//" />
+  <meta property="og:image" content="img/logo.png" />
+
+
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand home" href="http://value-from-data.com/">
+                    <img src="http://value-from-data.com/img/logo.png" alt="Paradoxo de Simpson logo" class="hidden-xs hidden-sm">
+                    <img src="http://value-from-data.com/img/logo-small.png" alt="Paradoxo de Simpson logo" class="visible-xs visible-sm">
+                    <span class="sr-only">Paradoxo de Simpson - go to homepage</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="navbar-collapse collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li class="dropdown">
+                        <a href="../../../../">Home</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="../../../../blog/">Blog</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="../../../../sobremim/">Sobre mim</a>
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a href="../../../../contact/">Contactos</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            
+
+            <div class="collapse clearfix" id="search">
+
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+
+                </span>
+                    </div>
+                </form>
+
+            </div>
+            
+
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+        </header>
+
+        <div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Paradoxo de Simpson</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+                    
+
+                    <div class="col-md-9" id="blog-post">
+
+                        <p class="text-muted text-uppercase mb-small text-right">By <a href="#">António Cruz</a> | March 30, 2017</p>
+
+                        <div id="post-content">
+
+
+<p style="margin-bottom:50px;">
+</p>
+<font size="4" color="DarkGoldenRod"> <b> Exercício físico e BMI</b></font>
+<p style="margin-bottom:20px;">
+</p>
+<p>Vamos supor que estamos a tentar perceber a relação entre o número de horas de exercício físico por semana e o BMI (Body Mass Index).</p>
+<p>Para efeito da nossa análise reunimos os dados de 3000 pessoas, pertencentes a diferentes grupos etários.</p>
+<p>Vamos visualizar os dados:</p>
+<p><img src="figures/unnamed-chunk-2-1.png" width="864" /></p>
+<p style="margin-bottom:50px;">
+</p>
+<p>Muito bem. Parece que quanto maior for o número de horas de exercício físico que fazemos por semana, menor o BMI, i.e., existe uma relação negativa entre o exercício e o BMI.</p>
+<p>Podemos inclusive confirmar pela reta de regressão que a cada hora adicional de exercício físico por semana o BMI varia em -0.4358175 pontos.</p>
+<p>Faz sentido, certo? Quanto mais exercício, menor o BMI.</p>
+<p>Será que o comportamento é o mesmo se fizermos, para os mesmos dados, esta análise por grupo etário?</p>
+<p>Vamos visualizar os dados:</p>
+<img src="figures/unnamed-chunk-3-1.png" width="864" />
+<p style="margin-bottom:50px;">
+</p>
+<p>O quê? A relação agora mudou. Para cada grupo etário o que temos é que o BMI aumenta quando o exercício físico aumenta.</p>
+<p>Lembro que os dados são exatamente os mesmos da primeira análise que fizemos.</p>
+<p>Podemos também aqui confirmar, por cada uma das retas de regressão por grupo etário o que acontece ao BMI quando o exercício físico aumenta.</p>
+<!-- html table generated in R 3.3.2 by xtable 1.8-2 package -->
+<!-- Fri Mar 31 19:59:36 2017 -->
+<table width="300">
+<caption align="top">
+Tabela 1: Declive por grupo de idade
+</caption>
+<tr>
+<th>
+Idade
+</th>
+<th>
+slope
+</th>
+</tr>
+<tr>
+<td>
+18 - 24
+</td>
+<td>
+0.48
+</td>
+</tr>
+<tr>
+<td>
+25 - 40
+</td>
+<td>
+0.39
+</td>
+</tr>
+<tr>
+<td>
+41 - 60
+</td>
+<td>
+0.37
+</td>
+</tr>
+<tr>
+<td>
++60
+</td>
+<td>
+0.48
+</td>
+</tr>
+</table>
+<p style="margin-bottom:50px;">
+</p>
+<p>Podemos verificar que, para todas as idades, a variação do BMI por cada 1 hora a mais de exercício físico por semana, é positiva.</p>
+<p>Como é possível?</p>
+<p style="margin-bottom:50px;">
+</p>
+<font size="4" color="DarkGoldenRod"> <b> Paradoxo de Simpson</b></font>
+<p style="margin-bottom:20px;">
+</p>
+<p>Isto é explicado pelo paradoxo de Simpson, por vezes referido nas áreas da epidemiologia e da investigação clinica.</p>
+<p>O paradoxo de Simpson é descrito como “uma tendência que aparece em diferentes grupos mas que desaparece ou é invertida quando os grupos são analisados em conjunto”.</p>
+<p>Aparentemente este fenómeno foi descoberto em 1934 por dois filósofos americanos mas foi apenas em 1951 que o estatístico britânico Edward H. Simpson chamou a atenção para este paradoxo e foi quem observou a sua relação com a inversão da desigualdade acima mencionada.</p>
+<p>No seu livro <em>“Causality”</em>, <strong>Judea Pearl</strong> faz uma afirmação ainda mais poderosa relativamente ao paradoxo de Simpson: “Any statistical relationship between two variables may be reversed by including additional factors in the analysis.” [Pearl2009].</p>
+<p>Porque é que isto é importante? Porque podemos tirar conclusões erradas que levem a decisões igualmente erradas com prováveis impactos negativos na nossa organização.</p>
+<p>E para ficarem descansados, ou não, isto não acontece apenas em dados simulados. Existem muitas situações reais onde se verifica precisamente esta situação.</p>
+<p style="margin-bottom:50px;">
+</p>
+<font size="4" color="DarkGoldenRod"> <b> Casos reais do paradoxo de Simpson</b></font>
+<p style="margin-bottom:20px;">
+</p>
+<p>Desde o ano 2000 que a <a href="http://www.nytimes.com/2013/04/27/business/economy/wage-disparity-continues-to-grow.html?_r=2&" target="_blank">mediana dos salários nos USA</a> tem aumentado 1% ao ano, ajustado da inflação.</p>
+<p>Mas no mesmo período a mediana dos salários para pessoas que abandonaram a escola precocemente, com a escolaridade obrigatória, com frequência universitária e com licenciaturas, diminuiu! Isto é, em todos os subgrupos por escolaridade, os salários diminuíram.</p>
+<p style="margin-bottom:20px;">
+</p>
+<p>O caso mais conhecido de um exemplo do paradoxo de Simpson aconteceu em 1973 quando a universidade da Califórnia foi processada por descriminação sexual na admissão de alunos. Os números pareciam bastante incriminatórios: 44% dos homens que se candidataram foram aceites mas apenas 35% das mulheres tiveram a mesma sorte.</p>
+<p>Mas quando os investigadores olharam para as evidências, descobriram algo surpreendente: Se fosse feita uma desagregação por departamento, existia um pequeno, mas estatisticamente significativo, enviesamente a favor das mulheres.</p>
+<p>O que aconteceu foi que a mulheres se candidatavam mais aos departamentos de humanidades e os homens aos da ciência e existiam mais candidatos para os departamentos de ciências.</p>
+<p style="margin-bottom:50px;">
+</p>
+<font size="4" color="DarkGoldenRod"> <b>Melhores hospitais para realizar uma cirurgia</b></font>
+<p style="margin-bottom:20px;">
+</p>
+<p>Por último, vou dar um exemplo que podia servir a cada um de nós. Vamos supor que vamos ser operados e queremos escolher o melhor hospital, i.e., o hospital com maior taxa de sucesso em cirurgias.</p>
+<p>O quadro seguinte mostra os dados que recolhemos:</p>
+<img src="figures/unnamed-chunk-5-1.png" width="384" />
+<p style="margin-bottom:20px;">
+</p>
+Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
+<p style="margin-bottom:30px;">
+</p>
+<p><img src="figures/unnamed-chunk-6-1.png" width="576" /></p>
+<p style="margin-bottom:50px;">
+</p>
+<p>Claramente o Hospital B apresenta a melhor taxa de sucesso em cirurgias. Certo? Era esse o hospital que iriamos escolher, certamente.</p>
+<p>Mas nós agora já sabemos mais qualquer coisa, sabemos o que é o paradoxo de Simpson. Só para descargo de consciência vamos analisar a taxa de sucesso por tipo de cirurgia.</p>
+<p>A tabela anterior apresentada, por hospital, quando detalhada por tipo de cirurgia apresenta os seguintes valores:</p>
+<p><img src="figures/unnamed-chunk-7-1.png" width="768" /></p>
+<p style="margin-bottom:20px;">
+</p>
+<p>Tal como fizemos por hospital, vamos verificar a taxa de sucesso por tipo de cirurgia e hospital:</p>
+<p style="margin-bottom:30px;">
+</p>
+<p><img src="figures/unnamed-chunk-8-1.png" width="864" /></p>
+<p style="margin-bottom:50px;">
+</p>
+<p>E esta hem? E agora, qual o hospital que vocês escolhiam?</p>
+<p style="margin-bottom:50px;">
+</p>
+
+
+
+
+                        </div>
+                        
+							  
+		<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+		<a class="a2a_button_facebook"></a>
+		<a class="a2a_button_twitter"></a>
+		<a class="a2a_button_google_plus"></a>
+		<a class="a2a_button_linkedin"></a>
+		<a class="a2a_button_email"></a>
+		</div>
+	  
+                        
+                        <div id="comments">
+                            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'value-from-data';
+    var disqus_identifier = 'http:\/\/value-from-data.com\/blog\/2017\/03\/simpson-paradox\/';
+    var disqus_title = 'Paradoxo de Simpson';
+    var disqus_url = 'http:\/\/value-from-data.com\/blog\/2017\/03\/simpson-paradox\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+                        </div>
+                        
+
+                    </div>
+                    
+
+                    
+
+                    
+
+                    <div class="col-md-3">
+
+                        
+
+                        
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Search</h3>
+    </div>
+
+    <div class="panel-body">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" role="search">
+            <div class="input-group">
+                <input type="search" name="q" results="0" class="form-control" placeholder="Search">
+                <input type="hidden" name="q" value="site:http://value-from-data.com/">
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="panel panel-default sidebar-menu">
+
+    <div class="panel-heading">
+        <h3 class="panel-title">Categories</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="nav nav-pills nav-stacked">
+            
+            <li><a href="http://value-from-data.com/categories/competi%c3%a7%c3%b5es">competições (2)</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/categories/exemplos">exemplos (1)</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/categories/geral">geral (3)</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="panel sidebar-menu">
+    <div class="panel-heading">
+        <h3 class="panel-title">Tags</h3>
+    </div>
+
+    <div class="panel-body">
+        <ul class="tag-cloud">
+            
+            <li><a href="http://value-from-data.com/tags/conceitos"><i class="fa fa-tags"></i> conceitos</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/tags/intelig%c3%aancia-artificial"><i class="fa fa-tags"></i> inteligência-artificial</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/tags/kaggle"><i class="fa fa-tags"></i> kaggle</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/tags/processamento-de-texto"><i class="fa fa-tags"></i> processamento-de-texto</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/tags/regress%c3%a3o"><i class="fa fa-tags"></i> regressão</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/tags/simula%c3%a7%c3%a3o"><i class="fa fa-tags"></i> simulação</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/tags/visualiza%c3%a7%c3%a3o"><i class="fa fa-tags"></i> visualização</a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+                        
+
+                    </div>
+                    
+
+                    
+
+                </div>
+                
+
+            </div>
+            
+        </div>
+        
+
+        <!-- Footer section -->
+<footer>
+  <div class="container">
+  <hr> <br>
+
+    <div class="row">
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; 2017, value-from-data; all rights reserved.</span>
+      </div>
+      <div class="col-md-4 text-center">
+        <ul class="list-inline social-buttons">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/ant%c3%b3nio-cruz-6a2468" target="_blank" title="LinkedIn" class="fa fa-linkedin fa-lg"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//facebook.com/value.from.data.portugal" target="_blank" title="Facebook" class="fa fa-facebook fa-lg"></a></li>
+
+
+
+<li><a href="//twitter.com/antonioacruz" target="_blank" title="Twitter" class="fa fa-twitter fa-lg"></a></li>
+
+
+
+
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline quicklinks">
+          
+            <li><a href="https://github.com/devcows/hugo-universal-theme">Base template from DevCows</a></li>
+          
+            <li><a href="http://www.value-from-data.com/sobremim">Modified by António Cruz</a></li>
+          
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    
+
+    
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-89291403-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="http://value-from-data.com/js/hpneo.gmaps.js"></script>
+<script src="http://value-from-data.com/js/gmaps.init.js"></script>
+<script src="http://value-from-data.com/js/front.js"></script>
+<script src="http://value-from-data.com/js/functions.js"></script>
+<script src="http://value-from-data.com/js/agency.js"></script>
+<script src="http://value-from-data.com/js/add_page.js"></script>
+
+
+<script src="http://value-from-data.com/js/owl.carousel.min.js"></script>
+
+
+  </body>
+</html>

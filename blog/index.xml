@@ -7,8 +7,159 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-pt</language>
     <copyright>Copyright (c) 2017, value-from-data; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 06 Mar 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Mar 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://value-from-data.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Paradoxo de Simpson</title>
+      <link>http://value-from-data.com/blog/2017/03/simpson-paradox/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://value-from-data.com/blog/2017/03/simpson-paradox/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Exercício físico e BMI&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Vamos supor que estamos a tentar perceber a relação entre o número de horas de exercício físico por semana e o BMI (Body Mass Index).&lt;/p&gt;
+&lt;p&gt;Para efeito da nossa análise reunimos os dados de 3000 pessoas, pertencentes a diferentes grupos etários.&lt;/p&gt;
+&lt;p&gt;Vamos visualizar os dados:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Muito bem. Parece que quanto maior for o número de horas de exercício físico que fazemos por semana, menor o BMI, i.e., existe uma relação negativa entre o exercício e o BMI.&lt;/p&gt;
+&lt;p&gt;Podemos inclusive confirmar pela reta de regressão que a cada hora adicional de exercício físico por semana o BMI varia em -0.4358175 pontos.&lt;/p&gt;
+&lt;p&gt;Faz sentido, certo? Quanto mais exercício, menor o BMI.&lt;/p&gt;
+&lt;p&gt;Será que o comportamento é o mesmo se fizermos, para os mesmos dados, esta análise por grupo etário?&lt;/p&gt;
+&lt;p&gt;Vamos visualizar os dados:&lt;/p&gt;
+&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;O quê? A relação agora mudou. Para cada grupo etário o que temos é que o BMI aumenta quando o exercício físico aumenta.&lt;/p&gt;
+&lt;p&gt;Lembro que os dados são exatamente os mesmos da primeira análise que fizemos.&lt;/p&gt;
+&lt;p&gt;Podemos também aqui confirmar, por cada uma das retas de regressão por grupo etário o que acontece ao BMI quando o exercício físico aumenta.&lt;/p&gt;
+&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
+&lt;!-- Fri Mar 31 19:59:36 2017 --&gt;
+&lt;table width=&#34;300&#34;&gt;
+&lt;caption align=&#34;top&#34;&gt;
+Tabela 1: Declive por grupo de idade
+&lt;/caption&gt;
+&lt;tr&gt;
+&lt;th&gt;
+Idade
+&lt;/th&gt;
+&lt;th&gt;
+slope
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+18 - 24
+&lt;/td&gt;
+&lt;td&gt;
+0.48
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+25 - 40
+&lt;/td&gt;
+&lt;td&gt;
+0.39
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+41 - 60
+&lt;/td&gt;
+&lt;td&gt;
+0.37
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
++60
+&lt;/td&gt;
+&lt;td&gt;
+0.48
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Podemos verificar que, para todas as idades, a variação do BMI por cada 1 hora a mais de exercício físico por semana, é positiva.&lt;/p&gt;
+&lt;p&gt;Como é possível?&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Paradoxo de Simpson&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Isto é explicado pelo paradoxo de Simpson, por vezes referido nas áreas da epidemiologia e da investigação clinica.&lt;/p&gt;
+&lt;p&gt;O paradoxo de Simpson é descrito como “uma tendência que aparece em diferentes grupos mas que desaparece ou é invertida quando os grupos são analisados em conjunto”.&lt;/p&gt;
+&lt;p&gt;Aparentemente este fenómeno foi descoberto em 1934 por dois filósofos americanos mas foi apenas em 1951 que o estatístico britânico Edward H. Simpson chamou a atenção para este paradoxo e foi quem observou a sua relação com a inversão da desigualdade acima mencionada.&lt;/p&gt;
+&lt;p&gt;No seu livro &lt;em&gt;“Causality”&lt;/em&gt;, &lt;strong&gt;Judea Pearl&lt;/strong&gt; faz uma afirmação ainda mais poderosa relativamente ao paradoxo de Simpson: “Any statistical relationship between two variables may be reversed by including additional factors in the analysis.” [Pearl2009].&lt;/p&gt;
+&lt;p&gt;Porque é que isto é importante? Porque podemos tirar conclusões erradas que levem a decisões igualmente erradas com prováveis impactos negativos na nossa organização.&lt;/p&gt;
+&lt;p&gt;E para ficarem descansados, ou não, isto não acontece apenas em dados simulados. Existem muitas situações reais onde se verifica precisamente esta situação.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Casos reais do paradoxo de Simpson&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Desde o ano 2000 que a &lt;a href=&#34;http://www.nytimes.com/2013/04/27/business/economy/wage-disparity-continues-to-grow.html?_r=2&amp;&#34; target=&#34;_blank&#34;&gt;mediana dos salários nos USA&lt;/a&gt; tem aumentado 1% ao ano, ajustado da inflação.&lt;/p&gt;
+&lt;p&gt;Mas no mesmo período a mediana dos salários para pessoas que abandonaram a escola precocemente, com a escolaridade obrigatória, com frequência universitária e com licenciaturas, diminuiu! Isto é, em todos os subgrupos por escolaridade, os salários diminuíram.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;O caso mais conhecido de um exemplo do paradoxo de Simpson aconteceu em 1973 quando a universidade da Califórnia foi processada por descriminação sexual na admissão de alunos. Os números pareciam bastante incriminatórios: 44% dos homens que se candidataram foram aceites mas apenas 35% das mulheres tiveram a mesma sorte.&lt;/p&gt;
+&lt;p&gt;Mas quando os investigadores olharam para as evidências, descobriram algo surpreendente: Se fosse feita uma desagregação por departamento, existia um pequeno, mas estatisticamente significativo, enviesamente a favor das mulheres.&lt;/p&gt;
+&lt;p&gt;O que aconteceu foi que a mulheres se candidatavam mais aos departamentos de humanidades e os homens aos da ciência e existiam mais candidatos para os departamentos de ciências.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt;Melhores hospitais para realizar uma cirurgia&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Por último, vou dar um exemplo que podia servir a cada um de nós. Vamos supor que vamos ser operados e queremos escolher o melhor hospital, i.e., o hospital com maior taxa de sucesso em cirurgias.&lt;/p&gt;
+&lt;p&gt;O quadro seguinte mostra os dados que recolhemos:&lt;/p&gt;
+&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;384&#34; /&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
+&lt;p style=&#34;margin-bottom:30px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Claramente o Hospital B apresenta a melhor taxa de sucesso em cirurgias. Certo? Era esse o hospital que iriamos escolher, certamente.&lt;/p&gt;
+&lt;p&gt;Mas nós agora já sabemos mais qualquer coisa, sabemos o que é o paradoxo de Simpson. Só para descargo de consciência vamos analisar a taxa de sucesso por tipo de cirurgia.&lt;/p&gt;
+&lt;p&gt;A tabela anterior apresentada, por hospital, quando detalhada por tipo de cirurgia apresenta os seguintes valores:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Tal como fizemos por hospital, vamos verificar a taxa de sucesso por tipo de cirurgia e hospital:&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:30px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;E esta hem? E agora, qual o hospital que vocês escolhiam?&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
     
     <item>
       <title>Quais os artigos do blog do New York Times blog que serão mais populares?</title>
