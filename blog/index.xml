@@ -11,6 +11,139 @@
     <atom:link href="http://value-from-data.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>A teoria dos grafos e a contratação pública</title>
+      <link>http://value-from-data.com/blog/2017/03/teoria-grafos/</link>
+      <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://value-from-data.com/blog/2017/03/teoria-grafos/</guid>
+      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
+
+/BLOGDOWN-BODY-BEFORE --&gt;
+
+&lt;div id=&#34;bg&#34;&gt;
+&lt;p&gt;&lt;img align=&#34;left&#34; style=&#34;width:13%;height:13%;margin:20px 30px&#34; src=&#34;../../../../img/banners/graph.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;O &lt;strong&gt;BASE&lt;/strong&gt; é um portal na internet assegurado pelo &lt;strong&gt;Instituto da Construção e do Imobiliário (InCI)&lt;/strong&gt;, dedicado aos contratos públicos, que agrega informação sobre a contratação pública e dá cumprimento ao &lt;strong&gt;código dos contratos públicos (CCP)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;As bases de dados ligadas ao portal são alimentadas, permanentemente, pela informação transmitida a partir do &lt;strong&gt;Diário da República Eletrónico&lt;/strong&gt;, das plataformas eletrónicas de contratação pública e das entidades adjudicantes.&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;BASE&lt;/strong&gt; constitui, do meu ponto de vista, uma excelente iniciativa e instrumento para todos nós, nomeadamente para a transparência e conhecimento da administração pública. Foi do &lt;strong&gt;BASE&lt;/strong&gt; que foi extraída a informação principal para a análise do presente artigo.&lt;/p&gt;
+&lt;p&gt;Poderão consultar o portal em &lt;a href=&#34;http://www.base.gov.pt/Base/pt/Homepage&#34; target=&#34;_blank&#34;&gt; Base: Contratos públicos online&lt;/a&gt; e podem também consultar &lt;a href=&#34;http://www.base.gov.pt/Base/pt/Pesquisa/Contrato?a=3258852&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; um exemplo da informação típica de um contrato (escolha do exemplo foi totalmente aleatória).&lt;/p&gt;
+&lt;p&gt;Este será o primeiro artigo com base em dados públicos do portal &lt;strong&gt;BASE&lt;/strong&gt;, mas conto no futuro fazer outras análises, pois considero que existe uma grande riqueza e potencial nos dados recolhidos e disponibilizados.&lt;/p&gt;
+&lt;p&gt;O portal disponibiliza relatórios sobre a contratação pública, nomeadamente sínteses mensais e relatórios anuais que poderão consultar &lt;a href=&#34;http://www.base.gov.pt/Base/pt/Relatorios&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;. Estes relatórios são bastante detalhados e exaustivos.&lt;/p&gt;
+&lt;p&gt;A minha perspetiva é analisar os dados de forma diferente e que possa complementar e acrescentar valor aos estudos já efetuados.&lt;/p&gt;
+&lt;p&gt;O objetivo é demonstrar como poderemos retirar valor dos dados utilizando ferramentas e técnicas que acrescentam valor e não focar nos dados especificos do cliente A ou fornecedor B (apesar do cuidado no processamento das transformações efetuadas, poderão existir erros).&lt;/p&gt;
+&lt;p&gt;Alguns pontos relevantes para a presente e futuras análises:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Os contratos possuem duas datas relevantes: a data de comunicação e a data de contratualização;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Em alguns casos o contrato é comunicado depois de passado mais de um ano da sua celebração;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Dos dois pontos anteriores resulta que a análise dos contratos num determinado período temporal nunca está fechada pois ainda poderá vir a ser comunicado um contrato relativo ao período analisado. Por exemplo, se estivermos hoje a analisar os contratos celebrados em 2016 e voltarmos a repetir essa análise daqui a um mês, os valores serão diferentes porque foram, entretanto, comunicados mais contratos para esse período;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Os dados reportam-se a contratos e não a custos (numa ótica patrimonial) ou cabimentos e compromissos do ano (numa ótica orçamental). Isto tem claramente implicações em analises que comparam anos ou períodos temporais pois em contratos relacionados com grandes investimentos (construção ou grandes projetos de consultoria e TI), pode ter sido realizado em 2015 um contrato de grande valor mas que tem uma duração estimada de, por exemplo, 3 anos. Essa entidade, provavelmente, não terá contratos do mesmo tipo em 2016.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Os dados que constam da presente análise reportam-se aos contratos comunicados até às 19h do dia 18 de abril de 2017 e apenas incluem os &lt;strong&gt;contratos celebrados em 2016&lt;/strong&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Os dados, depois de extraídos, foram transformados para corrigir algumas situações relevantes para as análises, nomeadamente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Consolidação do nome das entidades. Várias entidades, nomeadamente fornecedores, existem no portal com diferentes nomes, i.e., para o mesmo NIF o fornecedor aparece em diferentes contratos com nomes diferentes. Como exemplo temos “Agencia Abreu”, “AGÊNCIA ABREU - VIAGENS ABREU, S.A.”, “Agência Abreu, S. A.”, etc;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adicionalmente foram utilizadas outras fontes de informação públicas, nomeadamente:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Vocabulário publico para os contratos públicos. A informação foi retirada &lt;a href=&#34;hhttps://view.officeapps.live.com/op/view.aspx?src=http://www.novaid.fct.unl.pt/sites/www.novaid.fct.unl.pt/files/Contratacao/CPV_2008-ESPAP.xls&#34; target=&#34;_blank&#34;&gt;daqui&lt;/a&gt;;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Listagem de entidades públicas, de forma a normalizar o nome das mesmas, informação extraída das listagens de entidades para fins estatísticos do &lt;strong&gt;Banco de Portugal&lt;/strong&gt; - SEC2010 (consultar &lt;a href=&#34;https://www.bportugal.pt/page/lista-de-entidades-para-fins-estatisticos&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Com base na informação anterior, foram classificados os organismos em função do detentor e setor da entidade (se é administração central, local ou regional, por exemplo). Infelizmente ficaram de fora muitos organismos, nomeadamente escolas e agrupamento de escolas, que não constavam das listagens do &lt;strong&gt;Banco de Portugal&lt;/strong&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Conceitos da teoria dos grafos&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Não pretendo cansar-vos com conceitos teóricos e exaustivos, mas julgo ser relevante esclarecer alguns conceitos básicos que ajudam a analisar as dinâmicas em grafos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Um grafo possuiu dois objetos distintos: vértices (ou nós) e arestas (ou arcos);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Uma aresta liga dois vértices e podemos concetualiza-las como estradas que ligam cidades;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Nesta análise os vértices são entidades (clientes e fornecedores) e as arestas são relações contratuais entre duas entidades (se existiu um contrato). As arestas são definidas pela soma do valor contratual dos contratos celebrados em 2016. Assim, se existe uma aresta entre duas entidades é porque ocorreu pelo menos um contrato, em 2016, entre essas duas entidades;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Um dos objetivos fundamentais do &lt;strong&gt;SNA&lt;/strong&gt; (“Social network analysis”) é identificar os vértices centrais de um grafo. A questão que se coloca é como se mede essa centralidade. O que significa ser central num grafo? Existem várias formas, mas irei apenas focar na centralidade baseada no grau;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;O &lt;strong&gt;grau&lt;/strong&gt; define o número de arestas ligadas ao vértice. No nosso caso, o grau define o número de relações (leia-se entidades) que estabeleceram contratos com a entidade em análise. Por exemplo, se uma determinada entidade tiver um grau de 10, isso significa que estabeleceu contratos em 2016 com 10 entidades;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Para efeitos de medição de centralidade, um “ator” central no grafo é aquele que tem muitas conexões;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;PageRank: algoritmo da Google para classificar o valor das páginas. A Google interpreta uma ligação do vértice A para o B como um voto. Mas, adicionalmente, valoriza esse voto de forma diferenciada, i.e., analisa a importância do vértice que “vota”. Assim, “votos” de vértices importantes pesam mais que outros vértices.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt;Da teoria à prática&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Passando da teoria à prática irei analisar duas divisões do vocabulário público para os contratos públicos, a saber:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Serviços de finanças e seguros - 669 entidades (vertices);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Serviços de saúde e acção social - 1785 entidades (vertices).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para vos ajudar, deixo aqui algumas dicas para quando estiverem a consultar os grafos:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;com o cursor em cima do grafo, rodando a roda do rato, fazem &lt;em&gt;zoom&lt;/em&gt; sobre o grafo;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;o tamanho dos vertices (entidades) representam o valor relativo dos contratos celebrados por essa entidade em 2016;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;a largura das arestas representa o valor relativo dos contratos celebrados entre as entidades que estão na ponta dessa aresta;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ao passarem o cursor por cima de um vértice ou entidade, podem ver informação detalhada sobre o objeto, nomeadamente nº e valor dos contratos celebrados;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;se clicarem num vértice (entidade), todos os outros vértices e arestas para além do segundo nível de ligação a esse vértice, ficam cinzentos (para melhor visualização);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;se clicarem no botão esquerdo do rato num espaço em branco do grafo e, sem deixar de clicar, arrastarem o rato, todos as arestas desaparecem o que permite visualizar melhor a entidades e o seu peso relativo em termos de valor de contrato;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;no canto superior esquerdo podem selecionar o tipo de entidade e ver onde elas estão no grafo;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;por vezes o algoritmo de desenho deixa alguns vértices sobrepostos. Poderão sempre tentar corrigir esta situação clicando num vértice, e sem deixar de clicar, arrastar o vértice para outro local;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;procurem entidades que liguem dois clusters (agrupamentos) de entidades;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;procurem entidades afastadas, com poucas ligações, e valores significativos (representam normalmente situações muito especificas);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;procurem clusters (agrupamentos) afastados do centro (por vezes apresentam especificidades geográficas ou de negócio);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;procurem centros de agrupamentos que são fornecedores (um fornecedor com muitos clientes), o que poderá significar um poder negocial forte do fornecedor;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;procurem centros de agrupamentos que são clientes (um cliente com muitos fornecedores), o que poderá significar um poder negocial forte do cliente.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Antes de vos desejar uma boa caçada, peço que tenham paciência quando a página do grafo for carregada. Dependendo da vossa ligação à net e das capacidades gráficas do vosso PC, pode demorar algum tempo a fazer o &lt;em&gt;rendering &lt;/em&gt; da página (de qualquer forma, não espero que demore mais de 2 a 4 segundos).&lt;/p&gt;
+&lt;p&gt;Boa caçada.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Grafos, finalmente. &lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/network1&#34; width=&#34;1200&#34; height=&#34;650&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/network2&#34; width=&#34;1200&#34; height=&#34;650&#34; frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;Como podem verificar, consegue-se perceber facilmente pelas cores dos vértices qual o setor onde os fornecedores possuem mais poder.&lt;/p&gt;
+&lt;p&gt;Os fornecedores dos bens e serviços são os vértices amarelos e no caso dos serviços de finanças e seguros são o centro dos pequenos &lt;em&gt;clusters&lt;/em&gt; que se formaram (com a exceção do Instituto de Gestão Financeira da Segurança Social).&lt;/p&gt;
+&lt;p&gt;No caso dos serviços de saúde e ação social, as entidades que não são fornecedores são o centro dos pequenos &lt;em&gt;clusters&lt;/em&gt; que se formaram.&lt;/p&gt;
+&lt;p&gt;Calculando a centralidade global dos grafos baseadas no grau, temos um valor de 0.1247 para os serviços de finanças e seguros e um valor de 0.0618 para os serviços de saúde e ação social.&lt;/p&gt;
+&lt;p&gt;Este valor de centralidade varia entre 0 e 1 e ele é tanto maior quanto um vértice tem o maior grau possível (nº de vértices menos 1) e os restantes vértices possuem o menor grau possível.&lt;/p&gt;
+&lt;p&gt;Com base no grau, a centralidade do grafo relativo aos serviços de finanças e seguros é o dobro da dos serviços de saúde e ação social.&lt;/p&gt;
+&lt;p&gt;Podemos também verificar que quando comparamos as entidades individualmente com base no seu pageRank, para os dois grafos, a dos serviços de finanças e seguros é constituída por fornecedores e a dos serviços de saúde e ação social é por clientes.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/teoria-grafos_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;#####../content/blog/teoria-grafos_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Conclusões&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Os grafos são excelentes ferramentas para analisar dinâmicas entre entidades ou objetos, onde o número e complexidade das relações é elevada.&lt;/p&gt;
+&lt;p&gt;Para além dos exemplos dados, eles poderão ser utilizados para analisar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;a dinâmica das redes sociais;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ajudar na gestão dos recursos humanos (é relativamente fácil medir os emails entre pessoas numa organização e perceber a centralidade e desempenho dos trabalhadores);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;trafego em redes de computadores para otimização da distribuição de carga e localização dos dados;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;em gestão de projetos, considerando as tarefas como vértices;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;atividades desportivas de grupo, considerando os jogadores como vértices e os passes entre eles como arestas;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;análise macroeconómica em que os vértices são setores da economia e as arestas fluxos monetários entre eles;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;na saúde em que os vértices são doentes e médicos (ou especialidades, ou outros recursos).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Espero que tenham achado o artigo interessante e se tiverem sugestões ou comentários a fazer, não hesitem.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+
+
+
+&lt;!-- BLOGDOWN-HEAD
+
+
+
+
+
+
+/BLOGDOWN-HEAD --&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Paradoxo de Simpson</title>
       <link>http://value-from-data.com/blog/2017/03/simpson-paradox/</link>
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
