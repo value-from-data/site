@@ -22,7 +22,7 @@
 &lt;div id=&#34;bg&#34;&gt;
 &lt;p&gt;&lt;img align=&#34;left&#34; style=&#34;width:13%;height:13%;margin:20px 30px&#34; src=&#34;../../../../img/banners/graph.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/div&gt;
-&lt;p&gt;O &lt;strong&gt;BASE&lt;/strong&gt; é um portal na internet assegurado pelo &lt;strong&gt;Instituto da Construção e do Imobiliário (InCI)&lt;/strong&gt;, dedicado aos contratos públicos, que agrega informação sobre a contratação pública e dá cumprimento ao &lt;strong&gt;código dos contratos públicos (CCP)&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;O &lt;strong&gt;BASE&lt;/strong&gt; é um portal na internet assegurado pelo &lt;strong&gt;Instituto dos Mercados Públicos do Imobiliário e da Construção (IMPIC)&lt;/strong&gt;, dedicado aos contratos públicos, que agrega informação sobre a contratação pública e dá cumprimento ao &lt;strong&gt;código dos contratos públicos (CCP)&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;As bases de dados ligadas ao portal são alimentadas, permanentemente, pela informação transmitida a partir do &lt;strong&gt;Diário da República Eletrónico&lt;/strong&gt;, das plataformas eletrónicas de contratação pública e das entidades adjudicantes.&lt;/p&gt;
 &lt;p&gt;O &lt;strong&gt;BASE&lt;/strong&gt; constitui, do meu ponto de vista, uma excelente iniciativa e instrumento para todos nós, nomeadamente para a transparência e conhecimento da administração pública. Foi do &lt;strong&gt;BASE&lt;/strong&gt; que foi extraída a informação principal para a análise do presente artigo.&lt;/p&gt;
 &lt;p&gt;Poderão consultar o portal em &lt;a href=&#34;http://www.base.gov.pt/Base/pt/Homepage&#34; target=&#34;_blank&#34;&gt; Base: Contratos públicos online&lt;/a&gt; e podem também consultar &lt;a href=&#34;http://www.base.gov.pt/Base/pt/Pesquisa/Contrato?a=3258852&#34; target=&#34;_blank&#34;&gt;aqui&lt;/a&gt; um exemplo da informação típica de um contrato (escolha do exemplo foi totalmente aleatória).&lt;/p&gt;
@@ -39,7 +39,10 @@
 &lt;li&gt;&lt;p&gt;Os dados que constam da presente análise reportam-se aos contratos comunicados até às 19h do dia 18 de abril de 2017 e apenas incluem os &lt;strong&gt;contratos celebrados em 2016&lt;/strong&gt;;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Os dados, depois de extraídos, foram transformados para corrigir algumas situações relevantes para as análises, nomeadamente:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Consolidação do nome das entidades. Várias entidades, nomeadamente fornecedores, existem no portal com diferentes nomes, i.e., para o mesmo NIF o fornecedor aparece em diferentes contratos com nomes diferentes. Como exemplo temos “Agencia Abreu”, “AGÊNCIA ABREU - VIAGENS ABREU, S.A.”, “Agência Abreu, S. A.”, etc;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Consolidação do nome das entidades. Várias entidades, nomeadamente fornecedores, existem no portal com diferentes nomes, i.e., para o mesmo NIF o fornecedor aparece em diferentes contratos com nomes diferentes. Como exemplo temos “Agencia Abreu”, “AGÊNCIA ABREU - VIAGENS ABREU, S.A.”, “Agência Abreu, S. A.”, etc;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Existiam contratos cujo adjudicante (cliente), não estava identificado. Esses contratos foram removidos;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Em alguns contratos existem duas ou mais entidades adjudicantes (clientes). Nestas situações, o valor atribuido a cada cliente é igual ao valor do contrato a dividir pelo número de clientes;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Em alguns contratos existem duas ou mais entidades adjudicatárias (fornecedores). Nestas situações, o valor atribuido a cada fornecedor é igual ao valor do contrato a dividir pelo número de fornecedores;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Adicionalmente foram utilizadas outras fontes de informação públicas, nomeadamente:&lt;/p&gt;
@@ -96,9 +99,9 @@
 &lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Grafos, finalmente. &lt;/b&gt;&lt;/font&gt;
 &lt;p style=&#34;margin-bottom:20px;&#34;&gt;
 &lt;/p&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/network1&#34; width=&#34;1200&#34; height=&#34;650&#34; frameborder=&#34;0&#34;&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/network1&#34; width=&#34;1300&#34; height=&#34;800&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
-&lt;iframe src=&#34;../../../../htmlwidget/network2&#34; width=&#34;1200&#34; height=&#34;650&#34; frameborder=&#34;0&#34;&gt;
+&lt;iframe src=&#34;../../../../htmlwidget/network2&#34; width=&#34;1300&#34; height=&#34;800&#34; frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;p&gt;Como podem verificar, consegue-se perceber facilmente pelas cores dos vértices qual o setor onde os fornecedores possuem mais poder.&lt;/p&gt;
 &lt;p&gt;Os fornecedores dos bens e serviços são os vértices amarelos e no caso dos serviços de finanças e seguros são o centro dos pequenos &lt;em&gt;clusters&lt;/em&gt; que se formaram (com a exceção do Instituto de Gestão Financeira da Segurança Social).&lt;/p&gt;

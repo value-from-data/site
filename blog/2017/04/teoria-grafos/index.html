@@ -180,7 +180,7 @@
 <div id="bg">
 <p><img align="left" style="width:13%;height:13%;margin:20px 30px" src="../../../../img/banners/graph.png" alt=""></p>
 </div>
-<p>O <strong>BASE</strong> é um portal na internet assegurado pelo <strong>Instituto da Construção e do Imobiliário (InCI)</strong>, dedicado aos contratos públicos, que agrega informação sobre a contratação pública e dá cumprimento ao <strong>código dos contratos públicos (CCP)</strong>.</p>
+<p>O <strong>BASE</strong> é um portal na internet assegurado pelo <strong>Instituto dos Mercados Públicos do Imobiliário e da Construção (IMPIC)</strong>, dedicado aos contratos públicos, que agrega informação sobre a contratação pública e dá cumprimento ao <strong>código dos contratos públicos (CCP)</strong>.</p>
 <p>As bases de dados ligadas ao portal são alimentadas, permanentemente, pela informação transmitida a partir do <strong>Diário da República Eletrónico</strong>, das plataformas eletrónicas de contratação pública e das entidades adjudicantes.</p>
 <p>O <strong>BASE</strong> constitui, do meu ponto de vista, uma excelente iniciativa e instrumento para todos nós, nomeadamente para a transparência e conhecimento da administração pública. Foi do <strong>BASE</strong> que foi extraída a informação principal para a análise do presente artigo.</p>
 <p>Poderão consultar o portal em <a href="http://www.base.gov.pt/Base/pt/Homepage" target="_blank"> Base: Contratos públicos online</a> e podem também consultar <a href="http://www.base.gov.pt/Base/pt/Pesquisa/Contrato?a=3258852" target="_blank">aqui</a> um exemplo da informação típica de um contrato (escolha do exemplo foi totalmente aleatória).</p>
@@ -197,7 +197,10 @@
 <li><p>Os dados que constam da presente análise reportam-se aos contratos comunicados até às 19h do dia 18 de abril de 2017 e apenas incluem os <strong>contratos celebrados em 2016</strong>;</p></li>
 <li><p>Os dados, depois de extraídos, foram transformados para corrigir algumas situações relevantes para as análises, nomeadamente:</p>
 <ul>
-<li>Consolidação do nome das entidades. Várias entidades, nomeadamente fornecedores, existem no portal com diferentes nomes, i.e., para o mesmo NIF o fornecedor aparece em diferentes contratos com nomes diferentes. Como exemplo temos “Agencia Abreu”, “AGÊNCIA ABREU - VIAGENS ABREU, S.A.”, “Agência Abreu, S. A.”, etc;</li>
+<li><p>Consolidação do nome das entidades. Várias entidades, nomeadamente fornecedores, existem no portal com diferentes nomes, i.e., para o mesmo NIF o fornecedor aparece em diferentes contratos com nomes diferentes. Como exemplo temos “Agencia Abreu”, “AGÊNCIA ABREU - VIAGENS ABREU, S.A.”, “Agência Abreu, S. A.”, etc;</p></li>
+<li><p>Existiam contratos cujo adjudicante (cliente), não estava identificado. Esses contratos foram removidos;</p></li>
+<li><p>Em alguns contratos existem duas ou mais entidades adjudicantes (clientes). Nestas situações, o valor atribuido a cada cliente é igual ao valor do contrato a dividir pelo número de clientes;</p></li>
+<li><p>Em alguns contratos existem duas ou mais entidades adjudicatárias (fornecedores). Nestas situações, o valor atribuido a cada fornecedor é igual ao valor do contrato a dividir pelo número de fornecedores;</p></li>
 </ul></li>
 </ul>
 <p>Adicionalmente foram utilizadas outras fontes de informação públicas, nomeadamente:</p>
@@ -254,9 +257,9 @@
 <font size="4" color="DarkGoldenRod"> <b> Grafos, finalmente. </b></font>
 <p style="margin-bottom:20px;">
 </p>
-<iframe src="../../../../htmlwidget/network1" width="1200" height="650" frameborder="0">
+<iframe src="../../../../htmlwidget/network1" width="1300" height="800" frameborder="0">
 </iframe>
-<iframe src="../../../../htmlwidget/network2" width="1200" height="650" frameborder="0">
+<iframe src="../../../../htmlwidget/network2" width="1300" height="800" frameborder="0">
 </iframe>
 <p>Como podem verificar, consegue-se perceber facilmente pelas cores dos vértices qual o setor onde os fornecedores possuem mais poder.</p>
 <p>Os fornecedores dos bens e serviços são os vértices amarelos e no caso dos serviços de finanças e seguros são o centro dos pequenos <em>clusters</em> que se formaram (com a exceção do Instituto de Gestão Financeira da Segurança Social).</p>
