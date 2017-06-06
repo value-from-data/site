@@ -15,11 +15,7 @@
       <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/04/teoria-grafos/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;div id=&#34;bg&#34;&gt;
+      <description>&lt;div id=&#34;bg&#34;&gt;
 &lt;p&gt;&lt;img align=&#34;left&#34; style=&#34;width:13%;height:13%;margin:20px 30px&#34; src=&#34;../../../../img/banners/graph.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;O &lt;strong&gt;BASE&lt;/strong&gt; é um portal na internet assegurado pelo &lt;strong&gt;Instituto dos Mercados Públicos do Imobiliário e da Construção (IMPIC)&lt;/strong&gt;, dedicado aos contratos públicos, que agrega informação sobre a contratação pública e dá cumprimento ao &lt;strong&gt;código dos contratos públicos (CCP)&lt;/strong&gt;.&lt;/p&gt;
@@ -110,8 +106,8 @@
 &lt;p&gt;Este valor de centralidade varia entre 0 e 1 e ele é tanto maior quanto um vértice tem o maior grau possível (nº de vértices menos 1) e os restantes vértices possuem o menor grau possível.&lt;/p&gt;
 &lt;p&gt;Com base no grau, a centralidade do grafo relativo aos serviços de finanças e seguros é o dobro da dos serviços de saúde e ação social.&lt;/p&gt;
 &lt;p&gt;Podemos também verificar que quando comparamos as entidades individualmente com base no seu pageRank, para os dois grafos, a dos serviços de finanças e seguros é constituída por fornecedores e a dos serviços de saúde e ação social é por clientes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/teoria-grafos_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/teoria-grafos_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/teoria-grafos_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/teoria-grafos_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Conclusões&lt;/b&gt;&lt;/font&gt;
@@ -131,17 +127,6 @@
 &lt;p&gt;Espero que tenham achado o artigo interessante e se tiverem sugestões ou comentários a fazer, não hesitem.&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -151,11 +136,7 @@
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/03/simpson-paradox/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+      <description>&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Exercício físico e BMI&lt;/b&gt;&lt;/font&gt;
 &lt;p style=&#34;margin-bottom:20px;&#34;&gt;
@@ -163,7 +144,7 @@
 &lt;p&gt;Vamos supor que estamos a tentar perceber a relação entre o número de horas de exercício físico por semana e o BMI (Body Mass Index).&lt;/p&gt;
 &lt;p&gt;Para efeito da nossa análise reunimos os dados de 3000 pessoas, pertencentes a diferentes grupos etários.&lt;/p&gt;
 &lt;p&gt;Vamos visualizar os dados:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/simpson-paradox_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;Muito bem. Parece que quanto maior for o número de horas de exercício físico que fazemos por semana, menor o BMI, i.e., existe uma relação negativa entre o exercício e o BMI.&lt;/p&gt;
@@ -171,14 +152,14 @@
 &lt;p&gt;Faz sentido, certo? Quanto mais exercício, menor o BMI.&lt;/p&gt;
 &lt;p&gt;Será que o comportamento é o mesmo se fizermos, para os mesmos dados, esta análise por grupo etário?&lt;/p&gt;
 &lt;p&gt;Vamos visualizar os dados:&lt;/p&gt;
-&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;img src=&#34;../../blog/simpson-paradox_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;864&#34; /&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;O quê? A relação agora mudou. Para cada grupo etário o que temos é que o BMI aumenta quando o exercício físico aumenta.&lt;/p&gt;
 &lt;p&gt;Lembro que os dados são exatamente os mesmos da primeira análise que fizemos.&lt;/p&gt;
 &lt;p&gt;Podemos também aqui confirmar, por cada uma das retas de regressão por grupo etário o que acontece ao BMI quando o exercício físico aumenta.&lt;/p&gt;
-&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
-&lt;!-- Fri Mar 31 19:59:36 2017 --&gt;
+&lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
+&lt;!-- Tue Jun 06 10:28:32 2017 --&gt;
 &lt;table width=&#34;300&#34;&gt;
 &lt;caption align=&#34;top&#34;&gt;
 Tabela 1: Declive por grupo de idade
@@ -258,41 +239,30 @@ slope
 &lt;/p&gt;
 &lt;p&gt;Por último, vou dar um exemplo que podia servir a cada um de nós. Vamos supor que vamos ser operados e queremos escolher o melhor hospital, i.e., o hospital com maior taxa de sucesso em cirurgias.&lt;/p&gt;
 &lt;p&gt;O quadro seguinte mostra os dados que recolhemos:&lt;/p&gt;
-&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;384&#34; /&gt;
+&lt;img src=&#34;../../blog/simpson-paradox_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;384&#34; /&gt;
 &lt;p style=&#34;margin-bottom:20px;&#34;&gt;
 &lt;/p&gt;
 Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
 &lt;p style=&#34;margin-bottom:30px;&#34;&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/simpson-paradox_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;Claramente o Hospital B apresenta a melhor taxa de sucesso em cirurgias. Certo? Era esse o hospital que iriamos escolher, certamente.&lt;/p&gt;
 &lt;p&gt;Mas nós agora já sabemos mais qualquer coisa, sabemos o que é o paradoxo de Simpson. Só para descargo de consciência vamos analisar a taxa de sucesso por tipo de cirurgia.&lt;/p&gt;
 &lt;p&gt;A tabela anterior apresentada, por hospital, quando detalhada por tipo de cirurgia apresenta os seguintes valores:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/simpson-paradox_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:20px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;Tal como fizemos por hospital, vamos verificar a taxa de sucesso por tipo de cirurgia e hospital:&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:30px;&#34;&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/simpson-paradox_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;E esta hem? E agora, qual o hospital que vocês escolhiam?&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -302,11 +272,7 @@ Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
       <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/02/anscombe_quartets/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;Quando temos de analisar dados e tentar extrair conhecimento, depois de obviamente os recolher e importar, das primeiras coisas que fazemos é efetuar um sumário com as informações mais relevantes.&lt;/p&gt;
+      <description>&lt;p&gt;Quando temos de analisar dados e tentar extrair conhecimento, depois de obviamente os recolher e importar, das primeiras coisas que fazemos é efetuar um sumário com as informações mais relevantes.&lt;/p&gt;
 &lt;p&gt;Nesses sumários é muito comum elaborarmos estatísticas que representem a centralidade e dispersão dos dados, características fundamentais para a compreensão dos mesmos e ponto de partida para posteriores análises.&lt;/p&gt;
 &lt;p&gt;Mas por vezes esses sumários são enganadores e podem levar a conclusões ou ilações que não representam a realidade.&lt;/p&gt;
 &lt;p&gt;Para exemplificar esta questão, vamos supor que eu estou a analisar um conjunto de entidades e quero perceber se existem diferenças entre elas. Podem ser, por exemplo, comparar alunos com base em notas de diferentes disciplinas, países com base em diferentes variáveis macroeconómicas ou produtos com base nos dados de vendas. Vocês percebem a ideia.&lt;/p&gt;
@@ -321,14 +287,14 @@ Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
 &lt;p&gt;Como este negócio é muito concorrencial, o preço pode ter variado no mesmo dia, ou pode ter acontecido alguma promoção ou desconto em função de uma data especifica.&lt;/p&gt;
 &lt;p&gt;O quadro seguinte apresenta quantidade e valor das vendas para 11 meses e cada um dos produtos.&lt;/p&gt;
 &lt;p&gt;Mas tenham presente que neste exemplo académico são muito poucos dados, mas numa situação real temos milhares de registos e se calhar dezenas de produtos ou variaveis o que impossibilitaria retirar qualquer informação sem a prévia sumarização dos mesmos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/anscombe_quartets_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;816&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/anscombe_quartets_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;816&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Vamos então fazer uma sumarização dos dados utilizando as métricas mais usuais, começando com a média e desvio padrão das quantidades e valores mensais, para os quatro produtos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/anscombe_quartets_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/anscombe_quartets_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Podemos verificar pela sumarização dos dados que os 4 produtos obtêm resultados idênticos para o período dos 11 meses em análise.&lt;/p&gt;
 &lt;p&gt;Em media vendemos 9 unidades e um valor de 7.5€ por mês (sim eu sei. Com estas quantidades e valores mais vale criar outro negócio).&lt;/p&gt;
 &lt;p&gt;Mas vamos aprofundar a nossa análise. Vamos tentar perceber qual a correlação entre a quantidade e valor para cada um dos produtos vendidos.&lt;/p&gt;
-&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
-&lt;!-- Thu Mar 09 17:34:26 2017 --&gt;
+&lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
+&lt;!-- Tue Jun 06 10:27:52 2017 --&gt;
 &lt;table width=&#34;300&#34;&gt;
 &lt;caption align=&#34;top&#34;&gt;
 Tabela 3: Correlação entre quantidade e valor
@@ -377,8 +343,8 @@ Tosta mista
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Mais uma vez os dados mostram que os quatro produtos são idênticos. Mas também podemos perceber que o valor não depende exclusivamente da quantidade vendida.&lt;/p&gt;
 &lt;p&gt;Mas como ainda não estamos satisfeitos, vamos criar uma regressão linear em que a variável explicada ou dependente é o valor das vendas e a variável explicativa ou independente é a quantidade vendida, i.e., vamos tentar perceber em que medida a quantidade explica o valor das vendas.&lt;/p&gt;
-&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
-&lt;!-- Thu Mar 09 17:34:26 2017 --&gt;
+&lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
+&lt;!-- Tue Jun 06 10:27:53 2017 --&gt;
 &lt;table width=&#34;300&#34;&gt;
 &lt;caption align=&#34;top&#34;&gt;
 Tabela 4: Regressão linear
@@ -459,7 +425,7 @@ Tosta mista
 &lt;p&gt;Concluindo, se olharmos para a média, desvio padrão, correlação entre quantidade e valor, e um modelo de regressão que explica o valor em função da quantidade, os produtos são iguais.&lt;/p&gt;
 &lt;p&gt;Mas serão mesmo?&lt;/p&gt;
 &lt;p&gt;Vamos então visualizar os dados que estão na base destes cálculos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/anscombe_quartets_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/anscombe_quartets_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt; &lt;br&gt; Afinal, vender bifanas, pregos, hambúrgueres ou tostas mistas, não é a mesma coisa.&lt;/p&gt;
 &lt;p&gt;Podemos ver que a relação é de facto linear para a Bifana. O mesmo acontece com os Hambúrgueres, mas neste caso especifico temos um mês que é um &lt;a href=&#34;https://pt.wikipedia.org/wiki/Outlier&#34; target=&#34;_blank&#34;&gt;outlier&lt;/a&gt; e que cria uma variabilidade na relação entre quantidade e preço que não existe nos restantes meses. Talvez naquele mês tenha existido um conjunto de atividades culturais realizadas a horas pouco comuns o que nos permitiu praticar um preço acima do normal e como tal faturar mais com a mesma quantidade. Mas, se calhar, esse mês já não se vai repetir.&lt;/p&gt;
 &lt;p&gt;No caso dos pregos o que aconteceu é curioso: porque a partir de determinada quantidade vendida o valor faturado começa a descer. Talvez tenha sido necessário baixar os preços porque as pessoas deixaram de comer tantos pregos !!&lt;/p&gt;
@@ -468,28 +434,6 @@ Tosta mista
 &lt;p&gt;Esta análise ou principio é conhecido como &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34; target=&#34;_blank&#34;&gt;Anscombe’s quartet&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Este exemplo pretende apenas chamar a atenção para a importância da visualização dos dados em qualquer análise e o cuidado que é necessário ter antes de tirarmos conclusões e tomarmos decisões com base nos dados.&lt;/p&gt;
 &lt;p&gt;Os números também enganam e o que nós, certamente, não queremos é tomarmos uma decisão que terá um impacto relevante no futuro, com base em informação que não representa a realidade.&lt;/p&gt;
-
-
-&lt;!-- dynamically load mathjax for compatibility with self-contained --&gt;
-&lt;script&gt;
-  (function () {
-    var script = document.createElement(&#34;script&#34;);
-    script.type = &#34;text/javascript&#34;;
-    script.src  = &#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;;
-    if (location.protocol !== &#34;file:&#34; &amp;&amp; /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, &#39;&#39;);
-    document.getElementsByTagName(&#34;head&#34;)[0].appendChild(script);
-  })();
-&lt;/script&gt;
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -499,11 +443,7 @@ Tosta mista
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/inteligencia-artificial/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;&lt;em&gt;Andrew Ng&lt;/em&gt; (VP &amp;amp; Chief Scientist of Baidu; Co-Chairman and Co-Founder of Coursera; Adjunct Professor at Stanford University) um dos mais reputados especialistas em &lt;strong&gt;Inteligência Artificial&lt;/strong&gt; disse em Maio de 2016 que, “A inteligência artificial é a nova eletricidade! A eletricidade transformou incontáveis industrias; a &lt;strong&gt;IA&lt;/strong&gt; vai fazer o mesmo.”&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;Andrew Ng&lt;/em&gt; (VP &amp;amp; Chief Scientist of Baidu; Co-Chairman and Co-Founder of Coursera; Adjunct Professor at Stanford University) um dos mais reputados especialistas em &lt;strong&gt;Inteligência Artificial&lt;/strong&gt; disse em Maio de 2016 que, “A inteligência artificial é a nova eletricidade! A eletricidade transformou incontáveis industrias; a &lt;strong&gt;IA&lt;/strong&gt; vai fazer o mesmo.”&lt;/p&gt;
 &lt;p&gt;A &lt;strong&gt;Inteligência Artificial (IA)&lt;/strong&gt; pode ser a tecnologia mais disruptiva que o mundo viu desde a Revolução Industrial. Eu acredito que a &lt;strong&gt;IA&lt;/strong&gt; vai mudar positiva e materialmente como nos relacionamos com o mundo que nos rodeia, quer em termos pessoais quer profissionais.&lt;/p&gt;
 &lt;p&gt;Mas como todas as mudanças disruptivas, ela não será feita sem sacrifícios ou custos.&lt;/p&gt;
 &lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Machine Learning&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
@@ -564,17 +504,6 @@ Tosta mista
 &lt;p&gt;O ensino tradicional que ocorre hoje nas escolas e faculdades de pedra e cimento perderá para o ensino à distância. Já hoje a qualidade, oferta e custo dos MOOC ( &lt;a href=&#34;www.coursera.org&#34; target=&#34;_blank&#34;&gt;Coursera&lt;/a&gt;, &lt;a href=&#34;www.edx.org&#34; target=&#34;_blank&#34;&gt;Edx&lt;/a&gt; entre outros) supera em alguns casos o das universidades tradicionais (minha opinião). Para além das vantagens obvias de eu poder aprender em qualquer universidade do mundo, incluindo as mais reputadas, nos dias e horas à minha escolha (nos últimos anos tirei diversos cursos com a chancela do &lt;a href=&#34;http://web.mit.edu/&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; e &lt;a href=&#34;https://www.stanford.edu/&#34; target=&#34;_blank&#34;&gt;Stanford&lt;/a&gt;, para dar apenas 2 exemplos).&lt;/p&gt;
 &lt;p&gt;Existem inúmeros exemplos dos benefícios que a &lt;strong&gt;IA&lt;/strong&gt; proporciona já hoje (e que irei partilhar) e certamente que muitos mais existirão num futuro que está muito mais próximo do que pensamos.&lt;/p&gt;
 &lt;p&gt;Em alguns casos, a realidade supera a ficção. Bem-vindos ao futuro.&lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     

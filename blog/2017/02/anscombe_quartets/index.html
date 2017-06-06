@@ -67,12 +67,6 @@
   <meta property="og:url" content="/blog/2017/02/anscombe_quartets//" />
   <meta property="og:image" content="img/logo.png" />
 
-
-
-
-
-
-
 </head>
 
 
@@ -175,9 +169,7 @@
                         <p class="text-muted text-uppercase mb-small text-right">By <a href="#">António Cruz</a> | February 13, 2017</p>
 
                         <div id="post-content">
-
-
-<p>Quando temos de analisar dados e tentar extrair conhecimento, depois de obviamente os recolher e importar, das primeiras coisas que fazemos é efetuar um sumário com as informações mais relevantes.</p>
+                          <p>Quando temos de analisar dados e tentar extrair conhecimento, depois de obviamente os recolher e importar, das primeiras coisas que fazemos é efetuar um sumário com as informações mais relevantes.</p>
 <p>Nesses sumários é muito comum elaborarmos estatísticas que representem a centralidade e dispersão dos dados, características fundamentais para a compreensão dos mesmos e ponto de partida para posteriores análises.</p>
 <p>Mas por vezes esses sumários são enganadores e podem levar a conclusões ou ilações que não representam a realidade.</p>
 <p>Para exemplificar esta questão, vamos supor que eu estou a analisar um conjunto de entidades e quero perceber se existem diferenças entre elas. Podem ser, por exemplo, comparar alunos com base em notas de diferentes disciplinas, países com base em diferentes variáveis macroeconómicas ou produtos com base nos dados de vendas. Vocês percebem a ideia.</p>
@@ -192,14 +184,14 @@
 <p>Como este negócio é muito concorrencial, o preço pode ter variado no mesmo dia, ou pode ter acontecido alguma promoção ou desconto em função de uma data especifica.</p>
 <p>O quadro seguinte apresenta quantidade e valor das vendas para 11 meses e cada um dos produtos.</p>
 <p>Mas tenham presente que neste exemplo académico são muito poucos dados, mas numa situação real temos milhares de registos e se calhar dezenas de produtos ou variaveis o que impossibilitaria retirar qualquer informação sem a prévia sumarização dos mesmos.</p>
-<p><img src="figures/unnamed-chunk-3-1.png" width="816" /></p>
+<p><img src="../../../../blog/anscombe_quartets_files/figure-html/unnamed-chunk-3-1.png" width="816" /></p>
 <p>Vamos então fazer uma sumarização dos dados utilizando as métricas mais usuais, começando com a média e desvio padrão das quantidades e valores mensais, para os quatro produtos.</p>
-<p><img src="figures/unnamed-chunk-4-1.png" width="576" /></p>
+<p><img src="../../../../blog/anscombe_quartets_files/figure-html/unnamed-chunk-4-1.png" width="576" /></p>
 <p>Podemos verificar pela sumarização dos dados que os 4 produtos obtêm resultados idênticos para o período dos 11 meses em análise.</p>
 <p>Em media vendemos 9 unidades e um valor de 7.5€ por mês (sim eu sei. Com estas quantidades e valores mais vale criar outro negócio).</p>
 <p>Mas vamos aprofundar a nossa análise. Vamos tentar perceber qual a correlação entre a quantidade e valor para cada um dos produtos vendidos.</p>
-<!-- html table generated in R 3.3.2 by xtable 1.8-2 package -->
-<!-- Thu Mar 09 17:34:26 2017 -->
+<!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
+<!-- Tue Jun 06 10:27:52 2017 -->
 <table width="300">
 <caption align="top">
 Tabela 3: Correlação entre quantidade e valor
@@ -248,8 +240,8 @@ Tosta mista
 <p><br><br></p>
 <p>Mais uma vez os dados mostram que os quatro produtos são idênticos. Mas também podemos perceber que o valor não depende exclusivamente da quantidade vendida.</p>
 <p>Mas como ainda não estamos satisfeitos, vamos criar uma regressão linear em que a variável explicada ou dependente é o valor das vendas e a variável explicativa ou independente é a quantidade vendida, i.e., vamos tentar perceber em que medida a quantidade explica o valor das vendas.</p>
-<!-- html table generated in R 3.3.2 by xtable 1.8-2 package -->
-<!-- Thu Mar 09 17:34:26 2017 -->
+<!-- html table generated in R 3.4.0 by xtable 1.8-2 package -->
+<!-- Tue Jun 06 10:27:53 2017 -->
 <table width="300">
 <caption align="top">
 Tabela 4: Regressão linear
@@ -330,7 +322,7 @@ Tosta mista
 <p>Concluindo, se olharmos para a média, desvio padrão, correlação entre quantidade e valor, e um modelo de regressão que explica o valor em função da quantidade, os produtos são iguais.</p>
 <p>Mas serão mesmo?</p>
 <p>Vamos então visualizar os dados que estão na base destes cálculos.</p>
-<p><img src="figures/unnamed-chunk-7-1.png" width="672" /></p>
+<p><img src="../../../../blog/anscombe_quartets_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p><br> <br> Afinal, vender bifanas, pregos, hambúrgueres ou tostas mistas, não é a mesma coisa.</p>
 <p>Podemos ver que a relação é de facto linear para a Bifana. O mesmo acontece com os Hambúrgueres, mas neste caso especifico temos um mês que é um <a href="https://pt.wikipedia.org/wiki/Outlier" target="_blank">outlier</a> e que cria uma variabilidade na relação entre quantidade e preço que não existe nos restantes meses. Talvez naquele mês tenha existido um conjunto de atividades culturais realizadas a horas pouco comuns o que nos permitiu praticar um preço acima do normal e como tal faturar mais com a mesma quantidade. Mas, se calhar, esse mês já não se vai repetir.</p>
 <p>No caso dos pregos o que aconteceu é curioso: porque a partir de determinada quantidade vendida o valor faturado começa a descer. Talvez tenha sido necessário baixar os preços porque as pessoas deixaram de comer tantos pregos !!</p>
@@ -339,20 +331,6 @@ Tosta mista
 <p>Esta análise ou principio é conhecido como <a href="https://en.wikipedia.org/wiki/Anscombe's_quartet" target="_blank">Anscombe’s quartet</a>.</p>
 <p>Este exemplo pretende apenas chamar a atenção para a importância da visualização dos dados em qualquer análise e o cuidado que é necessário ter antes de tirarmos conclusões e tomarmos decisões com base nos dados.</p>
 <p>Os números também enganam e o que nós, certamente, não queremos é tomarmos uma decisão que terá um impacto relevante no futuro, com base em informação que não representa a realidade.</p>
-
-
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
-
 
                         </div>
                         
@@ -432,6 +410,9 @@ Tosta mista
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
+            <li><a href="http://value-from-data.com/categories/anormaly-detection">anormaly-detection (1)</a>
+            </li>
+            
             <li><a href="http://value-from-data.com/categories/competi%c3%a7%c3%b5es">competições (2)</a>
             </li>
             
@@ -460,10 +441,16 @@ Tosta mista
     <div class="panel-body">
         <ul class="tag-cloud">
             
+            <li><a href="http://value-from-data.com/tags/comportamentos-anormais"><i class="fa fa-tags"></i> comportamentos-anormais</a>
+            </li>
+            
             <li><a href="http://value-from-data.com/tags/conceitos"><i class="fa fa-tags"></i> conceitos</a>
             </li>
             
             <li><a href="http://value-from-data.com/tags/contrata%c3%a7%c3%a3o-publica"><i class="fa fa-tags"></i> contratação-publica</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/tags/dete%c3%a7%c3%a3o-de-fraudes"><i class="fa fa-tags"></i> deteção-de-fraudes</a>
             </li>
             
             <li><a href="http://value-from-data.com/tags/grafos"><i class="fa fa-tags"></i> grafos</a>

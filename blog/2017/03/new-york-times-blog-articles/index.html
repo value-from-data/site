@@ -67,12 +67,6 @@
   <meta property="og:url" content="/blog/2017/03/new-york-times-blog-articles//" />
   <meta property="og:image" content="img/logo.png" />
 
-
-
-
-
-
-
 </head>
 
 
@@ -175,9 +169,7 @@
                         <p class="text-muted text-uppercase mb-small text-right">By <a href="#">António Cruz</a> | March 6, 2017</p>
 
                         <div id="post-content">
-
-
-<p>O objetivo dos artigos referentes às competições da <em>Kaggle</em> é de exemplificar o que pode ser feito com o <strong>Machine Learning</strong>. Embora algumas das competições sejam tutoriais (e mesmo estas utilizam dados reais), a grande maioria é baseada em situações e dados reais e promovidas pelas entidades com objetivos concretos e de negócio.</p>
+                          <p>O objetivo dos artigos referentes às competições da <em>Kaggle</em> é de exemplificar o que pode ser feito com o <strong>Machine Learning</strong>. Embora algumas das competições sejam tutoriais (e mesmo estas utilizam dados reais), a grande maioria é baseada em situações e dados reais e promovidas pelas entidades com objetivos concretos e de negócio.</p>
 <p>Esta competição que decorreu entre 14 de abril de 2015 e 4 de maio do mesmo ano, era uma competição privada e fazia parte do curso <a href="https://www.edx.org/course/analytics-edge-mitx-15-071x-2" target="_blank">The Analytics Edge</a> da <em>edX</em>. Esta competição era o projeto final e contava para a avaliação do curso.</p>
 <p>O que torna os artigos de notícias on-line populares?</p>
 <p>Jornais e agregadores de notícias on-line como o <em>Google News</em> precisam de entender quais os artigos de notícias que serão os mais populares, para que eles possam priorizar a ordem em que as histórias aparecem. Muitos artigos de blog são publicados a cada dia e o New York Times tem que decidir quais os artigos que devem ser apresentados.</p>
@@ -209,8 +201,8 @@
 </ul>
 <p>Os fatores referidos anteriormente tornam esta competição bastante interessante, nomeadamente pelo facto de estarmos dependente de texto, sendo necessário alguma capacidade de <a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">Natural Language Processing</a>.</p>
 <p>Podemos também verificar, nos dois seguintes gráficos, que o número e proporção da popularidade dos artigos por departamento varia:</p>
-<p><img src="figures/unnamed-chunk-3-1.png" width="672" /></p>
-<p><img src="figures/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="../../../../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="../../../../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <p><br></p>
 <p>Como podemos ver, existem departamentos com muito poucos artigos e o nº de artigos populares é bastante inferior aos impopulares. Esta ultima situação, resultados desequilibrados, causa normalmente problemas na construção dos modelos.</p>
 <p><br></p>
@@ -249,40 +241,7 @@
 <p>O meu modelo final foi uma <a href="https://en.wikipedia.org/wiki/Random_forest" target="_blank">random forest</a> com 1000 árvores.</p>
 <p>Os dados seguintes foram calculados com uma versão atual do algoritmo utilizado (e portanto melhor) e com base nos dados do ficheiro de treino.</p>
 <p>Como não sei a popularidade dos artigos do ficheiro de teste, não posso realizar estes cálculos para esse conjunto de dados.</p>
-<pre><code>## [1] &quot;Calculating AUC ...&quot;
-## [1] &quot;(AUC) Sorting data ...&quot;
-## [1] &quot;(AUC) Calculating ranks ...&quot;
-## [1] &quot;AUC: 96.82536598626&quot;
-## [1] &quot;Bootstrapping ROC curves&quot;
-## [1] &quot;Eval AUC&quot;
-## [1] &quot;Producing ROC plot&quot;</code></pre>
-<p><img src="figures/unnamed-chunk-6-1.png" width="672" /></p>
-<pre><code>## Confusion Matrix and Statistics
-## 
-##           Reference
-## Prediction    0    1
-##          0 5280  159
-##          1  283  810
-##                                          
-##                Accuracy : 0.9323         
-##                  95% CI : (0.926, 0.9383)
-##     No Information Rate : 0.8517         
-##     P-Value [Acc &gt; NIR] : &lt; 2.2e-16      
-##                                          
-##                   Kappa : 0.7456         
-##  Mcnemar&#39;s Test P-Value : 4.901e-09      
-##                                          
-##             Sensitivity : 0.8359         
-##             Specificity : 0.9491         
-##          Pos Pred Value : 0.7411         
-##          Neg Pred Value : 0.9708         
-##              Prevalence : 0.1483         
-##          Detection Rate : 0.1240         
-##    Detection Prevalence : 0.1673         
-##       Balanced Accuracy : 0.8925         
-##                                          
-##        &#39;Positive&#39; Class : 1              
-## </code></pre>
+<p><img src="../../../../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p><br></p>
 <p>Como podemos verificar a AUC resultante para os dados de treino é de 96%. Nada mau.</p>
 <p>Podemos também perceber, pela <a href="https://en.wikipedia.org/wiki/Confusion_matrix" target="_blank">confusion matrix</a>, que o modelo previu erradamente 283 artigos como populares que não o eram, e previu 159 artigos como não populares que eram populares. Isso significa que o modelo acerta, para o total de 6532 artigos do ficheiro de treino, em 93% deles.</p>
@@ -293,9 +252,6 @@
 <p><br> <font size="4" color="blue"> <b> Qual o valor? </b></font></p>
 <p>Julgo que a partir deste exemplo seja fácil imaginar outras situações onde modelos deste tipo podem ser utilizados: deteção de spam em emails, classificar correspondência como urgente e não urgente, identificar queixas que merecem atenção imediata, etc.</p>
 <p>Espero que este exemplo, com base numa competição Kaggle, vos possa ter inspirado a identificar situações onde um modelo de classificação pode ser útil.</p>
-
-
-
 
                         </div>
                         
@@ -375,6 +331,9 @@
     <div class="panel-body">
         <ul class="nav nav-pills nav-stacked">
             
+            <li><a href="http://value-from-data.com/categories/anormaly-detection">anormaly-detection (1)</a>
+            </li>
+            
             <li><a href="http://value-from-data.com/categories/competi%c3%a7%c3%b5es">competições (2)</a>
             </li>
             
@@ -403,10 +362,16 @@
     <div class="panel-body">
         <ul class="tag-cloud">
             
+            <li><a href="http://value-from-data.com/tags/comportamentos-anormais"><i class="fa fa-tags"></i> comportamentos-anormais</a>
+            </li>
+            
             <li><a href="http://value-from-data.com/tags/conceitos"><i class="fa fa-tags"></i> conceitos</a>
             </li>
             
             <li><a href="http://value-from-data.com/tags/contrata%c3%a7%c3%a3o-publica"><i class="fa fa-tags"></i> contratação-publica</a>
+            </li>
+            
+            <li><a href="http://value-from-data.com/tags/dete%c3%a7%c3%a3o-de-fraudes"><i class="fa fa-tags"></i> deteção-de-fraudes</a>
             </li>
             
             <li><a href="http://value-from-data.com/tags/grafos"><i class="fa fa-tags"></i> grafos</a>

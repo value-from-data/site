@@ -15,11 +15,7 @@
       <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/um-bom-negocio/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;Vamos supor que você pretende comprar um carro usado. O que faz?&lt;/p&gt;
+      <description>&lt;p&gt;Vamos supor que você pretende comprar um carro usado. O que faz?&lt;/p&gt;
 &lt;p&gt;Bem, presumo que das primeiras coisas é consultar algum site de compra e venda de carros usados e procurar algum carro com as características que considera relevantes de forma a ter uma ideia das alternativas e preços. Provavelmente até visitará algum stand recomendado por um amigo seu ou que fica perto da sua casa ou trabalho.&lt;/p&gt;
 &lt;p&gt;Mas, qual a melhor compra que pode fazer?&lt;/p&gt;
 &lt;p&gt;E se que quiser vender o carro? qual o preço que deve pedir?&lt;/p&gt;
@@ -88,9 +84,9 @@
 &lt;p&gt;Mas e se eu quiser ter uma ideia do preço que custaria uma viatura que reúne um conjunto de características que não estão presentes nas viaturas à venda nos dois sites que pesquisei?&lt;/p&gt;
 &lt;p&gt;Ou, melhor ainda, se eu tiver um carro que quero vender, qual o preço que devo pedir?&lt;/p&gt;
 &lt;p&gt;Foi construido um modelo para prever o valor de venda esperado, modelo que considerou as variáveis kms, idade, potência, cilindrada, marca e modelo. O modelo consegue explicar &lt;strong&gt;82.40%&lt;/strong&gt; da variação do valor, o que é bastante positivo.&lt;/p&gt;
-&lt;p&gt;Com base no modelo podemos prever o valor de venda para viaturas com as caracteristicas que estejam dentro dos intervalos utilizados na construção do modelo. Para teste simulei 4 viaturas com as seguintes caracteristicas: volkswagen golf 1.9cc 110cv 117046kms 5 anos, peugeot 208 1.6cc 92cv 84225kms 7 anos, renault megane 1.5cc 90cv 44947kms 9 anos, opel astra 1.7cc 125cv 53819kms 12 anos.&lt;/p&gt;
+&lt;p&gt;Com base no modelo podemos prever o valor de venda para viaturas com as caracteristicas que estejam dentro dos intervalos utilizados na construção do modelo. Para teste simulei 4 viaturas com as seguintes caracteristicas: volkswagen golf 1.9cc 110cv 157794kms 5 anos, peugeot 208 1.6cc 92cv 63316kms 7 anos, renault megane 1.5cc 90cv 155659kms 9 anos, opel astra 1.7cc 125cv 83933kms 12 anos.&lt;/p&gt;
 &lt;p&gt;O valor de venda previsto, se pretendermos praticar preços de acordo com os que estavam a ser praticados à data da recolha dos dados nos dois sites de onde extraimos a informação, assim como o intervalo de confiança de 90% para esse valor médio (probabilidade de um carro com aquelas caracteristicas ser vendido dentro do nosso intervalo), constam do seguinte gráfico:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/Um-bom-negocio_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/Um-bom-negocio_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Podemos a partir daqui decidir qual o preço que podemos praticar, definindo o preço final em função de termos ou não urgência na venda, o carro ter mais ou menos equipamento que o normal, o estado da viatura ser bom ou mau, etc. Mas temos um bom ponto de partida com o intervalo calculado.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Questões finais &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Tentei não me alongar muito para não vos cansar.&lt;/p&gt;
@@ -100,17 +96,6 @@
 &lt;li&gt;&lt;p&gt;Qual o preço que devo pedir se quiser fechar negócio nos próximos 15 dias?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Com este exemplo simples, espero ter conseguido demonstrar, com utilização de algumas técnicas, a importância da informação para extrair conhecimento e potenciar a boa decisão.&lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     

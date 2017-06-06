@@ -15,11 +15,7 @@
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/03/new-york-times-blog-articles/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;O objetivo dos artigos referentes às competições da &lt;em&gt;Kaggle&lt;/em&gt; é de exemplificar o que pode ser feito com o &lt;strong&gt;Machine Learning&lt;/strong&gt;. Embora algumas das competições sejam tutoriais (e mesmo estas utilizam dados reais), a grande maioria é baseada em situações e dados reais e promovidas pelas entidades com objetivos concretos e de negócio.&lt;/p&gt;
+      <description>&lt;p&gt;O objetivo dos artigos referentes às competições da &lt;em&gt;Kaggle&lt;/em&gt; é de exemplificar o que pode ser feito com o &lt;strong&gt;Machine Learning&lt;/strong&gt;. Embora algumas das competições sejam tutoriais (e mesmo estas utilizam dados reais), a grande maioria é baseada em situações e dados reais e promovidas pelas entidades com objetivos concretos e de negócio.&lt;/p&gt;
 &lt;p&gt;Esta competição que decorreu entre 14 de abril de 2015 e 4 de maio do mesmo ano, era uma competição privada e fazia parte do curso &lt;a href=&#34;https://www.edx.org/course/analytics-edge-mitx-15-071x-2&#34; target=&#34;_blank&#34;&gt;The Analytics Edge&lt;/a&gt; da &lt;em&gt;edX&lt;/em&gt;. Esta competição era o projeto final e contava para a avaliação do curso.&lt;/p&gt;
 &lt;p&gt;O que torna os artigos de notícias on-line populares?&lt;/p&gt;
 &lt;p&gt;Jornais e agregadores de notícias on-line como o &lt;em&gt;Google News&lt;/em&gt; precisam de entender quais os artigos de notícias que serão os mais populares, para que eles possam priorizar a ordem em que as histórias aparecem. Muitos artigos de blog são publicados a cada dia e o New York Times tem que decidir quais os artigos que devem ser apresentados.&lt;/p&gt;
@@ -51,8 +47,8 @@
 &lt;/ul&gt;
 &lt;p&gt;Os fatores referidos anteriormente tornam esta competição bastante interessante, nomeadamente pelo facto de estarmos dependente de texto, sendo necessário alguma capacidade de &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_language_processing&#34; target=&#34;_blank&#34;&gt;Natural Language Processing&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Podemos também verificar, nos dois seguintes gráficos, que o número e proporção da popularidade dos artigos por departamento varia:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Como podemos ver, existem departamentos com muito poucos artigos e o nº de artigos populares é bastante inferior aos impopulares. Esta ultima situação, resultados desequilibrados, causa normalmente problemas na construção dos modelos.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -91,40 +87,7 @@
 &lt;p&gt;O meu modelo final foi uma &lt;a href=&#34;https://en.wikipedia.org/wiki/Random_forest&#34; target=&#34;_blank&#34;&gt;random forest&lt;/a&gt; com 1000 árvores.&lt;/p&gt;
 &lt;p&gt;Os dados seguintes foram calculados com uma versão atual do algoritmo utilizado (e portanto melhor) e com base nos dados do ficheiro de treino.&lt;/p&gt;
 &lt;p&gt;Como não sei a popularidade dos artigos do ficheiro de teste, não posso realizar estes cálculos para esse conjunto de dados.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Calculating AUC ...&amp;quot;
-## [1] &amp;quot;(AUC) Sorting data ...&amp;quot;
-## [1] &amp;quot;(AUC) Calculating ranks ...&amp;quot;
-## [1] &amp;quot;AUC: 96.82536598626&amp;quot;
-## [1] &amp;quot;Bootstrapping ROC curves&amp;quot;
-## [1] &amp;quot;Eval AUC&amp;quot;
-## [1] &amp;quot;Producing ROC plot&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;## Confusion Matrix and Statistics
-## 
-##           Reference
-## Prediction    0    1
-##          0 5280  159
-##          1  283  810
-##                                          
-##                Accuracy : 0.9323         
-##                  95% CI : (0.926, 0.9383)
-##     No Information Rate : 0.8517         
-##     P-Value [Acc &amp;gt; NIR] : &amp;lt; 2.2e-16      
-##                                          
-##                   Kappa : 0.7456         
-##  Mcnemar&amp;#39;s Test P-Value : 4.901e-09      
-##                                          
-##             Sensitivity : 0.8359         
-##             Specificity : 0.9491         
-##          Pos Pred Value : 0.7411         
-##          Neg Pred Value : 0.9708         
-##              Prevalence : 0.1483         
-##          Detection Rate : 0.1240         
-##    Detection Prevalence : 0.1673         
-##       Balanced Accuracy : 0.8925         
-##                                          
-##        &amp;#39;Positive&amp;#39; Class : 1              
-## &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Como podemos verificar a AUC resultante para os dados de treino é de 96%. Nada mau.&lt;/p&gt;
 &lt;p&gt;Podemos também perceber, pela &lt;a href=&#34;https://en.wikipedia.org/wiki/Confusion_matrix&#34; target=&#34;_blank&#34;&gt;confusion matrix&lt;/a&gt;, que o modelo previu erradamente 283 artigos como populares que não o eram, e previu 159 artigos como não populares que eram populares. Isso significa que o modelo acerta, para o total de 6532 artigos do ficheiro de treino, em 93% deles.&lt;/p&gt;
@@ -135,17 +98,6 @@
 &lt;p&gt;&lt;br&gt; &lt;font size=&#34;4&#34; color=&#34;blue&#34;&gt; &lt;b&gt; Qual o valor? &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;Julgo que a partir deste exemplo seja fácil imaginar outras situações onde modelos deste tipo podem ser utilizados: deteção de spam em emails, classificar correspondência como urgente e não urgente, identificar queixas que merecem atenção imediata, etc.&lt;/p&gt;
 &lt;p&gt;Espero que este exemplo, com base numa competição Kaggle, vos possa ter inspirado a identificar situações onde um modelo de classificação pode ser útil.&lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -155,11 +107,7 @@
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/kaggle/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;Muita da informação presente neste post foi diretamente traduzida da &lt;a href=&#34;https://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;wikipedia&lt;/a&gt;. Para quê inventar a roda?&lt;/p&gt;
+      <description>&lt;p&gt;Muita da informação presente neste post foi diretamente traduzida da &lt;a href=&#34;https://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;wikipedia&lt;/a&gt;. Para quê inventar a roda?&lt;/p&gt;
 &lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; O que é a &lt;a href=&#34;https://www.kaggle.com/&#34; target=&#34;_blank&#34;&gt;Kaggle&lt;/a&gt; &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;Em 2010, a Kaggle foi fundada como uma plataforma para competições de modelos preditivos, nas quais empresas e pesquisadores disponibilizam os seus dados e &lt;em&gt;cientistas de dados&lt;/em&gt; de todo o mundo competem para produzir os melhores modelos.&lt;/p&gt;
 &lt;p&gt;Esta abordagem crowdsourcing baseia-se no facto de que existem inúmeras estratégias que podem ser aplicadas a qualquer tarefa de modelagem preditiva e é impossível saber, no início, qual a técnica ou analista que será mais eficaz. A &lt;em&gt;Kaggle&lt;/em&gt; também aloja competições de recrutamento em que os cientistas de dados competem por uma hipótese de conseguir entrevistas de trabalho nas empresas líderes em ciência de dados como &lt;em&gt;Facebook&lt;/em&gt;, &lt;em&gt;Winton Capital&lt;/em&gt; e &lt;em&gt;Walmart&lt;/em&gt;.&lt;/p&gt;
@@ -186,17 +134,6 @@
 &lt;p&gt;Irei publicar alguns artigos da minha experiência em competições &lt;em&gt;kaggle&lt;/em&gt;, começando por descrever as já terminadas e ir atualizando conforme vá participando em novas competições.&lt;/p&gt;
 &lt;p&gt;Normalmente as competições são muito interessantes e os dados são reais.&lt;/p&gt;
 &lt;p&gt;Espero que gostem.&lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     

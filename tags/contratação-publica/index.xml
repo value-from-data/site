@@ -15,11 +15,7 @@
       <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/04/teoria-grafos/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;div id=&#34;bg&#34;&gt;
+      <description>&lt;div id=&#34;bg&#34;&gt;
 &lt;p&gt;&lt;img align=&#34;left&#34; style=&#34;width:13%;height:13%;margin:20px 30px&#34; src=&#34;../../../../img/banners/graph.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;O &lt;strong&gt;BASE&lt;/strong&gt; é um portal na internet assegurado pelo &lt;strong&gt;Instituto dos Mercados Públicos do Imobiliário e da Construção (IMPIC)&lt;/strong&gt;, dedicado aos contratos públicos, que agrega informação sobre a contratação pública e dá cumprimento ao &lt;strong&gt;código dos contratos públicos (CCP)&lt;/strong&gt;.&lt;/p&gt;
@@ -110,8 +106,8 @@
 &lt;p&gt;Este valor de centralidade varia entre 0 e 1 e ele é tanto maior quanto um vértice tem o maior grau possível (nº de vértices menos 1) e os restantes vértices possuem o menor grau possível.&lt;/p&gt;
 &lt;p&gt;Com base no grau, a centralidade do grafo relativo aos serviços de finanças e seguros é o dobro da dos serviços de saúde e ação social.&lt;/p&gt;
 &lt;p&gt;Podemos também verificar que quando comparamos as entidades individualmente com base no seu pageRank, para os dois grafos, a dos serviços de finanças e seguros é constituída por fornecedores e a dos serviços de saúde e ação social é por clientes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/teoria-grafos_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/teoria-grafos_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/teoria-grafos_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/teoria-grafos_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Conclusões&lt;/b&gt;&lt;/font&gt;
@@ -131,17 +127,6 @@
 &lt;p&gt;Espero que tenham achado o artigo interessante e se tiverem sugestões ou comentários a fazer, não hesitem.&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     

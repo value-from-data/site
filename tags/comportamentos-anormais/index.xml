@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comportamentos Anormais on Melhores decisões</title>
+    <link>http://value-from-data.com/tags/comportamentos-anormais/index.xml</link>
+    <description>Recent content in Comportamentos Anormais on Melhores decisões</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-pt</language>
+    <copyright>Copyright (c) 2017, value-from-data; all rights reserved.</copyright>
+    <atom:link href="http://value-from-data.com/tags/comportamentos-anormais/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Não encontras nada estranho?</title>
+      <link>http://value-from-data.com/blog/2017/06/achas-normal/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://value-from-data.com/blog/2017/06/achas-normal/</guid>
+      <description>&lt;div id=&#34;bg&#34;&gt;
+&lt;p&gt;&lt;img align=&#34;left&#34; style=&#34;width:13%;height:13%;margin:20px 30px&#34; src=&#34;../../../../img/banners/detetive.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A deteção de situações anómalas é um objetivo recorrente a todo o tipo de organizações e em todas as áreas.&lt;/p&gt;
+&lt;p&gt;A análise de dados utiliza tecnologias para detetar anomalias, padrões e indicadores de risco num conjunto de dados.&lt;/p&gt;
+&lt;p&gt;Desde a deteção da fraude contabilística, à intrusão de sistemas digitais, falhas, erros ou a fabricação manual de evidências, são alguns dos exemplos onde podem ser utilizados algoritmos de deteção de situações anómalas.&lt;/p&gt;
+&lt;p&gt;Diversos tipos de algoritmos podem ser utilizados, em função do problema de negócio em causa, uns mais complexos do que outros e com diferentes graus de dificuldade de implementação.&lt;/p&gt;
+&lt;p&gt;Eu pessoalmente gosto das soluções simples e que podem produzir resultados rapidamente.&lt;/p&gt;
+&lt;p&gt;Por isso, vou vos falar num mecanismo bastante simples e com resultados surpreendentes. Já ouviram falar na &lt;strong&gt;Benford’s law&lt;/strong&gt;? Não? Vocês é que ficam a perder.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Benford’s law&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Pensa-se que foi o matemático e astrónomo &lt;em&gt;Simon Newcomb&lt;/em&gt;, em 1881, o primeiro a publicar um artigo sobre o fenómeno que mais tarde veio a ser conhecido por &lt;strong&gt;Benford’s law&lt;/strong&gt; (vamos chamar-lhe lei de &lt;strong&gt;Benford&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Ele apercebeu-se que as primeiras páginas dos livros da biblioteca estavam muito mais usadas e que o desgaste ia diminuindo nas páginas com maiores dígitos. Ou seja, as páginas que começavam por 1 eram mais lidas que as que começavam por dígitos maiores.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Newcomb&lt;/strong&gt; não disponibilizou nenhuma teoria para a descoberta e passados 50 anos, aparentemente sem ligação à descoberta inicial, o físico &lt;strong&gt;Frank Benford&lt;/strong&gt; também reparou que as primeiras páginas dos seus livros estavam mais gastas que as ultimas.&lt;/p&gt;
+&lt;p&gt;Perante a descoberta &lt;strong&gt;Benford&lt;/strong&gt; testou a sua hipótese, que existiam naturalmente mais números que começavam por dígitos menores. Em mais de 20000 observações de eventos e factos tão distintos como a área dos rios, o peso atómico dos elementos, números que apareciam nos artigos do &lt;strong&gt;Reader’s Digest&lt;/strong&gt;, etc, &lt;strong&gt;Benford&lt;/strong&gt; provou a sua hipótese.&lt;/p&gt;
+&lt;p&gt;Essa distribuição que determina que os números menores aparecem com mais frequência que os maiores ficou conhecida como a lei de &lt;strong&gt;Benford&lt;/strong&gt; e determina que a proporção de ocorrência dos números, neste caso para o primeiro digito, segue a seguinte distribuição:&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/achas-normal_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Ou seja, para números gerados &lt;em&gt;naturalmente&lt;/em&gt; a percentagem de vezes em que o &lt;strong&gt;1&lt;/strong&gt; aparece como primeiro digito deverá ser de 30.1%, o &lt;strong&gt;2&lt;/strong&gt; deverá aparecer como primeiro digito em 17.6% das vezes, e assim sucessivamente.&lt;/p&gt;
+&lt;p&gt;O web site &lt;a href=&#34;http://testingbenfordslaw.com/&#34; target=&#34;_blank&#34;&gt; http://testingbenfordslaw.com/&lt;/a&gt; coloca à prova a lei de &lt;strong&gt;Benford&lt;/strong&gt; perante um conjunto diverso de dados como os seguidores de utilizadores no twitter, a população das cidades espanholas, a despesa do governo Inglês, número de moradas Brasileiras, o PIB real dos países, etc.&lt;/p&gt;
+&lt;p&gt;Tudo isto é muito interessante, mas perguntam vocês se isto tem alguma base cientifica que nos permita confiar numa análise deste tipo?&lt;/p&gt;
+&lt;p&gt;Durante mais de 90 anos matemáticos e estatísticos tentaram explicar tal fenómeno. Mas apenas em 1995 o matemático &lt;strong&gt;Hill&lt;/strong&gt; forneceu uma explicação e demonstração do facto.&lt;/p&gt;
+&lt;p&gt;O que vos posso dizer é que a coisa funciona muito bem. Mesmo muito bem. Estranhamente muito bem. De tal forma que a técnica é cada vez mais utilizada, nomeadamente na auditoria forense.&lt;/p&gt;
+&lt;p&gt;Existem várias formas de aplicar a lei de &lt;strong&gt;Benford&lt;/strong&gt;, nomeadamente ao primeiro digito, dois primeiros dígitos, 3 primeiros dígitos, 2 últimos dígitos ou números de segunda ordem. Existem também várias formas de determinar o nível de significância (se um conjunto de eventos estão, ou não, conformes com a regra) como sejam o teste do qui-quadrado, teste &lt;strong&gt;Kolmogorov–Smirnov&lt;/strong&gt;, ou o teste de &lt;strong&gt;kuiper&lt;/strong&gt;. No exemplo prático deste artigo irei analisar o primeiro digito e utilizarei o teste de &lt;strong&gt;Kolmogorov–Smirnov&lt;/strong&gt; com um nível de significância de 5% para avaliar se a regra é ou não cumprida.&lt;/p&gt;
+&lt;p&gt;Não se pense, no entanto, que a técnica é uma panaceia para todos os males. Ela não se deve aplicar em determinadas situações, como por exemplo quando os números são atribuídos (códigos postais, número de faturas ou cheques, etc), quando existem níveis psicológicos nos preços (19.99 em vez de 20), quando existem limites naturais (altura de adultos), etc.&lt;/p&gt;
+&lt;p&gt;A técnica tem-se revelado particularmente eficaz na área contabilística quando os números resultam de combinações matemáticas (quantidade x preço unitário), e nas áreas das contas a receber e a pagar, faturação, despesas, etc.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Aplicação à contratação pública &lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Para efeitos de exemplo prático irei utilizar os dados do portal &lt;a href=&#34;http://www.base.gov.pt/Base/pt/Homepage&#34; target=&#34;_blank&#34;&gt; Base&lt;/a&gt;. Podem ler mais sobre a forma como os dados foram extraídos e processados neste &lt;a href=&#34;http://value-from-data.com/blog/2017/04/teoria-grafos/&#34; target=&#34;_blank&#34;&gt; artigo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Agora prestem atenção. Neste exemplo prático, tal como em qualquer outra situação, esta técnica deve ser utilizada em conjunto com outras e o resultado dela, por si, não significa que existe fraude, crime ou más práticas de gestão.&lt;/p&gt;
+&lt;p&gt;Mas um resultado positivo no teste deveria chamar a atenção dos responsáveis da organização, em primeiro lugar, para a avaliação das suas práticas de contratação, e, em segundo lugar, das entidades de controlo e inspetivas para uma possível auditoria.&lt;/p&gt;
+&lt;p&gt;Ou seja, um resultado positivo (os números divergem da distribuição de &lt;strong&gt;Benford&lt;/strong&gt;) não tem um significado automático. Mas deveria, isso sim, despoletar uma análise mais cuidada para que se possa perceber as razões do verificado.&lt;/p&gt;
+&lt;p&gt;Um resultado negativo também não significa que está tudo bem, não é um aval ou certificação. Existem sempre casos de falsos positivos e falsos negativos.&lt;/p&gt;
+&lt;p&gt;Vamos começar por uma hipótese simples: os contratos celebrados em 2016 cumprem a lei de Benford, por tipo de procedimento?&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;img src=&#34;../../blog/achas-normal_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;912&#34; /&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;No gráfico as colunas representam a distribuição real e a linha vermelha a distribuição teórica segundo a lei de Benford.&lt;/p&gt;
+&lt;p&gt;Não foram considerados alguns tipos de procedimentos, como por exemplo os concursos limitados por prévia qualificação e os procedimentos de negociação, por terem muitos poucos contratos.&lt;/p&gt;
+&lt;p&gt;Podem também reparar que o ajuste direto e o concurso público não cumprem a regra segundo o teste de significância escolhido (teste de &lt;strong&gt;Kolmogorov–Smirnov&lt;/strong&gt; com um nível de 5%), por uma boa razão. A maioria destes testes estatísticos é muito sensível quando o número de observações (neste caso, contratos) é muito pequeno ou muito grande. No caso do ajuste direto e do concurso público o número é enorme.&lt;/p&gt;
+&lt;p&gt;No entanto, o apresentado faz sentido do ponto de vista da perceção que temos da realidade pois os ajustes diretos têm limites de valor e estão mais sujeitos a valores menos &lt;em&gt;naturais&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Mas a base de partida parece-me suficientemente boa para sermos mais específicos na nossa análise.&lt;/p&gt;
+&lt;p&gt;A partir deste momento os nossos dados apenas irão considerar os 4 tipo de procedimentos que estão no gráfico anterior:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ajuste direto;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ao abrigo de acordo-quadro (artº 258º);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ao abrigo de acordo-quadro (artº 259º);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;concurso público&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vamos avaliar a lei e Benford por cliente.&lt;/p&gt;
+&lt;p&gt;Para o efeito irei apresentar 9 exemplos de clientes (escolhidos aleatóriamente) cujos contratos celebrados em 2016 cumprem a lei de Benford e que realizaram pelo menos 300 contratos.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/achas-normal_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;912&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Como podem verificar, mesmo não existindo uma sobreposição gráfica perfeita entre a distribuição real e a teórica, o teste de significância confirma o cumprimento da regra. Isso também acontece porque o número de contratos por entidade não é demasiado elevado o que a acontecer tornaria o teste muito sensível a qualquer variação relativamente à distribuição teórica.&lt;/p&gt;
+&lt;p&gt;O número de clientes cumpridores é muito maior, estes forma apenas exemplos para permitir avaliar o resultado.&lt;/p&gt;
+&lt;p&gt;Podemos também efetuar a mesma análise, agora para 9 exemplos de entidades cujos contratos realizados em 2016 não cumprem a lei de Benford.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/achas-normal_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;912&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Mais uma vez realço que este resultado não permite concluir que nos exemplos apresentados existiu fraude, crime ou má pratica de gestão. Mas julgo que seria prudente uma avaliação mais detalhada e cuidada por parte dos interessados, na sua política de contratação pública.&lt;/p&gt;
+&lt;p&gt;A partir deste momento poderiamos aplicar a mesma metodologia por fornecedor, ou outro agrupamento que fosse adequado ao objetivo pretendido.&lt;/p&gt;
+&lt;p&gt;Para finalizar apresento um gráfico que identifica os clientes com mais de 50 contratos celebrados em 2016, considerando apenas os 4 tipos de procedimento indicados anteriormente.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../../blog/achas-normal_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;912&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Cada ponto representa um cliente e os pontos acima da diagonal cumprem a lei de &lt;strong&gt;Benford&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Apesar da maioria dos clientes cumprir a regra, existem muitos onde tal não acontece.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Conclusões&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;A lei de &lt;strong&gt;Benford&lt;/strong&gt; é uma ferramenta bastante útil para detetar situações merecedoras de uma análise mais cuidada e detalhada.&lt;/p&gt;
+&lt;p&gt;Permite otimizar recursos ao destacar, num grande volume de dados e de forma simples e rápida, as situações merecedoras de tratamento especial.&lt;/p&gt;
+&lt;p&gt;Os níveis de significãncia estatística são flexíveis e podem ser otimizados com a experiência e objetivos pretendidos.&lt;/p&gt;
+&lt;p&gt;Quando conjudado com outras ferramentas de análise de dados, podem ser alcançados resultados bastante válidos.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

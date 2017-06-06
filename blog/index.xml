@@ -7,8 +7,111 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-pt</language>
     <copyright>Copyright (c) 2017, value-from-data; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 24 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://value-from-data.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Não encontras nada estranho?</title>
+      <link>http://value-from-data.com/blog/2017/06/achas-normal/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://value-from-data.com/blog/2017/06/achas-normal/</guid>
+      <description>&lt;div id=&#34;bg&#34;&gt;
+&lt;p&gt;&lt;img align=&#34;left&#34; style=&#34;width:13%;height:13%;margin:20px 30px&#34; src=&#34;../../../../img/banners/detetive.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;A deteção de situações anómalas é um objetivo recorrente a todo o tipo de organizações e em todas as áreas.&lt;/p&gt;
+&lt;p&gt;A análise de dados utiliza tecnologias para detetar anomalias, padrões e indicadores de risco num conjunto de dados.&lt;/p&gt;
+&lt;p&gt;Desde a deteção da fraude contabilística, à intrusão de sistemas digitais, falhas, erros ou a fabricação manual de evidências, são alguns dos exemplos onde podem ser utilizados algoritmos de deteção de situações anómalas.&lt;/p&gt;
+&lt;p&gt;Diversos tipos de algoritmos podem ser utilizados, em função do problema de negócio em causa, uns mais complexos do que outros e com diferentes graus de dificuldade de implementação.&lt;/p&gt;
+&lt;p&gt;Eu pessoalmente gosto das soluções simples e que podem produzir resultados rapidamente.&lt;/p&gt;
+&lt;p&gt;Por isso, vou vos falar num mecanismo bastante simples e com resultados surpreendentes. Já ouviram falar na &lt;strong&gt;Benford’s law&lt;/strong&gt;? Não? Vocês é que ficam a perder.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Benford’s law&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Pensa-se que foi o matemático e astrónomo &lt;em&gt;Simon Newcomb&lt;/em&gt;, em 1881, o primeiro a publicar um artigo sobre o fenómeno que mais tarde veio a ser conhecido por &lt;strong&gt;Benford’s law&lt;/strong&gt; (vamos chamar-lhe lei de &lt;strong&gt;Benford&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;Ele apercebeu-se que as primeiras páginas dos livros da biblioteca estavam muito mais usadas e que o desgaste ia diminuindo nas páginas com maiores dígitos. Ou seja, as páginas que começavam por 1 eram mais lidas que as que começavam por dígitos maiores.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Newcomb&lt;/strong&gt; não disponibilizou nenhuma teoria para a descoberta e passados 50 anos, aparentemente sem ligação à descoberta inicial, o físico &lt;strong&gt;Frank Benford&lt;/strong&gt; também reparou que as primeiras páginas dos seus livros estavam mais gastas que as ultimas.&lt;/p&gt;
+&lt;p&gt;Perante a descoberta &lt;strong&gt;Benford&lt;/strong&gt; testou a sua hipótese, que existiam naturalmente mais números que começavam por dígitos menores. Em mais de 20000 observações de eventos e factos tão distintos como a área dos rios, o peso atómico dos elementos, números que apareciam nos artigos do &lt;strong&gt;Reader’s Digest&lt;/strong&gt;, etc, &lt;strong&gt;Benford&lt;/strong&gt; provou a sua hipótese.&lt;/p&gt;
+&lt;p&gt;Essa distribuição que determina que os números menores aparecem com mais frequência que os maiores ficou conhecida como a lei de &lt;strong&gt;Benford&lt;/strong&gt; e determina que a proporção de ocorrência dos números, neste caso para o primeiro digito, segue a seguinte distribuição:&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/achas-normal_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Ou seja, para números gerados &lt;em&gt;naturalmente&lt;/em&gt; a percentagem de vezes em que o &lt;strong&gt;1&lt;/strong&gt; aparece como primeiro digito deverá ser de 30.1%, o &lt;strong&gt;2&lt;/strong&gt; deverá aparecer como primeiro digito em 17.6% das vezes, e assim sucessivamente.&lt;/p&gt;
+&lt;p&gt;O web site &lt;a href=&#34;http://testingbenfordslaw.com/&#34; target=&#34;_blank&#34;&gt; http://testingbenfordslaw.com/&lt;/a&gt; coloca à prova a lei de &lt;strong&gt;Benford&lt;/strong&gt; perante um conjunto diverso de dados como os seguidores de utilizadores no twitter, a população das cidades espanholas, a despesa do governo Inglês, número de moradas Brasileiras, o PIB real dos países, etc.&lt;/p&gt;
+&lt;p&gt;Tudo isto é muito interessante, mas perguntam vocês se isto tem alguma base cientifica que nos permita confiar numa análise deste tipo?&lt;/p&gt;
+&lt;p&gt;Durante mais de 90 anos matemáticos e estatísticos tentaram explicar tal fenómeno. Mas apenas em 1995 o matemático &lt;strong&gt;Hill&lt;/strong&gt; forneceu uma explicação e demonstração do facto.&lt;/p&gt;
+&lt;p&gt;O que vos posso dizer é que a coisa funciona muito bem. Mesmo muito bem. Estranhamente muito bem. De tal forma que a técnica é cada vez mais utilizada, nomeadamente na auditoria forense.&lt;/p&gt;
+&lt;p&gt;Existem várias formas de aplicar a lei de &lt;strong&gt;Benford&lt;/strong&gt;, nomeadamente ao primeiro digito, dois primeiros dígitos, 3 primeiros dígitos, 2 últimos dígitos ou números de segunda ordem. Existem também várias formas de determinar o nível de significância (se um conjunto de eventos estão, ou não, conformes com a regra) como sejam o teste do qui-quadrado, teste &lt;strong&gt;Kolmogorov–Smirnov&lt;/strong&gt;, ou o teste de &lt;strong&gt;kuiper&lt;/strong&gt;. No exemplo prático deste artigo irei analisar o primeiro digito e utilizarei o teste de &lt;strong&gt;Kolmogorov–Smirnov&lt;/strong&gt; com um nível de significância de 5% para avaliar se a regra é ou não cumprida.&lt;/p&gt;
+&lt;p&gt;Não se pense, no entanto, que a técnica é uma panaceia para todos os males. Ela não se deve aplicar em determinadas situações, como por exemplo quando os números são atribuídos (códigos postais, número de faturas ou cheques, etc), quando existem níveis psicológicos nos preços (19.99 em vez de 20), quando existem limites naturais (altura de adultos), etc.&lt;/p&gt;
+&lt;p&gt;A técnica tem-se revelado particularmente eficaz na área contabilística quando os números resultam de combinações matemáticas (quantidade x preço unitário), e nas áreas das contas a receber e a pagar, faturação, despesas, etc.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Aplicação à contratação pública &lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Para efeitos de exemplo prático irei utilizar os dados do portal &lt;a href=&#34;http://www.base.gov.pt/Base/pt/Homepage&#34; target=&#34;_blank&#34;&gt; Base&lt;/a&gt;. Podem ler mais sobre a forma como os dados foram extraídos e processados neste &lt;a href=&#34;http://value-from-data.com/blog/2017/04/teoria-grafos/&#34; target=&#34;_blank&#34;&gt; artigo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Agora prestem atenção. Neste exemplo prático, tal como em qualquer outra situação, esta técnica deve ser utilizada em conjunto com outras e o resultado dela, por si, não significa que existe fraude, crime ou más práticas de gestão.&lt;/p&gt;
+&lt;p&gt;Mas um resultado positivo no teste deveria chamar a atenção dos responsáveis da organização, em primeiro lugar, para a avaliação das suas práticas de contratação, e, em segundo lugar, das entidades de controlo e inspetivas para uma possível auditoria.&lt;/p&gt;
+&lt;p&gt;Ou seja, um resultado positivo (os números divergem da distribuição de &lt;strong&gt;Benford&lt;/strong&gt;) não tem um significado automático. Mas deveria, isso sim, despoletar uma análise mais cuidada para que se possa perceber as razões do verificado.&lt;/p&gt;
+&lt;p&gt;Um resultado negativo também não significa que está tudo bem, não é um aval ou certificação. Existem sempre casos de falsos positivos e falsos negativos.&lt;/p&gt;
+&lt;p&gt;Vamos começar por uma hipótese simples: os contratos celebrados em 2016 cumprem a lei de Benford, por tipo de procedimento?&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;img src=&#34;../blog/achas-normal_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;912&#34; /&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;No gráfico as colunas representam a distribuição real e a linha vermelha a distribuição teórica segundo a lei de Benford.&lt;/p&gt;
+&lt;p&gt;Não foram considerados alguns tipos de procedimentos, como por exemplo os concursos limitados por prévia qualificação e os procedimentos de negociação, por terem muitos poucos contratos.&lt;/p&gt;
+&lt;p&gt;Podem também reparar que o ajuste direto e o concurso público não cumprem a regra segundo o teste de significância escolhido (teste de &lt;strong&gt;Kolmogorov–Smirnov&lt;/strong&gt; com um nível de 5%), por uma boa razão. A maioria destes testes estatísticos é muito sensível quando o número de observações (neste caso, contratos) é muito pequeno ou muito grande. No caso do ajuste direto e do concurso público o número é enorme.&lt;/p&gt;
+&lt;p&gt;No entanto, o apresentado faz sentido do ponto de vista da perceção que temos da realidade pois os ajustes diretos têm limites de valor e estão mais sujeitos a valores menos &lt;em&gt;naturais&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Mas a base de partida parece-me suficientemente boa para sermos mais específicos na nossa análise.&lt;/p&gt;
+&lt;p&gt;A partir deste momento os nossos dados apenas irão considerar os 4 tipo de procedimentos que estão no gráfico anterior:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;ajuste direto;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ao abrigo de acordo-quadro (artº 258º);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;ao abrigo de acordo-quadro (artº 259º);&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;concurso público&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vamos avaliar a lei e Benford por cliente.&lt;/p&gt;
+&lt;p&gt;Para o efeito irei apresentar 9 exemplos de clientes (escolhidos aleatóriamente) cujos contratos celebrados em 2016 cumprem a lei de Benford e que realizaram pelo menos 300 contratos.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/achas-normal_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;912&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Como podem verificar, mesmo não existindo uma sobreposição gráfica perfeita entre a distribuição real e a teórica, o teste de significância confirma o cumprimento da regra. Isso também acontece porque o número de contratos por entidade não é demasiado elevado o que a acontecer tornaria o teste muito sensível a qualquer variação relativamente à distribuição teórica.&lt;/p&gt;
+&lt;p&gt;O número de clientes cumpridores é muito maior, estes forma apenas exemplos para permitir avaliar o resultado.&lt;/p&gt;
+&lt;p&gt;Podemos também efetuar a mesma análise, agora para 9 exemplos de entidades cujos contratos realizados em 2016 não cumprem a lei de Benford.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/achas-normal_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;912&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Mais uma vez realço que este resultado não permite concluir que nos exemplos apresentados existiu fraude, crime ou má pratica de gestão. Mas julgo que seria prudente uma avaliação mais detalhada e cuidada por parte dos interessados, na sua política de contratação pública.&lt;/p&gt;
+&lt;p&gt;A partir deste momento poderiamos aplicar a mesma metodologia por fornecedor, ou outro agrupamento que fosse adequado ao objetivo pretendido.&lt;/p&gt;
+&lt;p&gt;Para finalizar apresento um gráfico que identifica os clientes com mais de 50 contratos celebrados em 2016, considerando apenas os 4 tipos de procedimento indicados anteriormente.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/achas-normal_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;912&#34; /&gt;&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:10px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;Cada ponto representa um cliente e os pontos acima da diagonal cumprem a lei de &lt;strong&gt;Benford&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Apesar da maioria dos clientes cumprir a regra, existem muitos onde tal não acontece.&lt;/p&gt;
+&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+&lt;/p&gt;
+&lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Conclusões&lt;/b&gt;&lt;/font&gt;
+&lt;p style=&#34;margin-bottom:20px;&#34;&gt;
+&lt;/p&gt;
+&lt;p&gt;A lei de &lt;strong&gt;Benford&lt;/strong&gt; é uma ferramenta bastante útil para detetar situações merecedoras de uma análise mais cuidada e detalhada.&lt;/p&gt;
+&lt;p&gt;Permite otimizar recursos ao destacar, num grande volume de dados e de forma simples e rápida, as situações merecedoras de tratamento especial.&lt;/p&gt;
+&lt;p&gt;Os níveis de significãncia estatística são flexíveis e podem ser otimizados com a experiência e objetivos pretendidos.&lt;/p&gt;
+&lt;p&gt;Quando conjudado com outras ferramentas de análise de dados, podem ser alcançados resultados bastante válidos.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>A teoria dos grafos e a contratação pública</title>
@@ -16,11 +119,7 @@
       <pubDate>Mon, 24 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/04/teoria-grafos/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;div id=&#34;bg&#34;&gt;
+      <description>&lt;div id=&#34;bg&#34;&gt;
 &lt;p&gt;&lt;img align=&#34;left&#34; style=&#34;width:13%;height:13%;margin:20px 30px&#34; src=&#34;../../../../img/banners/graph.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;O &lt;strong&gt;BASE&lt;/strong&gt; é um portal na internet assegurado pelo &lt;strong&gt;Instituto dos Mercados Públicos do Imobiliário e da Construção (IMPIC)&lt;/strong&gt;, dedicado aos contratos públicos, que agrega informação sobre a contratação pública e dá cumprimento ao &lt;strong&gt;código dos contratos públicos (CCP)&lt;/strong&gt;.&lt;/p&gt;
@@ -111,8 +210,8 @@
 &lt;p&gt;Este valor de centralidade varia entre 0 e 1 e ele é tanto maior quanto um vértice tem o maior grau possível (nº de vértices menos 1) e os restantes vértices possuem o menor grau possível.&lt;/p&gt;
 &lt;p&gt;Com base no grau, a centralidade do grafo relativo aos serviços de finanças e seguros é o dobro da dos serviços de saúde e ação social.&lt;/p&gt;
 &lt;p&gt;Podemos também verificar que quando comparamos as entidades individualmente com base no seu pageRank, para os dois grafos, a dos serviços de finanças e seguros é constituída por fornecedores e a dos serviços de saúde e ação social é por clientes.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/teoria-grafos_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/teoria-grafos_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/teoria-grafos_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/teoria-grafos_files/figure-html/unnamed-chunk-9-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Conclusões&lt;/b&gt;&lt;/font&gt;
@@ -132,17 +231,6 @@
 &lt;p&gt;Espero que tenham achado o artigo interessante e se tiverem sugestões ou comentários a fazer, não hesitem.&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -152,11 +240,7 @@
       <pubDate>Thu, 30 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/03/simpson-paradox/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
+      <description>&lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;font size=&#34;4&#34; color=&#34;DarkGoldenRod&#34;&gt; &lt;b&gt; Exercício físico e BMI&lt;/b&gt;&lt;/font&gt;
 &lt;p style=&#34;margin-bottom:20px;&#34;&gt;
@@ -164,7 +248,7 @@
 &lt;p&gt;Vamos supor que estamos a tentar perceber a relação entre o número de horas de exercício físico por semana e o BMI (Body Mass Index).&lt;/p&gt;
 &lt;p&gt;Para efeito da nossa análise reunimos os dados de 3000 pessoas, pertencentes a diferentes grupos etários.&lt;/p&gt;
 &lt;p&gt;Vamos visualizar os dados:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/simpson-paradox_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;Muito bem. Parece que quanto maior for o número de horas de exercício físico que fazemos por semana, menor o BMI, i.e., existe uma relação negativa entre o exercício e o BMI.&lt;/p&gt;
@@ -172,14 +256,14 @@
 &lt;p&gt;Faz sentido, certo? Quanto mais exercício, menor o BMI.&lt;/p&gt;
 &lt;p&gt;Será que o comportamento é o mesmo se fizermos, para os mesmos dados, esta análise por grupo etário?&lt;/p&gt;
 &lt;p&gt;Vamos visualizar os dados:&lt;/p&gt;
-&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;864&#34; /&gt;
+&lt;img src=&#34;../blog/simpson-paradox_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;864&#34; /&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;O quê? A relação agora mudou. Para cada grupo etário o que temos é que o BMI aumenta quando o exercício físico aumenta.&lt;/p&gt;
 &lt;p&gt;Lembro que os dados são exatamente os mesmos da primeira análise que fizemos.&lt;/p&gt;
 &lt;p&gt;Podemos também aqui confirmar, por cada uma das retas de regressão por grupo etário o que acontece ao BMI quando o exercício físico aumenta.&lt;/p&gt;
-&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
-&lt;!-- Fri Mar 31 19:59:36 2017 --&gt;
+&lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
+&lt;!-- Tue Jun 06 10:28:32 2017 --&gt;
 &lt;table width=&#34;300&#34;&gt;
 &lt;caption align=&#34;top&#34;&gt;
 Tabela 1: Declive por grupo de idade
@@ -259,41 +343,30 @@ slope
 &lt;/p&gt;
 &lt;p&gt;Por último, vou dar um exemplo que podia servir a cada um de nós. Vamos supor que vamos ser operados e queremos escolher o melhor hospital, i.e., o hospital com maior taxa de sucesso em cirurgias.&lt;/p&gt;
 &lt;p&gt;O quadro seguinte mostra os dados que recolhemos:&lt;/p&gt;
-&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;384&#34; /&gt;
+&lt;img src=&#34;../blog/simpson-paradox_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;384&#34; /&gt;
 &lt;p style=&#34;margin-bottom:20px;&#34;&gt;
 &lt;/p&gt;
 Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
 &lt;p style=&#34;margin-bottom:30px;&#34;&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/simpson-paradox_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;Claramente o Hospital B apresenta a melhor taxa de sucesso em cirurgias. Certo? Era esse o hospital que iriamos escolher, certamente.&lt;/p&gt;
 &lt;p&gt;Mas nós agora já sabemos mais qualquer coisa, sabemos o que é o paradoxo de Simpson. Só para descargo de consciência vamos analisar a taxa de sucesso por tipo de cirurgia.&lt;/p&gt;
 &lt;p&gt;A tabela anterior apresentada, por hospital, quando detalhada por tipo de cirurgia apresenta os seguintes valores:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/simpson-paradox_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;768&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:20px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;Tal como fizemos por hospital, vamos verificar a taxa de sucesso por tipo de cirurgia e hospital:&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:30px;&#34;&gt;
 &lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/simpson-paradox_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/simpson-paradox_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;864&#34; /&gt;&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
 &lt;p&gt;E esta hem? E agora, qual o hospital que vocês escolhiam?&lt;/p&gt;
 &lt;p style=&#34;margin-bottom:50px;&#34;&gt;
 &lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -303,11 +376,7 @@ Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
       <pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/03/new-york-times-blog-articles/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;O objetivo dos artigos referentes às competições da &lt;em&gt;Kaggle&lt;/em&gt; é de exemplificar o que pode ser feito com o &lt;strong&gt;Machine Learning&lt;/strong&gt;. Embora algumas das competições sejam tutoriais (e mesmo estas utilizam dados reais), a grande maioria é baseada em situações e dados reais e promovidas pelas entidades com objetivos concretos e de negócio.&lt;/p&gt;
+      <description>&lt;p&gt;O objetivo dos artigos referentes às competições da &lt;em&gt;Kaggle&lt;/em&gt; é de exemplificar o que pode ser feito com o &lt;strong&gt;Machine Learning&lt;/strong&gt;. Embora algumas das competições sejam tutoriais (e mesmo estas utilizam dados reais), a grande maioria é baseada em situações e dados reais e promovidas pelas entidades com objetivos concretos e de negócio.&lt;/p&gt;
 &lt;p&gt;Esta competição que decorreu entre 14 de abril de 2015 e 4 de maio do mesmo ano, era uma competição privada e fazia parte do curso &lt;a href=&#34;https://www.edx.org/course/analytics-edge-mitx-15-071x-2&#34; target=&#34;_blank&#34;&gt;The Analytics Edge&lt;/a&gt; da &lt;em&gt;edX&lt;/em&gt;. Esta competição era o projeto final e contava para a avaliação do curso.&lt;/p&gt;
 &lt;p&gt;O que torna os artigos de notícias on-line populares?&lt;/p&gt;
 &lt;p&gt;Jornais e agregadores de notícias on-line como o &lt;em&gt;Google News&lt;/em&gt; precisam de entender quais os artigos de notícias que serão os mais populares, para que eles possam priorizar a ordem em que as histórias aparecem. Muitos artigos de blog são publicados a cada dia e o New York Times tem que decidir quais os artigos que devem ser apresentados.&lt;/p&gt;
@@ -339,8 +408,8 @@ Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
 &lt;/ul&gt;
 &lt;p&gt;Os fatores referidos anteriormente tornam esta competição bastante interessante, nomeadamente pelo facto de estarmos dependente de texto, sendo necessário alguma capacidade de &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_language_processing&#34; target=&#34;_blank&#34;&gt;Natural Language Processing&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Podemos também verificar, nos dois seguintes gráficos, que o número e proporção da popularidade dos artigos por departamento varia:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Como podemos ver, existem departamentos com muito poucos artigos e o nº de artigos populares é bastante inferior aos impopulares. Esta ultima situação, resultados desequilibrados, causa normalmente problemas na construção dos modelos.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
@@ -379,40 +448,7 @@ Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
 &lt;p&gt;O meu modelo final foi uma &lt;a href=&#34;https://en.wikipedia.org/wiki/Random_forest&#34; target=&#34;_blank&#34;&gt;random forest&lt;/a&gt; com 1000 árvores.&lt;/p&gt;
 &lt;p&gt;Os dados seguintes foram calculados com uma versão atual do algoritmo utilizado (e portanto melhor) e com base nos dados do ficheiro de treino.&lt;/p&gt;
 &lt;p&gt;Como não sei a popularidade dos artigos do ficheiro de teste, não posso realizar estes cálculos para esse conjunto de dados.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Calculating AUC ...&amp;quot;
-## [1] &amp;quot;(AUC) Sorting data ...&amp;quot;
-## [1] &amp;quot;(AUC) Calculating ranks ...&amp;quot;
-## [1] &amp;quot;AUC: 96.82536598626&amp;quot;
-## [1] &amp;quot;Bootstrapping ROC curves&amp;quot;
-## [1] &amp;quot;Eval AUC&amp;quot;
-## [1] &amp;quot;Producing ROC plot&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;## Confusion Matrix and Statistics
-## 
-##           Reference
-## Prediction    0    1
-##          0 5280  159
-##          1  283  810
-##                                          
-##                Accuracy : 0.9323         
-##                  95% CI : (0.926, 0.9383)
-##     No Information Rate : 0.8517         
-##     P-Value [Acc &amp;gt; NIR] : &amp;lt; 2.2e-16      
-##                                          
-##                   Kappa : 0.7456         
-##  Mcnemar&amp;#39;s Test P-Value : 4.901e-09      
-##                                          
-##             Sensitivity : 0.8359         
-##             Specificity : 0.9491         
-##          Pos Pred Value : 0.7411         
-##          Neg Pred Value : 0.9708         
-##              Prevalence : 0.1483         
-##          Detection Rate : 0.1240         
-##    Detection Prevalence : 0.1673         
-##       Balanced Accuracy : 0.8925         
-##                                          
-##        &amp;#39;Positive&amp;#39; Class : 1              
-## &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/New-York-Times-blog-articles_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Como podemos verificar a AUC resultante para os dados de treino é de 96%. Nada mau.&lt;/p&gt;
 &lt;p&gt;Podemos também perceber, pela &lt;a href=&#34;https://en.wikipedia.org/wiki/Confusion_matrix&#34; target=&#34;_blank&#34;&gt;confusion matrix&lt;/a&gt;, que o modelo previu erradamente 283 artigos como populares que não o eram, e previu 159 artigos como não populares que eram populares. Isso significa que o modelo acerta, para o total de 6532 artigos do ficheiro de treino, em 93% deles.&lt;/p&gt;
@@ -423,17 +459,6 @@ Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
 &lt;p&gt;&lt;br&gt; &lt;font size=&#34;4&#34; color=&#34;blue&#34;&gt; &lt;b&gt; Qual o valor? &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;Julgo que a partir deste exemplo seja fácil imaginar outras situações onde modelos deste tipo podem ser utilizados: deteção de spam em emails, classificar correspondência como urgente e não urgente, identificar queixas que merecem atenção imediata, etc.&lt;/p&gt;
 &lt;p&gt;Espero que este exemplo, com base numa competição Kaggle, vos possa ter inspirado a identificar situações onde um modelo de classificação pode ser útil.&lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -443,11 +468,7 @@ Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
       <pubDate>Mon, 13 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/02/anscombe_quartets/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;Quando temos de analisar dados e tentar extrair conhecimento, depois de obviamente os recolher e importar, das primeiras coisas que fazemos é efetuar um sumário com as informações mais relevantes.&lt;/p&gt;
+      <description>&lt;p&gt;Quando temos de analisar dados e tentar extrair conhecimento, depois de obviamente os recolher e importar, das primeiras coisas que fazemos é efetuar um sumário com as informações mais relevantes.&lt;/p&gt;
 &lt;p&gt;Nesses sumários é muito comum elaborarmos estatísticas que representem a centralidade e dispersão dos dados, características fundamentais para a compreensão dos mesmos e ponto de partida para posteriores análises.&lt;/p&gt;
 &lt;p&gt;Mas por vezes esses sumários são enganadores e podem levar a conclusões ou ilações que não representam a realidade.&lt;/p&gt;
 &lt;p&gt;Para exemplificar esta questão, vamos supor que eu estou a analisar um conjunto de entidades e quero perceber se existem diferenças entre elas. Podem ser, por exemplo, comparar alunos com base em notas de diferentes disciplinas, países com base em diferentes variáveis macroeconómicas ou produtos com base nos dados de vendas. Vocês percebem a ideia.&lt;/p&gt;
@@ -462,14 +483,14 @@ Calculando a taxa de sucesso para cada hospital, temos o seguinte gráfico:
 &lt;p&gt;Como este negócio é muito concorrencial, o preço pode ter variado no mesmo dia, ou pode ter acontecido alguma promoção ou desconto em função de uma data especifica.&lt;/p&gt;
 &lt;p&gt;O quadro seguinte apresenta quantidade e valor das vendas para 11 meses e cada um dos produtos.&lt;/p&gt;
 &lt;p&gt;Mas tenham presente que neste exemplo académico são muito poucos dados, mas numa situação real temos milhares de registos e se calhar dezenas de produtos ou variaveis o que impossibilitaria retirar qualquer informação sem a prévia sumarização dos mesmos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/anscombe_quartets_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;816&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/anscombe_quartets_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;816&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Vamos então fazer uma sumarização dos dados utilizando as métricas mais usuais, começando com a média e desvio padrão das quantidades e valores mensais, para os quatro produtos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/anscombe_quartets_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/anscombe_quartets_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;576&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Podemos verificar pela sumarização dos dados que os 4 produtos obtêm resultados idênticos para o período dos 11 meses em análise.&lt;/p&gt;
 &lt;p&gt;Em media vendemos 9 unidades e um valor de 7.5€ por mês (sim eu sei. Com estas quantidades e valores mais vale criar outro negócio).&lt;/p&gt;
 &lt;p&gt;Mas vamos aprofundar a nossa análise. Vamos tentar perceber qual a correlação entre a quantidade e valor para cada um dos produtos vendidos.&lt;/p&gt;
-&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
-&lt;!-- Thu Mar 09 17:34:26 2017 --&gt;
+&lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
+&lt;!-- Tue Jun 06 10:27:52 2017 --&gt;
 &lt;table width=&#34;300&#34;&gt;
 &lt;caption align=&#34;top&#34;&gt;
 Tabela 3: Correlação entre quantidade e valor
@@ -518,8 +539,8 @@ Tosta mista
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Mais uma vez os dados mostram que os quatro produtos são idênticos. Mas também podemos perceber que o valor não depende exclusivamente da quantidade vendida.&lt;/p&gt;
 &lt;p&gt;Mas como ainda não estamos satisfeitos, vamos criar uma regressão linear em que a variável explicada ou dependente é o valor das vendas e a variável explicativa ou independente é a quantidade vendida, i.e., vamos tentar perceber em que medida a quantidade explica o valor das vendas.&lt;/p&gt;
-&lt;!-- html table generated in R 3.3.2 by xtable 1.8-2 package --&gt;
-&lt;!-- Thu Mar 09 17:34:26 2017 --&gt;
+&lt;!-- html table generated in R 3.4.0 by xtable 1.8-2 package --&gt;
+&lt;!-- Tue Jun 06 10:27:53 2017 --&gt;
 &lt;table width=&#34;300&#34;&gt;
 &lt;caption align=&#34;top&#34;&gt;
 Tabela 4: Regressão linear
@@ -600,7 +621,7 @@ Tosta mista
 &lt;p&gt;Concluindo, se olharmos para a média, desvio padrão, correlação entre quantidade e valor, e um modelo de regressão que explica o valor em função da quantidade, os produtos são iguais.&lt;/p&gt;
 &lt;p&gt;Mas serão mesmo?&lt;/p&gt;
 &lt;p&gt;Vamos então visualizar os dados que estão na base destes cálculos.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/anscombe_quartets_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/anscombe_quartets_files/figure-html/unnamed-chunk-7-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br&gt; &lt;br&gt; Afinal, vender bifanas, pregos, hambúrgueres ou tostas mistas, não é a mesma coisa.&lt;/p&gt;
 &lt;p&gt;Podemos ver que a relação é de facto linear para a Bifana. O mesmo acontece com os Hambúrgueres, mas neste caso especifico temos um mês que é um &lt;a href=&#34;https://pt.wikipedia.org/wiki/Outlier&#34; target=&#34;_blank&#34;&gt;outlier&lt;/a&gt; e que cria uma variabilidade na relação entre quantidade e preço que não existe nos restantes meses. Talvez naquele mês tenha existido um conjunto de atividades culturais realizadas a horas pouco comuns o que nos permitiu praticar um preço acima do normal e como tal faturar mais com a mesma quantidade. Mas, se calhar, esse mês já não se vai repetir.&lt;/p&gt;
 &lt;p&gt;No caso dos pregos o que aconteceu é curioso: porque a partir de determinada quantidade vendida o valor faturado começa a descer. Talvez tenha sido necessário baixar os preços porque as pessoas deixaram de comer tantos pregos !!&lt;/p&gt;
@@ -609,28 +630,6 @@ Tosta mista
 &lt;p&gt;Esta análise ou principio é conhecido como &lt;a href=&#34;https://en.wikipedia.org/wiki/Anscombe&#39;s_quartet&#34; target=&#34;_blank&#34;&gt;Anscombe’s quartet&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Este exemplo pretende apenas chamar a atenção para a importância da visualização dos dados em qualquer análise e o cuidado que é necessário ter antes de tirarmos conclusões e tomarmos decisões com base nos dados.&lt;/p&gt;
 &lt;p&gt;Os números também enganam e o que nós, certamente, não queremos é tomarmos uma decisão que terá um impacto relevante no futuro, com base em informação que não representa a realidade.&lt;/p&gt;
-
-
-&lt;!-- dynamically load mathjax for compatibility with self-contained --&gt;
-&lt;script&gt;
-  (function () {
-    var script = document.createElement(&#34;script&#34;);
-    script.type = &#34;text/javascript&#34;;
-    script.src  = &#34;https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#34;;
-    if (location.protocol !== &#34;file:&#34; &amp;&amp; /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, &#39;&#39;);
-    document.getElementsByTagName(&#34;head&#34;)[0].appendChild(script);
-  })();
-&lt;/script&gt;
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -640,11 +639,7 @@ Tosta mista
       <pubDate>Mon, 16 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/um-bom-negocio/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;Vamos supor que você pretende comprar um carro usado. O que faz?&lt;/p&gt;
+      <description>&lt;p&gt;Vamos supor que você pretende comprar um carro usado. O que faz?&lt;/p&gt;
 &lt;p&gt;Bem, presumo que das primeiras coisas é consultar algum site de compra e venda de carros usados e procurar algum carro com as características que considera relevantes de forma a ter uma ideia das alternativas e preços. Provavelmente até visitará algum stand recomendado por um amigo seu ou que fica perto da sua casa ou trabalho.&lt;/p&gt;
 &lt;p&gt;Mas, qual a melhor compra que pode fazer?&lt;/p&gt;
 &lt;p&gt;E se que quiser vender o carro? qual o preço que deve pedir?&lt;/p&gt;
@@ -713,9 +708,9 @@ Tosta mista
 &lt;p&gt;Mas e se eu quiser ter uma ideia do preço que custaria uma viatura que reúne um conjunto de características que não estão presentes nas viaturas à venda nos dois sites que pesquisei?&lt;/p&gt;
 &lt;p&gt;Ou, melhor ainda, se eu tiver um carro que quero vender, qual o preço que devo pedir?&lt;/p&gt;
 &lt;p&gt;Foi construido um modelo para prever o valor de venda esperado, modelo que considerou as variáveis kms, idade, potência, cilindrada, marca e modelo. O modelo consegue explicar &lt;strong&gt;82.40%&lt;/strong&gt; da variação do valor, o que é bastante positivo.&lt;/p&gt;
-&lt;p&gt;Com base no modelo podemos prever o valor de venda para viaturas com as caracteristicas que estejam dentro dos intervalos utilizados na construção do modelo. Para teste simulei 4 viaturas com as seguintes caracteristicas: volkswagen golf 1.9cc 110cv 117046kms 5 anos, peugeot 208 1.6cc 92cv 84225kms 7 anos, renault megane 1.5cc 90cv 44947kms 9 anos, opel astra 1.7cc 125cv 53819kms 12 anos.&lt;/p&gt;
+&lt;p&gt;Com base no modelo podemos prever o valor de venda para viaturas com as caracteristicas que estejam dentro dos intervalos utilizados na construção do modelo. Para teste simulei 4 viaturas com as seguintes caracteristicas: volkswagen golf 1.9cc 110cv 157794kms 5 anos, peugeot 208 1.6cc 92cv 63316kms 7 anos, renault megane 1.5cc 90cv 155659kms 9 anos, opel astra 1.7cc 125cv 83933kms 12 anos.&lt;/p&gt;
 &lt;p&gt;O valor de venda previsto, se pretendermos praticar preços de acordo com os que estavam a ser praticados à data da recolha dos dados nos dois sites de onde extraimos a informação, assim como o intervalo de confiança de 90% para esse valor médio (probabilidade de um carro com aquelas caracteristicas ser vendido dentro do nosso intervalo), constam do seguinte gráfico:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;#####../content/blog/Um-bom-negocio_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../blog/Um-bom-negocio_files/figure-html/unnamed-chunk-8-1.png&#34; width=&#34;691.2&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Podemos a partir daqui decidir qual o preço que podemos praticar, definindo o preço final em função de termos ou não urgência na venda, o carro ter mais ou menos equipamento que o normal, o estado da viatura ser bom ou mau, etc. Mas temos um bom ponto de partida com o intervalo calculado.&lt;/p&gt;
 &lt;p&gt;&lt;br&gt; &lt;font size=&#34;2&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Questões finais &lt;/b&gt;&lt;/font&gt; &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;Tentei não me alongar muito para não vos cansar.&lt;/p&gt;
@@ -725,17 +720,6 @@ Tosta mista
 &lt;li&gt;&lt;p&gt;Qual o preço que devo pedir se quiser fechar negócio nos próximos 15 dias?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Com este exemplo simples, espero ter conseguido demonstrar, com utilização de algumas técnicas, a importância da informação para extrair conhecimento e potenciar a boa decisão.&lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -745,11 +729,7 @@ Tosta mista
       <pubDate>Thu, 05 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/kaggle/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;Muita da informação presente neste post foi diretamente traduzida da &lt;a href=&#34;https://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;wikipedia&lt;/a&gt;. Para quê inventar a roda?&lt;/p&gt;
+      <description>&lt;p&gt;Muita da informação presente neste post foi diretamente traduzida da &lt;a href=&#34;https://en.wikipedia.org/wiki/Kaggle&#34; target=&#34;_blank&#34;&gt;wikipedia&lt;/a&gt;. Para quê inventar a roda?&lt;/p&gt;
 &lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; O que é a &lt;a href=&#34;https://www.kaggle.com/&#34; target=&#34;_blank&#34;&gt;Kaggle&lt;/a&gt; &lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
 &lt;p&gt;Em 2010, a Kaggle foi fundada como uma plataforma para competições de modelos preditivos, nas quais empresas e pesquisadores disponibilizam os seus dados e &lt;em&gt;cientistas de dados&lt;/em&gt; de todo o mundo competem para produzir os melhores modelos.&lt;/p&gt;
 &lt;p&gt;Esta abordagem crowdsourcing baseia-se no facto de que existem inúmeras estratégias que podem ser aplicadas a qualquer tarefa de modelagem preditiva e é impossível saber, no início, qual a técnica ou analista que será mais eficaz. A &lt;em&gt;Kaggle&lt;/em&gt; também aloja competições de recrutamento em que os cientistas de dados competem por uma hipótese de conseguir entrevistas de trabalho nas empresas líderes em ciência de dados como &lt;em&gt;Facebook&lt;/em&gt;, &lt;em&gt;Winton Capital&lt;/em&gt; e &lt;em&gt;Walmart&lt;/em&gt;.&lt;/p&gt;
@@ -776,17 +756,6 @@ Tosta mista
 &lt;p&gt;Irei publicar alguns artigos da minha experiência em competições &lt;em&gt;kaggle&lt;/em&gt;, começando por descrever as já terminadas e ir atualizando conforme vá participando em novas competições.&lt;/p&gt;
 &lt;p&gt;Normalmente as competições são muito interessantes e os dados são reais.&lt;/p&gt;
 &lt;p&gt;Espero que gostem.&lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
@@ -796,11 +765,7 @@ Tosta mista
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>http://value-from-data.com/blog/2017/01/inteligencia-artificial/</guid>
-      <description>&lt;!-- BLOGDOWN-BODY-BEFORE
-
-/BLOGDOWN-BODY-BEFORE --&gt;
-
-&lt;p&gt;&lt;em&gt;Andrew Ng&lt;/em&gt; (VP &amp;amp; Chief Scientist of Baidu; Co-Chairman and Co-Founder of Coursera; Adjunct Professor at Stanford University) um dos mais reputados especialistas em &lt;strong&gt;Inteligência Artificial&lt;/strong&gt; disse em Maio de 2016 que, “A inteligência artificial é a nova eletricidade! A eletricidade transformou incontáveis industrias; a &lt;strong&gt;IA&lt;/strong&gt; vai fazer o mesmo.”&lt;/p&gt;
+      <description>&lt;p&gt;&lt;em&gt;Andrew Ng&lt;/em&gt; (VP &amp;amp; Chief Scientist of Baidu; Co-Chairman and Co-Founder of Coursera; Adjunct Professor at Stanford University) um dos mais reputados especialistas em &lt;strong&gt;Inteligência Artificial&lt;/strong&gt; disse em Maio de 2016 que, “A inteligência artificial é a nova eletricidade! A eletricidade transformou incontáveis industrias; a &lt;strong&gt;IA&lt;/strong&gt; vai fazer o mesmo.”&lt;/p&gt;
 &lt;p&gt;A &lt;strong&gt;Inteligência Artificial (IA)&lt;/strong&gt; pode ser a tecnologia mais disruptiva que o mundo viu desde a Revolução Industrial. Eu acredito que a &lt;strong&gt;IA&lt;/strong&gt; vai mudar positiva e materialmente como nos relacionamos com o mundo que nos rodeia, quer em termos pessoais quer profissionais.&lt;/p&gt;
 &lt;p&gt;Mas como todas as mudanças disruptivas, ela não será feita sem sacrifícios ou custos.&lt;/p&gt;
 &lt;p&gt;&lt;font size=&#34;4&#34; color=&#34;grey&#34;&gt; &lt;b&gt; Machine Learning&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;
@@ -861,17 +826,6 @@ Tosta mista
 &lt;p&gt;O ensino tradicional que ocorre hoje nas escolas e faculdades de pedra e cimento perderá para o ensino à distância. Já hoje a qualidade, oferta e custo dos MOOC ( &lt;a href=&#34;www.coursera.org&#34; target=&#34;_blank&#34;&gt;Coursera&lt;/a&gt;, &lt;a href=&#34;www.edx.org&#34; target=&#34;_blank&#34;&gt;Edx&lt;/a&gt; entre outros) supera em alguns casos o das universidades tradicionais (minha opinião). Para além das vantagens obvias de eu poder aprender em qualquer universidade do mundo, incluindo as mais reputadas, nos dias e horas à minha escolha (nos últimos anos tirei diversos cursos com a chancela do &lt;a href=&#34;http://web.mit.edu/&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; e &lt;a href=&#34;https://www.stanford.edu/&#34; target=&#34;_blank&#34;&gt;Stanford&lt;/a&gt;, para dar apenas 2 exemplos).&lt;/p&gt;
 &lt;p&gt;Existem inúmeros exemplos dos benefícios que a &lt;strong&gt;IA&lt;/strong&gt; proporciona já hoje (e que irei partilhar) e certamente que muitos mais existirão num futuro que está muito mais próximo do que pensamos.&lt;/p&gt;
 &lt;p&gt;Em alguns casos, a realidade supera a ficção. Bem-vindos ao futuro.&lt;/p&gt;
-
-
-
-&lt;!-- BLOGDOWN-HEAD
-
-
-
-
-
-
-/BLOGDOWN-HEAD --&gt;
 </description>
     </item>
     
